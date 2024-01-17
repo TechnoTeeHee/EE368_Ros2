@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lab_interfaces/msg/WallDistanceArray.msg
+// generated code does not contain a copyright notice
+
+#include "lab_interfaces/msg/WallDistanceMeasurement.idl"
+
+module lab_interfaces {
+  module msg {
+    struct WallDistanceArray {
+      sequence<lab_interfaces::msg::WallDistanceMeasurement> dist_array;
+    };
+  };
+};

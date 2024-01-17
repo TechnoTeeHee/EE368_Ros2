@@ -1,0 +1,40 @@
+{
+  "package_name": "lab_interfaces",
+  "output_dir": "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_c/lab_interfaces",
+  "template_dir": "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/Num.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/NumArray.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/Turtle.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/TurtleArray.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:srv/MeasureWallDist.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:srv/CaptureTurtle.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/WallDistanceMeasurement.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/WallDistanceArray.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/WallDistanceStatistics.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../local/lib/python3.10/dist-packages/rosidl_generator_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/opt/ros/humble/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/Num.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/NumArray.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/Turtle.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/TurtleArray.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/srv/MeasureWallDist.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/srv/CaptureTurtle.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/WallDistanceMeasurement.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/WallDistanceArray.idl",
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/WallDistanceStatistics.idl"
+  ]
+}

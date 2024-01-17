@@ -1,0 +1,41 @@
+[0.690s] Invoking command in '/home/teehee/ros2_ws/build/labs_pkg': PYTHONPATH=/home/teehee/ros2_ws/build/labs_pkg/prefix_override:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/labs_pkg/build --no-deps install_data
+[0.902s] running develop
+[0.903s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.904s]   warnings.warn(
+[0.905s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.905s]   warnings.warn(
+[1.047s] running egg_info
+[1.048s] writing labs_pkg.egg-info/PKG-INFO
+[1.048s] writing dependency_links to labs_pkg.egg-info/dependency_links.txt
+[1.048s] writing entry points to labs_pkg.egg-info/entry_points.txt
+[1.048s] writing requirements to labs_pkg.egg-info/requires.txt
+[1.048s] writing top-level names to labs_pkg.egg-info/top_level.txt
+[1.050s] reading manifest file 'labs_pkg.egg-info/SOURCES.txt'
+[1.051s] writing manifest file 'labs_pkg.egg-info/SOURCES.txt'
+[1.053s] running build_ext
+[1.053s] Creating /home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages/labs-pkg.egg-link (link to .)
+[1.054s] Installing add2ints_client script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.054s] Installing add2ints_client_no_oop script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.054s] Installing add2ints_server script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.055s] Installing array_adder script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.055s] Installing control_turtle script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.056s] Installing cumulative_adder script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.056s] Installing integer_array_publisher script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.057s] Installing integer_publisher script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.057s] Installing my_listener script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.057s] Installing my_talker script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.057s] Installing tb4_circles script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.057s] Installing tb4_stop_at_wall script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.057s] Installing turtlesim_circles script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.058s] Installing turtlesim_move script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.058s] Installing turtlesim_scan script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.058s] Installing turtlesim_stop_at_wall script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.058s] Installing wall_dist_measurement script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.058s] Installing wall_dist_measurement_server script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.058s] Installing wall_dist_statistics script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.059s] Installing wall_dist_statistics_client script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.059s] 
+[1.059s] Installed /home/teehee/ros2_ws/build/labs_pkg
+[1.059s] running install_data
+[1.059s] copying package.xml -> /home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg
+[1.087s] Invoked command in '/home/teehee/ros2_ws/build/labs_pkg' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/labs_pkg/prefix_override:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/labs_pkg/build --no-deps install_data

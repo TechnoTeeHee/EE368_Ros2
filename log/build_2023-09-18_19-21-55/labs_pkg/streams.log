@@ -1,0 +1,24 @@
+[0.659s] Invoking command in '/home/teehee/ros2_ws/build/labs_pkg': PYTHONPATH=/home/teehee/ros2_ws/build/labs_pkg/prefix_override:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/labs_pkg/build --no-deps install_data
+[0.874s] running develop
+[0.874s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.874s]   warnings.warn(
+[0.875s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.875s]   warnings.warn(
+[0.994s] running egg_info
+[0.994s] writing labs_pkg.egg-info/PKG-INFO
+[0.995s] writing dependency_links to labs_pkg.egg-info/dependency_links.txt
+[0.996s] writing entry points to labs_pkg.egg-info/entry_points.txt
+[0.996s] writing requirements to labs_pkg.egg-info/requires.txt
+[0.997s] writing top-level names to labs_pkg.egg-info/top_level.txt
+[0.998s] reading manifest file 'labs_pkg.egg-info/SOURCES.txt'
+[0.999s] writing manifest file 'labs_pkg.egg-info/SOURCES.txt'
+[1.001s] running build_ext
+[1.001s] Creating /home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages/labs-pkg.egg-link (link to .)
+[1.002s] Installing cumulative_adder script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.002s] Installing integer_publisher script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.002s] Installing my_listener script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.002s] Installing my_talker script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[1.002s] 
+[1.003s] Installed /home/teehee/ros2_ws/build/labs_pkg
+[1.003s] running install_data
+[1.029s] Invoked command in '/home/teehee/ros2_ws/build/labs_pkg' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/labs_pkg/prefix_override:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/labs_pkg/build --no-deps install_data

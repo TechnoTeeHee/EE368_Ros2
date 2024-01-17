@@ -1,0 +1,144 @@
+[0.000000] (-) TimerEvent: {}
+[0.000242] (-) JobUnselected: {'identifier': 'example_pkg'}
+[0.000320] (-) JobUnselected: {'identifier': 'lab_exam2_pkg'}
+[0.000341] (-) JobUnselected: {'identifier': 'labs_bringup'}
+[0.000412] (-) JobUnselected: {'identifier': 'labs_pkg'}
+[0.000436] (lab_interfaces) JobQueued: {'identifier': 'lab_interfaces', 'dependencies': OrderedDict()}
+[0.000510] (lab_interfaces) JobStarted: {'identifier': 'lab_interfaces'}
+[0.061450] (lab_interfaces) JobProgress: {'identifier': 'lab_interfaces', 'progress': 'cmake'}
+[0.062051] (lab_interfaces) JobProgress: {'identifier': 'lab_interfaces', 'progress': 'build'}
+[0.062760] (lab_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/teehee/ros2_ws/build/lab_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/teehee/ros2_ws/build/lab_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'teehee'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teehee/ros2_ws/install/lab_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/teehee'), ('OLDPWD', '/home/teehee'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1592'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/teehee/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'teehee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teehee'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/teehee-VM:@/tmp/.ICE-unix/1557,unix/teehee-VM:/tmp/.ICE-unix/1557'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/920ca86b_9b51_469e_b441_7af1cfbe4f6b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.QX5DE2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.140'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/teehee/ros2_ws/build/lab_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/teehee/ros2_ws/build/labs_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble')]), 'shell': False}
+[0.096371] (-) TimerEvent: {}
+[0.100061] (lab_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.198467] (-) TimerEvent: {}
+[0.268936] (lab_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.270769] (lab_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.273286] (lab_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.301055] (lab_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.301253] (-) TimerEvent: {}
+[0.401693] (-) TimerEvent: {}
+[0.502210] (-) TimerEvent: {}
+[0.602822] (-) TimerEvent: {}
+[0.609411] (lab_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.703132] (-) TimerEvent: {}
+[0.803565] (-) TimerEvent: {}
+[0.804048] (lab_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.903792] (-) TimerEvent: {}
+[1.004297] (-) TimerEvent: {}
+[1.057843] (lab_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.081391] (lab_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.104617] (lab_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.104980] (-) TimerEvent: {}
+[1.105160] (lab_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.105259] (lab_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.122047] (lab_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.181924] (lab_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.185605] (lab_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/teehee/ros2_ws/build/lab_interfaces\n'}
+[1.206315] (-) TimerEvent: {}
+[1.226896] (lab_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.240236] (lab_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.263743] (lab_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_lab_interfaces\n'}
+[1.376248] (-) TimerEvent: {}
+[1.483762] (-) TimerEvent: {}
+[1.487473] (lab_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.488367] (lab_interfaces) StdoutLine: {'line': b'writing lab_interfaces.egg-info/PKG-INFO\n'}
+[1.488935] (lab_interfaces) StdoutLine: {'line': b'writing dependency_links to lab_interfaces.egg-info/dependency_links.txt\n'}
+[1.489169] (lab_interfaces) StdoutLine: {'line': b'writing top-level names to lab_interfaces.egg-info/top_level.txt\n'}
+[1.491075] (lab_interfaces) StdoutLine: {'line': b"reading manifest file 'lab_interfaces.egg-info/SOURCES.txt'\n"}
+[1.491737] (lab_interfaces) StdoutLine: {'line': b"writing manifest file 'lab_interfaces.egg-info/SOURCES.txt'\n"}
+[1.530274] (lab_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_lab_interfaces_egg\n'}
+[1.599880] (-) TimerEvent: {}
+[1.715381] (-) TimerEvent: {}
+[1.824039] (-) TimerEvent: {}
+[1.928764] (-) TimerEvent: {}
+[1.961561] (lab_interfaces) StdoutLine: {'line': b'[  2%] Built target lab_interfaces__cpp\n'}
+[1.974625] (lab_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.985970] (lab_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.012675] (lab_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.017498] (lab_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lab_interfaces__rosidl_generator_c\x1b[0m\n'}
+[2.036075] (lab_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/msg/detail/num__functions.c.o\x1b[0m\n'}
+[2.036250] (-) TimerEvent: {}
+[2.099818] (lab_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/msg/detail/num_array__functions.c.o\x1b[0m\n'}
+[2.149719] (lab_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/msg/detail/turtle__functions.c.o\x1b[0m\n'}
+[2.149893] (-) TimerEvent: {}
+[2.203150] (lab_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/msg/detail/turtle_array__functions.c.o\x1b[0m\n'}
+[2.255684] (lab_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/srv/detail/measure_wall_dist__functions.c.o\x1b[0m\n'}
+[2.255868] (-) TimerEvent: {}
+[2.315383] (lab_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__functions.c.o\x1b[0m\n'}
+[2.332124] (lab_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__functions.h:19\x1b[m\x1b[K,\n'}
+[2.332318] (lab_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__functions.c:4\x1b[m\x1b[K:\n'}
+[2.332385] (lab_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Klab_interfaces/msg/detail/int64__struct.h: No such file or directory\n'}
+[2.332456] (lab_interfaces) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"lab_interfaces/msg/detail/int64__struct.h"\x1b[m\x1b[K\n'}
+[2.332678] (lab_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.332878] (lab_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[2.333542] (lab_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lab_interfaces__rosidl_generator_c.dir/build.make:303: CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__functions.c.o] Error 1\n'}
+[2.333867] (lab_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/lab_interfaces__rosidl_generator_c.dir/all] Error 2\n'}
+[2.333950] (lab_interfaces) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[2.356620] (-) TimerEvent: {}
+[2.396783] (lab_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lab_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.438931] (lab_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/msg/num__type_support.cpp.o\x1b[0m\n'}
+[2.545588] (lab_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lab_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[2.545771] (-) TimerEvent: {}
+[2.564218] (lab_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/msg/num_array__type_support.cpp.o\x1b[0m\n'}
+[2.568754] (lab_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/msg/detail/num__type_support.cpp.o\x1b[0m\n'}
+[2.571655] (lab_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target lab_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.598034] (lab_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.o\x1b[0m\n'}
+[2.662121] (-) TimerEvent: {}
+[2.709736] (lab_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/msg/turtle__type_support.cpp.o\x1b[0m\n'}
+[2.839416] (-) TimerEvent: {}
+[2.862226] (lab_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/msg/turtle_array__type_support.cpp.o\x1b[0m\n'}
+[2.941467] (-) TimerEvent: {}
+[2.954273] (lab_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/msg/detail/num_array__type_support.cpp.o\x1b[0m\n'}
+[2.969799] (lab_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/num_array__type_support.cpp.o\x1b[0m\n'}
+[2.970082] (lab_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/srv/measure_wall_dist__type_support.cpp.o\x1b[0m\n'}
+[3.090831] (-) TimerEvent: {}
+[3.122571] (lab_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/srv/capture_turtle__type_support.cpp.o\x1b[0m\n'}
+[3.174272] (lab_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_cpp/lab_interfaces/srv/capture_turtle__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[3.174483] (lab_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_cpp/lab_interfaces/srv/detail/capture_turtle__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Klab_interfaces/msg/detail/int64__struct.hpp: No such file or directory\n'}
+[3.174579] (lab_interfaces) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"lab_interfaces/msg/detail/int64__struct.hpp"\x1b[m\x1b[K\n'}
+[3.174642] (lab_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.174696] (lab_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[3.176810] (lab_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/build.make:188: CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/srv/capture_turtle__type_support.cpp.o] Error 1\n'}
+[3.176945] (lab_interfaces) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.187708] (lab_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/msg/detail/turtle__type_support.cpp.o\x1b[0m\n'}
+[3.297676] (lab_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[3.297871] (-) TimerEvent: {}
+[3.308496] (lab_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/msg/detail/turtle_array__type_support.cpp.o\x1b[0m\n'}
+[3.318428] (lab_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/srv/detail/measure_wall_dist__type_support.cpp.o\x1b[0m\n'}
+[3.367146] (lab_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/turtle__type_support.cpp.o\x1b[0m\n'}
+[3.416700] (-) TimerEvent: {}
+[3.543937] (lab_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/srv/detail/capture_turtle__type_support.cpp.o\x1b[0m\n'}
+[3.544140] (-) TimerEvent: {}
+[3.603868] (lab_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_introspection_cpp/lab_interfaces/srv/detail/capture_turtle__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[3.604127] (lab_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_cpp/lab_interfaces/srv/detail/capture_turtle__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Klab_interfaces/msg/detail/int64__struct.hpp: No such file or directory\n'}
+[3.604238] (lab_interfaces) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"lab_interfaces/msg/detail/int64__struct.hpp"\x1b[m\x1b[K\n'}
+[3.604311] (lab_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.604367] (lab_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[3.605574] (lab_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:217: CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/srv/detail/capture_turtle__type_support.cpp.o] Error 1\n'}
+[3.605843] (lab_interfaces) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.627029] (lab_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/turtle_array__type_support.cpp.o\x1b[0m\n'}
+[3.691519] (lab_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2\n'}
+[3.691711] (-) TimerEvent: {}
+[3.696304] (lab_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/dds_fastrtps/measure_wall_dist__type_support.cpp.o\x1b[0m\n'}
+[3.703130] (lab_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/dds_fastrtps/capture_turtle__type_support.cpp.o\x1b[0m\n'}
+[3.740225] (lab_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/wall_distance_measurement__type_support.cpp.o\x1b[0m\n'}
+[3.769582] (lab_interfaces) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[3.769772] (lab_interfaces) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/dds_fastrtps/capture_turtle__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[3.769849] (lab_interfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_cpp/lab_interfaces/srv/detail/capture_turtle__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Klab_interfaces/msg/detail/int64__struct.hpp: No such file or directory\n'}
+[3.769911] (lab_interfaces) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"lab_interfaces/msg/detail/int64__struct.hpp"\x1b[m\x1b[K\n'}
+[3.769963] (lab_interfaces) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.770011] (lab_interfaces) StderrLine: {'line': b'compilation terminated.\n'}
+[3.772766] (lab_interfaces) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:217: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/dds_fastrtps/capture_turtle__type_support.cpp.o] Error 1\n'}
+[3.772898] (lab_interfaces) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[4.005940] (-) TimerEvent: {}
+[4.081994] (lab_interfaces) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[4.082594] (lab_interfaces) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[4.085633] (lab_interfaces) CommandEnded: {'returncode': 2}
+[4.106197] (-) TimerEvent: {}
+[4.206654] (-) TimerEvent: {}
+[4.307110] (-) TimerEvent: {}
+[4.407622] (-) TimerEvent: {}
+[4.508090] (-) TimerEvent: {}
+[4.608519] (-) TimerEvent: {}
+[4.665189] (lab_interfaces) JobEnded: {'identifier': 'lab_interfaces', 'rc': 2}
+[4.677010] (-) EventReactorShutdown: {}

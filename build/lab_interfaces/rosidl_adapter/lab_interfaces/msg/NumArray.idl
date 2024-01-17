@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lab_interfaces/msg/NumArray.msg
+// generated code does not contain a copyright notice
+
+#include "lab_interfaces/msg/Num.idl"
+
+module lab_interfaces {
+  module msg {
+    struct NumArray {
+      sequence<lab_interfaces::msg::Num> num_array;
+    };
+  };
+};

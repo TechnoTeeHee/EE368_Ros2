@@ -1,0 +1,1 @@
+/home/teehee/ros2_ws/build/labs_bringup/ament_cmake_core/labs_bringupConfig-version.cmake

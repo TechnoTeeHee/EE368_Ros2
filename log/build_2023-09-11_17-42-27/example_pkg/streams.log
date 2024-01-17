@@ -1,0 +1,26 @@
+[0.578s] Invoking command in '/home/teehee/ros2_ws/src~/example_pkg': PYTHONPATH=/home/teehee/ros2_ws/build/example_pkg/prefix_override:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/example_pkg build --build-base /home/teehee/ros2_ws/build/example_pkg/build install --record /home/teehee/ros2_ws/build/example_pkg/install.log --single-version-externally-managed
+[0.767s] running egg_info
+[0.768s] writing ../../build/example_pkg/example_pkg.egg-info/PKG-INFO
+[0.768s] writing dependency_links to ../../build/example_pkg/example_pkg.egg-info/dependency_links.txt
+[0.769s] writing entry points to ../../build/example_pkg/example_pkg.egg-info/entry_points.txt
+[0.770s] writing requirements to ../../build/example_pkg/example_pkg.egg-info/requires.txt
+[0.770s] writing top-level names to ../../build/example_pkg/example_pkg.egg-info/top_level.txt
+[0.773s] reading manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.773s] writing manifest file '../../build/example_pkg/example_pkg.egg-info/SOURCES.txt'
+[0.774s] running build
+[0.774s] running build_py
+[0.774s] copying example_pkg/example_node.py -> /home/teehee/ros2_ws/build/example_pkg/build/lib/example_pkg
+[0.774s] running install
+[0.774s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.774s]   warnings.warn(
+[0.775s] running install_lib
+[0.775s] copying /home/teehee/ros2_ws/build/example_pkg/build/lib/example_pkg/example_node.py -> /home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg
+[0.775s] byte-compiling /home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg/example_node.py to example_node.cpython-310.pyc
+[0.776s] running install_data
+[0.777s] running install_egg_info
+[0.778s] removing '/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.782s] Copying ../../build/example_pkg/example_pkg.egg-info to /home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages/example_pkg-0.0.0-py3.10.egg-info
+[0.785s] running install_scripts
+[0.809s] Installing ex_node script to /home/teehee/ros2_ws/install/example_pkg/lib/example_pkg
+[0.809s] writing list of installed files to '/home/teehee/ros2_ws/build/example_pkg/install.log'
+[0.835s] Invoked command in '/home/teehee/ros2_ws/src~/example_pkg' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/example_pkg/prefix_override:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/example_pkg build --build-base /home/teehee/ros2_ws/build/example_pkg/build install --record /home/teehee/ros2_ws/build/example_pkg/install.log --single-version-externally-managed

@@ -1,0 +1,60 @@
+[0.089s] Invoking command in '/home/teehee/ros2_ws/build/lab_interfaces': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/lab_interfaces -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/lab_interfaces
+[0.306s] -- The C compiler identification is GNU 11.4.0
+[0.477s] -- The CXX compiler identification is GNU 11.4.0
+[0.498s] -- Detecting C compiler ABI info
+[0.607s] -- Detecting C compiler ABI info - done
+[0.613s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.614s] -- Detecting C compile features
+[0.616s] -- Detecting C compile features - done
+[0.621s] -- Detecting CXX compiler ABI info
+[0.730s] -- Detecting CXX compiler ABI info - done
+[0.738s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.738s] -- Detecting CXX compile features
+[0.738s] -- Detecting CXX compile features - done
+[0.749s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.934s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.086s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.089s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.095s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.137s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.347s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[1.347s]   execute_process(/usr/bin/python3.10 -m rosidl_adapter --package-name
+[1.348s]   lab_interfaces --arguments-file
+[1.348s]   /home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter__arguments__lab_interfaces.json
+[1.348s]   --output-dir
+[1.348s]   /home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces
+[1.348s]   --output-file
+[1.348s]   /home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces.idls)
+[1.348s]   returned error code 1:
+[1.348s] 
+[1.348s]   Error with: lab_interfaces WallDistanceStatistics
+[1.348s]   <build_depend>rosidl_default_generators</build_depend>
+[1.348s] 
+[1.348s]   Traceback (most recent call last):
+[1.348s] 
+[1.348s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[1.348s]       return _run_code(code, main_globals, None,
+[1.348s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[1.348s]       exec(code, run_globals)
+[1.348s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.348s]       sys.exit(main())
+[1.348s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[1.348s]       abs_idl_file = convert_to_idl(
+[1.348s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.349s]       return convert_msg_to_idl(
+[1.349s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.349s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.349s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 510, in parse_message_string
+[1.349s]       raise InvalidFieldDefinition(line)
+[1.349s] 
+[1.349s]   rosidl_adapter.parser.InvalidFieldDefinition:
+[1.349s]   <build_depend>rosidl_default_generators</build_depend>
+[1.349s] 
+[1.349s] Call Stack (most recent call first):
+[1.349s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[1.349s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[1.349s] 
+[1.349s] [0m
+[1.349s] -- Configuring incomplete, errors occurred!
+[1.349s] See also "/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles/CMakeOutput.log".
+[1.368s] Invoked command in '/home/teehee/ros2_ws/build/lab_interfaces' returned '1': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/lab_interfaces -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/lab_interfaces

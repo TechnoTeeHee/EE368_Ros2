@@ -1,0 +1,4 @@
+[console_scripts]
+movefile = lab_exam2_pkg.movefile:main
+turtlesim_scan = lab_exam2_pkg.turtlesim_scan:main
+

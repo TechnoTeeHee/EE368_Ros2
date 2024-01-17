@@ -1,0 +1,35 @@
+In file included from [01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__functions.h:19[m[K,
+                 from [01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__functions.c:4[m[K:
+[01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__struct.h:22:10:[m[K [01;31m[Kfatal error: [m[Klab_interfaces/msg/detail/int64__struct.h: No such file or directory
+   22 | #include [01;31m[K"lab_interfaces/msg/detail/int64__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lab_interfaces__rosidl_generator_c.dir/build.make:303: CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__functions.c.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/lab_interfaces__rosidl_generator_c.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_cpp/lab_interfaces/srv/capture_turtle__type_support.cpp:7[m[K:
+[01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_cpp/lab_interfaces/srv/detail/capture_turtle__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Klab_interfaces/msg/detail/int64__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"lab_interfaces/msg/detail/int64__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/build.make:188: CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/srv/capture_turtle__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/all] Error 2
+In file included from [01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_introspection_cpp/lab_interfaces/srv/detail/capture_turtle__type_support.cpp:12[m[K:
+[01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_cpp/lab_interfaces/srv/detail/capture_turtle__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Klab_interfaces/msg/detail/int64__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"lab_interfaces/msg/detail/int64__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make:217: CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/srv/detail/capture_turtle__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+In file included from [01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/dds_fastrtps/capture_turtle__type_support.cpp:4[m[K:
+[01m[K/home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_cpp/lab_interfaces/srv/detail/capture_turtle__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Klab_interfaces/msg/detail/int64__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"lab_interfaces/msg/detail/int64__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make:217: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/dds_fastrtps/capture_turtle__type_support.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

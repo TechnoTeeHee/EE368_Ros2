@@ -1,0 +1,14 @@
+{
+  "package_name": "lab_interfaces",
+  "non_idl_tuples": [
+    "/home/teehee/ros2_ws/src/lab_interfaces:msg/Num.msg",
+    "/home/teehee/ros2_ws/src/lab_interfaces:msg/NumArray.msg",
+    "/home/teehee/ros2_ws/src/lab_interfaces:msg/Turtle.msg",
+    "/home/teehee/ros2_ws/src/lab_interfaces:msg/TurtleArray.msg",
+    "/home/teehee/ros2_ws/src/lab_interfaces:srv/MeasureWallDist.srv",
+    "/home/teehee/ros2_ws/src/lab_interfaces:srv/CaptureTurtle.srv",
+    "/home/teehee/ros2_ws/src/lab_interfaces:msg/WallDistanceMeasurement.msg",
+    "/home/teehee/ros2_ws/src/lab_interfaces:msg/WallDistanceArray.msg",
+    "/home/teehee/ros2_ws/src/lab_interfaces:msg/WallDistanceStatistics.msg"
+  ]
+}

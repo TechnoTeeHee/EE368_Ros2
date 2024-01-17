@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from lab_interfaces/msg/WallDistanceStatistics.msg
+// generated code does not contain a copyright notice
+
+
+module lab_interfaces {
+  module msg {
+    struct WallDistanceStatistics {
+      double mean;
+
+      double std;
+    };
+  };
+};
