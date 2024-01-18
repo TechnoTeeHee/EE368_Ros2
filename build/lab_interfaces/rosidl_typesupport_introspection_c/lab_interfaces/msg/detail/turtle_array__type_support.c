@@ -13,9 +13,9 @@
 
 
 // Include directives for member types
-// Member `turtle_array`
+// Member `turtles`
 #include "lab_interfaces/msg/turtle.h"
-// Member `turtle_array`
+// Member `turtles`
 #include "lab_interfaces/msg/detail/turtle__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
@@ -37,7 +37,7 @@ void lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__Turtl
   lab_interfaces__msg__TurtleArray__fini(message_memory);
 }
 
-size_t lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__size_function__TurtleArray__turtle_array(
+size_t lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__size_function__TurtleArray__turtles(
   const void * untyped_member)
 {
   const lab_interfaces__msg__Turtle__Sequence * member =
@@ -45,7 +45,7 @@ size_t lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__siz
   return member->size;
 }
 
-const void * lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtle_array(
+const void * lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtles(
   const void * untyped_member, size_t index)
 {
   const lab_interfaces__msg__Turtle__Sequence * member =
@@ -53,7 +53,7 @@ const void * lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_
   return &member->data[index];
 }
 
-void * lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtle_array(
+void * lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtles(
   void * untyped_member, size_t index)
 {
   lab_interfaces__msg__Turtle__Sequence * member =
@@ -61,29 +61,29 @@ void * lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get
   return &member->data[index];
 }
 
-void lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__fetch_function__TurtleArray__turtle_array(
+void lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__fetch_function__TurtleArray__turtles(
   const void * untyped_member, size_t index, void * untyped_value)
 {
   const lab_interfaces__msg__Turtle * item =
     ((const lab_interfaces__msg__Turtle *)
-    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtle_array(untyped_member, index));
+    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtles(untyped_member, index));
   lab_interfaces__msg__Turtle * value =
     (lab_interfaces__msg__Turtle *)(untyped_value);
   *value = *item;
 }
 
-void lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__assign_function__TurtleArray__turtle_array(
+void lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__assign_function__TurtleArray__turtles(
   void * untyped_member, size_t index, const void * untyped_value)
 {
   lab_interfaces__msg__Turtle * item =
     ((lab_interfaces__msg__Turtle *)
-    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtle_array(untyped_member, index));
+    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtles(untyped_member, index));
   const lab_interfaces__msg__Turtle * value =
     (const lab_interfaces__msg__Turtle *)(untyped_value);
   *item = *value;
 }
 
-bool lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__resize_function__TurtleArray__turtle_array(
+bool lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__resize_function__TurtleArray__turtles(
   void * untyped_member, size_t size)
 {
   lab_interfaces__msg__Turtle__Sequence * member =
@@ -94,21 +94,21 @@ bool lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__resiz
 
 static rosidl_typesupport_introspection_c__MessageMember lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__TurtleArray_message_member_array[1] = {
   {
-    "turtle_array",  // name
+    "turtles",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message (initialized later)
     true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(lab_interfaces__msg__TurtleArray, turtle_array),  // bytes offset in struct
+    offsetof(lab_interfaces__msg__TurtleArray, turtles),  // bytes offset in struct
     NULL,  // default value
-    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__size_function__TurtleArray__turtle_array,  // size() function pointer
-    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtle_array,  // get_const(index) function pointer
-    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtle_array,  // get(index) function pointer
-    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__fetch_function__TurtleArray__turtle_array,  // fetch(index, &value) function pointer
-    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__assign_function__TurtleArray__turtle_array,  // assign(index, value) function pointer
-    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__resize_function__TurtleArray__turtle_array  // resize(index) function pointer
+    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__size_function__TurtleArray__turtles,  // size() function pointer
+    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_const_function__TurtleArray__turtles,  // get_const(index) function pointer
+    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__get_function__TurtleArray__turtles,  // get(index) function pointer
+    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__fetch_function__TurtleArray__turtles,  // fetch(index, &value) function pointer
+    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__assign_function__TurtleArray__turtles,  // assign(index, value) function pointer
+    lab_interfaces__msg__TurtleArray__rosidl_typesupport_introspection_c__resize_function__TurtleArray__turtles  // resize(index) function pointer
   }
 };
 

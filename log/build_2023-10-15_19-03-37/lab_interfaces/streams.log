@@ -1,7 +1,0 @@
-[0.061s] Invoking command in '/home/teehee/ros2_ws/build/lab_interfaces': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/lab_interfaces -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/lab_interfaces
-[0.076s] [31mCMake Error at CMakeLists.txt:19:
-[0.076s]   Parse error.  Expected a command name, got quoted argument with text "".
-[0.076s] 
-[0.076s] [0m
-[0.077s] -- Configuring incomplete, errors occurred!
-[0.080s] Invoked command in '/home/teehee/ros2_ws/build/lab_interfaces' returned '1': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/lab_interfaces -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/lab_interfaces

@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/labex6/labex6.egg-info
+writing ../../build/labex6/labex6.egg-info/PKG-INFO
+writing dependency_links to ../../build/labex6/labex6.egg-info/dependency_links.txt
+writing entry points to ../../build/labex6/labex6.egg-info/entry_points.txt
+writing requirements to ../../build/labex6/labex6.egg-info/requires.txt
+writing top-level names to ../../build/labex6/labex6.egg-info/top_level.txt
+writing manifest file '../../build/labex6/labex6.egg-info/SOURCES.txt'
+reading manifest file '../../build/labex6/labex6.egg-info/SOURCES.txt'
+writing manifest file '../../build/labex6/labex6.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/teehee/ros2_ws/build/labex6/build
+creating /home/teehee/ros2_ws/build/labex6/build/lib
+creating /home/teehee/ros2_ws/build/labex6/build/lib/labex6
+copying labex6/__init__.py -> /home/teehee/ros2_ws/build/labex6/build/lib/labex6
+copying labex6/tb4_drivesquare.py -> /home/teehee/ros2_ws/build/labex6/build/lib/labex6
+running install
+running install_lib
+creating /home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages/labex6
+copying /home/teehee/ros2_ws/build/labex6/build/lib/labex6/__init__.py -> /home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages/labex6
+copying /home/teehee/ros2_ws/build/labex6/build/lib/labex6/tb4_drivesquare.py -> /home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages/labex6
+byte-compiling /home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages/labex6/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages/labex6/tb4_drivesquare.py to tb4_drivesquare.cpython-310.pyc
+running install_data
+creating /home/teehee/ros2_ws/install/labex6/share/ament_index
+creating /home/teehee/ros2_ws/install/labex6/share/ament_index/resource_index
+creating /home/teehee/ros2_ws/install/labex6/share/ament_index/resource_index/packages
+copying resource/labex6 -> /home/teehee/ros2_ws/install/labex6/share/ament_index/resource_index/packages
+copying package.xml -> /home/teehee/ros2_ws/install/labex6/share/labex6
+running install_egg_info
+Copying ../../build/labex6/labex6.egg-info to /home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages/labex6-0.0.0-py3.10.egg-info
+running install_scripts
+Installing tb4_drivesquare script to /home/teehee/ros2_ws/install/labex6/lib/labex6
+writing list of installed files to '/home/teehee/ros2_ws/build/labex6/install.log'

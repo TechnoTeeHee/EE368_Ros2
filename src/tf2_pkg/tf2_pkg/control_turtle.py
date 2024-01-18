@@ -9,7 +9,7 @@ from lab_interfaces.srv import CaptureTurtle
 from functools import partial
 
 Kv = 2.0
-Ka = 6.0
+Ka = 7.0
 
 class TurtlesimMoveNode(Node):
     def __init__(self):

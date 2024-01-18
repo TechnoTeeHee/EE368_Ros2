@@ -1,0 +1,6 @@
+source;share/labex6/hook/pythonpath.ps1
+source;share/labex6/hook/pythonpath.dsv
+source;share/labex6/hook/pythonpath.sh
+source;share/labex6/hook/ament_prefix_path.ps1
+source;share/labex6/hook/ament_prefix_path.dsv
+source;share/labex6/hook/ament_prefix_path.sh

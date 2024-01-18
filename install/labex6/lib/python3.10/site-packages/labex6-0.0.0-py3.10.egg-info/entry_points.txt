@@ -1,0 +1,3 @@
+[console_scripts]
+tb4_drivesquare = labs_pkg.tb4_drivesquare:main
+

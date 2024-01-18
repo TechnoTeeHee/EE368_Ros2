@@ -135,6 +135,8 @@ size_t max_serialized_size_lab_interfaces__srv__CaptureTurtle_Request(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
@@ -154,7 +156,20 @@ size_t max_serialized_size_lab_interfaces__srv__CaptureTurtle_Request(
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = lab_interfaces__srv__CaptureTurtle_Request;
+    is_plain =
+      (
+      offsetof(DataType, name) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _CaptureTurtle_Request__max_serialized_size(char & bounds_info)
@@ -237,6 +252,10 @@ extern "C"
 {
 #endif
 
+// already included above
+// #include "rosidl_runtime_c/string.h"  // message
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"  // message
 
 // forward declare type support functions
 
@@ -252,9 +271,23 @@ static bool _CaptureTurtle_Response__cdr_serialize(
     return false;
   }
   const _CaptureTurtle_Response__ros_msg_type * ros_message = static_cast<const _CaptureTurtle_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: success
+  // Field name: status
   {
-    cdr << (ros_message->success ? true : false);
+    cdr << (ros_message->status ? true : false);
+  }
+
+  // Field name: message
+  {
+    const rosidl_runtime_c__String * str = &ros_message->message;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
+      return false;
+    }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
   }
 
   return true;
@@ -269,11 +302,27 @@ static bool _CaptureTurtle_Response__cdr_deserialize(
     return false;
   }
   _CaptureTurtle_Response__ros_msg_type * ros_message = static_cast<_CaptureTurtle_Response__ros_msg_type *>(untyped_ros_message);
-  // Field name: success
+  // Field name: status
   {
     uint8_t tmp;
     cdr >> tmp;
-    ros_message->success = tmp ? true : false;
+    ros_message->status = tmp ? true : false;
+  }
+
+  // Field name: message
+  {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->message.data) {
+      rosidl_runtime_c__String__init(&ros_message->message);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->message,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'message'\n");
+      return false;
+    }
   }
 
   return true;
@@ -293,12 +342,16 @@ size_t get_serialized_size_lab_interfaces__srv__CaptureTurtle_Response(
   (void)padding;
   (void)wchar_size;
 
-  // field.name success
+  // field.name status
   {
-    size_t item_size = sizeof(ros_message->success);
+    size_t item_size = sizeof(ros_message->status);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // field.name message
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->message.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -320,20 +373,48 @@ size_t max_serialized_size_lab_interfaces__srv__CaptureTurtle_Response(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
   full_bounded = true;
   is_plain = true;
 
-  // member: success
+  // member: status
   {
     size_t array_size = 1;
 
+    last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
+  // member: message
+  {
+    size_t array_size = 1;
 
-  return current_alignment - initial_alignment;
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
+  }
+
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = lab_interfaces__srv__CaptureTurtle_Response;
+    is_plain =
+      (
+      offsetof(DataType, message) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _CaptureTurtle_Response__max_serialized_size(char & bounds_info)

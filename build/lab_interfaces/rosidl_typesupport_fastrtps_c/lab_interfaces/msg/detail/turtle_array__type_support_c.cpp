@@ -34,7 +34,7 @@ extern "C"
 {
 #endif
 
-#include "lab_interfaces/msg/detail/turtle__functions.h"  // turtle_array
+#include "lab_interfaces/msg/detail/turtle__functions.h"  // turtles
 
 // forward declare type support functions
 size_t get_serialized_size_lab_interfaces__msg__Turtle(
@@ -61,15 +61,15 @@ static bool _TurtleArray__cdr_serialize(
     return false;
   }
   const _TurtleArray__ros_msg_type * ros_message = static_cast<const _TurtleArray__ros_msg_type *>(untyped_ros_message);
-  // Field name: turtle_array
+  // Field name: turtles
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
       ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
         rosidl_typesupport_fastrtps_c, lab_interfaces, msg, Turtle
       )()->data);
-    size_t size = ros_message->turtle_array.size;
-    auto array_ptr = ros_message->turtle_array.data;
+    size_t size = ros_message->turtles.size;
+    auto array_ptr = ros_message->turtles.data;
     cdr << static_cast<uint32_t>(size);
     for (size_t i = 0; i < size; ++i) {
       if (!callbacks->cdr_serialize(
@@ -92,7 +92,7 @@ static bool _TurtleArray__cdr_deserialize(
     return false;
   }
   _TurtleArray__ros_msg_type * ros_message = static_cast<_TurtleArray__ros_msg_type *>(untyped_ros_message);
-  // Field name: turtle_array
+  // Field name: turtles
   {
     const message_type_support_callbacks_t * callbacks =
       static_cast<const message_type_support_callbacks_t *>(
@@ -102,14 +102,14 @@ static bool _TurtleArray__cdr_deserialize(
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->turtle_array.data) {
-      lab_interfaces__msg__Turtle__Sequence__fini(&ros_message->turtle_array);
+    if (ros_message->turtles.data) {
+      lab_interfaces__msg__Turtle__Sequence__fini(&ros_message->turtles);
     }
-    if (!lab_interfaces__msg__Turtle__Sequence__init(&ros_message->turtle_array, size)) {
-      fprintf(stderr, "failed to create array for field 'turtle_array'");
+    if (!lab_interfaces__msg__Turtle__Sequence__init(&ros_message->turtles, size)) {
+      fprintf(stderr, "failed to create array for field 'turtles'");
       return false;
     }
-    auto array_ptr = ros_message->turtle_array.data;
+    auto array_ptr = ros_message->turtles.data;
     for (size_t i = 0; i < size; ++i) {
       if (!callbacks->cdr_deserialize(
           cdr, &array_ptr[i]))
@@ -136,10 +136,10 @@ size_t get_serialized_size_lab_interfaces__msg__TurtleArray(
   (void)padding;
   (void)wchar_size;
 
-  // field.name turtle_array
+  // field.name turtles
   {
-    size_t array_size = ros_message->turtle_array.size;
-    auto array_ptr = ros_message->turtle_array.data;
+    size_t array_size = ros_message->turtles.size;
+    auto array_ptr = ros_message->turtles.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
@@ -169,13 +169,15 @@ size_t max_serialized_size_lab_interfaces__msg__TurtleArray(
 
   const size_t padding = 4;
   const size_t wchar_size = 4;
+  size_t last_member_size = 0;
+  (void)last_member_size;
   (void)padding;
   (void)wchar_size;
 
   full_bounded = true;
   is_plain = true;
 
-  // member: turtle_array
+  // member: turtles
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -184,18 +186,35 @@ size_t max_serialized_size_lab_interfaces__msg__TurtleArray(
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
 
+    last_member_size = 0;
     for (size_t index = 0; index < array_size; ++index) {
       bool inner_full_bounded;
       bool inner_is_plain;
-      current_alignment +=
+      size_t inner_size;
+      inner_size =
         max_serialized_size_lab_interfaces__msg__Turtle(
         inner_full_bounded, inner_is_plain, current_alignment);
+      last_member_size += inner_size;
+      current_alignment += inner_size;
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;
     }
   }
 
-  return current_alignment - initial_alignment;
+  size_t ret_val = current_alignment - initial_alignment;
+  if (is_plain) {
+    // All members are plain, and type is not empty.
+    // We still need to check that the in-memory alignment
+    // is the same as the CDR mandated alignment.
+    using DataType = lab_interfaces__msg__TurtleArray;
+    is_plain =
+      (
+      offsetof(DataType, turtles) +
+      last_member_size
+      ) == ret_val;
+  }
+
+  return ret_val;
 }
 
 static size_t _TurtleArray__max_serialized_size(char & bounds_info)

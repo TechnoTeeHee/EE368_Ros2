@@ -1,3 +1,1 @@
-
-
-bool success
+/home/teehee/ros2_ws/build/lab_interfaces/rosidl_cmake/srv/CaptureTurtle_Response.msg

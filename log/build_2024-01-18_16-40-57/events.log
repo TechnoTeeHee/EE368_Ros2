@@ -1,0 +1,328 @@
+[0.000000] (-) TimerEvent: {}
+[0.000339] (-) JobUnselected: {'identifier': 'example_pkg'}
+[0.000411] (-) JobUnselected: {'identifier': 'lab_exam2_pkg'}
+[0.000431] (-) JobUnselected: {'identifier': 'labex6'}
+[0.000445] (-) JobUnselected: {'identifier': 'labs_bringup'}
+[0.000457] (-) JobUnselected: {'identifier': 'labs_pkg'}
+[0.000469] (-) JobUnselected: {'identifier': 'tf2_pkg'}
+[0.000482] (lab_interfaces) JobQueued: {'identifier': 'lab_interfaces', 'dependencies': OrderedDict()}
+[0.000498] (lab_interfaces) JobStarted: {'identifier': 'lab_interfaces'}
+[0.061160] (lab_interfaces) JobProgress: {'identifier': 'lab_interfaces', 'progress': 'cmake'}
+[0.062175] (lab_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/teehee/ros2_ws/src/lab_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/lab_interfaces'], 'cwd': '/home/teehee/ros2_ws/build/lab_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'teehee'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teehee/ros2_ws/install/lab_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/teehee'), ('OLDPWD', '/home/teehee'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1958'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/teehee/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'teehee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teehee'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/teehee-VM:@/tmp/.ICE-unix/1923,unix/teehee-VM:/tmp/.ICE-unix/1923'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/deb560be_1d50_47e7_9856_a704f300e7d7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K01XH2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/teehee/ros2_ws/build/lab_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/labs_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099112] (-) TimerEvent: {}
+[0.201454] (-) TimerEvent: {}
+[0.229663] (lab_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.302173] (-) TimerEvent: {}
+[0.314352] (lab_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.328573] (lab_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.402855] (-) TimerEvent: {}
+[0.445095] (lab_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.445276] (lab_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.445505] (lab_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.447689] (lab_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.451202] (lab_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.503630] (-) TimerEvent: {}
+[0.553509] (lab_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.560066] (lab_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.560451] (lab_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.560767] (lab_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.569367] (lab_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.603876] (-) TimerEvent: {}
+[0.707371] (-) TimerEvent: {}
+[0.741415] (lab_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.795843] (lab_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.808483] (-) TimerEvent: {}
+[0.820858] (lab_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.823732] (lab_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.830629] (lab_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.868325] (lab_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.918036] (-) TimerEvent: {}
+[1.020339] (-) TimerEvent: {}
+[1.121173] (-) TimerEvent: {}
+[1.137907] (lab_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.222112] (-) TimerEvent: {}
+[1.313000] (lab_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.326583] (-) TimerEvent: {}
+[1.428682] (-) TimerEvent: {}
+[1.537714] (-) TimerEvent: {}
+[1.541239] (lab_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.564818] (lab_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.565977] (lab_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.598133] (lab_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.598460] (lab_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.598523] (lab_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.598577] (lab_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.618122] (lab_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.641400] (-) TimerEvent: {}
+[1.677185] (lab_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.711517] (lab_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.715166] (lab_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/teehee/ros2_ws/build/lab_interfaces\n'}
+[1.725380] (lab_interfaces) CommandEnded: {'returncode': 0}
+[1.725712] (lab_interfaces) JobProgress: {'identifier': 'lab_interfaces', 'progress': 'build'}
+[1.725734] (lab_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/teehee/ros2_ws/build/lab_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/teehee/ros2_ws/build/lab_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'teehee'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teehee/ros2_ws/install/lab_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/teehee'), ('OLDPWD', '/home/teehee'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1958'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/teehee/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'teehee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teehee'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/teehee-VM:@/tmp/.ICE-unix/1923,unix/teehee-VM:/tmp/.ICE-unix/1923'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/deb560be_1d50_47e7_9856_a704f300e7d7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K01XH2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/teehee/ros2_ws/build/lab_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/labs_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble')]), 'shell': False}
+[1.741938] (-) TimerEvent: {}
+[1.796111] (lab_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.801881] (lab_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.823162] (lab_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_lab_interfaces\n'}
+[1.942030] (-) TimerEvent: {}
+[2.040216] (lab_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.041611] (lab_interfaces) StdoutLine: {'line': b'creating lab_interfaces.egg-info\n'}
+[2.041764] (lab_interfaces) StdoutLine: {'line': b'writing lab_interfaces.egg-info/PKG-INFO\n'}
+[2.041967] (lab_interfaces) StdoutLine: {'line': b'writing dependency_links to lab_interfaces.egg-info/dependency_links.txt\n'}
+[2.042057] (-) TimerEvent: {}
+[2.042254] (lab_interfaces) StdoutLine: {'line': b'writing top-level names to lab_interfaces.egg-info/top_level.txt\n'}
+[2.042347] (lab_interfaces) StdoutLine: {'line': b"writing manifest file 'lab_interfaces.egg-info/SOURCES.txt'\n"}
+[2.064440] (lab_interfaces) StdoutLine: {'line': b"reading manifest file 'lab_interfaces.egg-info/SOURCES.txt'\n"}
+[2.064899] (lab_interfaces) StdoutLine: {'line': b"writing manifest file 'lab_interfaces.egg-info/SOURCES.txt'\n"}
+[2.120654] (lab_interfaces) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_build_lab_interfaces_egg\n'}
+[2.142171] (-) TimerEvent: {}
+[2.193688] (lab_interfaces) StdoutLine: {'line': b'[  4%] Built target lab_interfaces__cpp\n'}
+[2.204533] (lab_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/srv/detail/capture_turtle__functions.c.o\x1b[0m\n'}
+[2.204948] (lab_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/msg/detail/turtle__functions.c.o\x1b[0m\n'}
+[2.205506] (lab_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_c.dir/rosidl_generator_c/lab_interfaces/msg/detail/turtle_array__functions.c.o\x1b[0m\n'}
+[2.206826] (lab_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.242540] (-) TimerEvent: {}
+[2.273478] (lab_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.279878] (lab_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library liblab_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.292680] (lab_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.335532] (lab_interfaces) StdoutLine: {'line': b'[ 19%] Built target lab_interfaces__rosidl_generator_c\n'}
+[2.348013] (lab_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.348177] (-) TimerEvent: {}
+[2.480491] (-) TimerEvent: {}
+[2.535567] (lab_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/msg/detail/turtle__type_support.cpp.o\x1b[0m\n'}
+[2.588495] (lab_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/msg/turtle__type_support.cpp.o\x1b[0m\n'}
+[2.588716] (-) TimerEvent: {}
+[2.689495] (-) TimerEvent: {}
+[2.719428] (lab_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/turtle__type_support.cpp.o\x1b[0m\n'}
+[2.772211] (lab_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o\x1b[0m\n'}
+[2.828497] (lab_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/msg/turtle_array__type_support.cpp.o\x1b[0m\n'}
+[2.828693] (-) TimerEvent: {}
+[3.008980] (lab_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/msg/detail/turtle_array__type_support.cpp.o\x1b[0m\n'}
+[3.009230] (-) TimerEvent: {}
+[3.090762] (lab_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/turtle_array__type_support.cpp.o\x1b[0m\n'}
+[3.102571] (lab_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lab_interfaces/srv/capture_turtle__type_support.cpp.o\x1b[0m\n'}
+[3.113053] (-) TimerEvent: {}
+[3.123347] (lab_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o\x1b[0m\n'}
+[3.394926] (lab_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library liblab_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.395118] (-) TimerEvent: {}
+[3.405120] (lab_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/srv/detail/capture_turtle__type_support.cpp.o\x1b[0m\n'}
+[3.423178] (lab_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o\x1b[0m\n'}
+[3.503503] (-) TimerEvent: {}
+[3.510992] (lab_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/dds_fastrtps/capture_turtle__type_support.cpp.o\x1b[0m\n'}
+[3.519053] (lab_interfaces) StdoutLine: {'line': b'[ 48%] Built target lab_interfaces__rosidl_typesupport_cpp\n'}
+[3.533422] (lab_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.759347] (lab_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library liblab_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.759580] (-) TimerEvent: {}
+[3.773612] (lab_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library liblab_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.860211] (-) TimerEvent: {}
+[3.863011] (lab_interfaces) StdoutLine: {'line': b'[ 55%] Built target lab_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.881147] (lab_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.894747] (lab_interfaces) StdoutLine: {'line': b'[ 57%] Built target lab_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.923960] (lab_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library liblab_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.924492] (lab_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lab_interfaces/msg/detail/turtle_array__type_support.c.o\x1b[0m\n'}
+[3.924630] (lab_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lab_interfaces/msg/detail/turtle__type_support.c.o\x1b[0m\n'}
+[3.967490] (lab_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lab_interfaces/srv/detail/capture_turtle__type_support.c.o\x1b[0m\n'}
+[3.967731] (-) TimerEvent: {}
+[4.013992] (lab_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library liblab_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.035617] (lab_interfaces) StdoutLine: {'line': b'[ 68%] Built target lab_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[4.068119] (-) TimerEvent: {}
+[4.080118] (lab_interfaces) StdoutLine: {'line': b'[ 68%] Built target lab_interfaces__rosidl_typesupport_introspection_c\n'}
+[4.146744] (lab_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lab_interfaces/msg/turtle__type_support.cpp.o\x1b[0m\n'}
+[4.147169] (lab_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lab_interfaces/msg/turtle_array__type_support.cpp.o\x1b[0m\n'}
+[4.147435] (lab_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/lab_interfaces/srv/capture_turtle__type_support.cpp.o\x1b[0m\n'}
+[4.170077] (-) TimerEvent: {}
+[4.188603] (lab_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library liblab_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.243044] (lab_interfaces) StdoutLine: {'line': b'[ 76%] Built target lab_interfaces__rosidl_typesupport_c\n'}
+[4.270904] (-) TimerEvent: {}
+[4.272295] (lab_interfaces) StdoutLine: {'line': b'[ 76%] Built target lab_interfaces\n'}
+[4.302265] (lab_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.372007] (-) TimerEvent: {}
+[4.474100] (-) TimerEvent: {}
+[4.577110] (-) TimerEvent: {}
+[4.680234] (-) TimerEvent: {}
+[4.764789] (lab_interfaces) StdoutLine: {'line': b'[ 78%] Built target lab_interfaces__py\n'}
+[4.782096] (-) TimerEvent: {}
+[4.792384] (lab_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lab_interfaces/msg/_turtle_s.c.o\x1b[0m\n'}
+[4.792762] (lab_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lab_interfaces/msg/_turtle_array_s.c.o\x1b[0m\n'}
+[4.792856] (lab_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_generator_py.dir/rosidl_generator_py/lab_interfaces/srv/_capture_turtle_s.c.o\x1b[0m\n'}
+[4.883019] (-) TimerEvent: {}
+[4.992709] (-) TimerEvent: {}
+[5.017590] (lab_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lab_interfaces/liblab_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[5.071826] (lab_interfaces) StdoutLine: {'line': b'[ 87%] Built target lab_interfaces__rosidl_generator_py\n'}
+[5.095028] (-) TimerEvent: {}
+[5.099841] (lab_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.100018] (lab_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.100083] (lab_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.198201] (-) TimerEvent: {}
+[5.204115] (lab_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lab_interfaces/lab_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.215814] (lab_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lab_interfaces/lab_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.222982] (lab_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lab_interfaces/lab_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.252469] (lab_interfaces) StdoutLine: {'line': b'[100%] Built target lab_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[5.269743] (lab_interfaces) StdoutLine: {'line': b'[100%] Built target lab_interfaces__rosidl_typesupport_c__pyext\n'}
+[5.283739] (lab_interfaces) StdoutLine: {'line': b'[100%] Built target lab_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.298447] (-) TimerEvent: {}
+[5.300303] (lab_interfaces) CommandEnded: {'returncode': 0}
+[5.399056] (-) TimerEvent: {}
+[5.499786] (-) TimerEvent: {}
+[5.516624] (lab_interfaces) JobProgress: {'identifier': 'lab_interfaces', 'progress': 'install'}
+[5.528325] (lab_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/teehee/ros2_ws/build/lab_interfaces'], 'cwd': '/home/teehee/ros2_ws/build/lab_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'teehee'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teehee/ros2_ws/install/lab_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/teehee'), ('OLDPWD', '/home/teehee'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1958'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/teehee/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'teehee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teehee'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/teehee-VM:@/tmp/.ICE-unix/1923,unix/teehee-VM:/tmp/.ICE-unix/1923'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/deb560be_1d50_47e7_9856_a704f300e7d7'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.K01XH2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/teehee/ros2_ws/build/lab_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/labs_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble')]), 'shell': False}
+[5.551027] (lab_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.551494] (lab_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.551839] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/ament_index/resource_index/rosidl_interfaces/lab_interfaces\n'}
+[5.564278] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__functions.h\n'}
+[5.576468] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__struct.h\n'}
+[5.587865] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__type_support.h\n'}
+[5.599259] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__functions.h\n'}
+[5.600182] (-) TimerEvent: {}
+[5.609819] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__struct.h\n'}
+[5.621754] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__type_support.h\n'}
+[5.641693] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.654137] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/turtle.h\n'}
+[5.665932] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/turtle_array.h\n'}
+[5.677073] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/capture_turtle.h\n'}
+[5.688447] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__functions.h\n'}
+[5.700441] (-) TimerEvent: {}
+[5.700981] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__struct.h\n'}
+[5.712180] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__type_support.h\n'}
+[5.724542] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/environment/library_path.sh\n'}
+[5.746239] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/environment/library_path.dsv\n'}
+[5.759174] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h\n'}
+[5.771573] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_c.h\n'}
+[5.782403] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.793364] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_fastrtps_c.h\n'}
+[5.800906] (-) TimerEvent: {}
+[5.815372] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__rosidl_typesupport_introspection_c.h\n'}
+[5.815733] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__rosidl_typesupport_introspection_c.h\n'}
+[5.827309] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.839582] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_introspection_c.h\n'}
+[5.851644] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__builder.hpp\n'}
+[5.864474] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__struct.hpp\n'}
+[5.876382] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__traits.hpp\n'}
+[5.888041] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__builder.hpp\n'}
+[5.899705] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__struct.hpp\n'}
+[5.901303] (-) TimerEvent: {}
+[5.910382] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__traits.hpp\n'}
+[5.921196] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/turtle.hpp\n'}
+[5.932317] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/turtle_array.hpp\n'}
+[5.942261] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/capture_turtle.hpp\n'}
+[5.954543] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__builder.hpp\n'}
+[5.967664] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__struct.hpp\n'}
+[5.978675] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__traits.hpp\n'}
+[5.990680] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.001679] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.001844] (-) TimerEvent: {}
+[6.012990] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.023982] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.035434] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.046445] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/msg/detail/turtle_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.058658] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/include/lab_interfaces/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.069964] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/environment/pythonpath.sh\n'}
+[6.081259] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/environment/pythonpath.dsv\n'}
+[6.092981] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.103032] (-) TimerEvent: {}
+[6.104545] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.115862] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.127034] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.148268] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/__init__.py\n'}
+[6.161528] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.173446] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.184717] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.196203] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/lab_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.204478] (-) TimerEvent: {}
+[6.207370] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/lab_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.217936] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/lab_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.230181] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/liblab_interfaces__rosidl_generator_py.so\n'}
+[6.247108] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg/__init__.py\n'}
+[6.260083] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg/_turtle.py\n'}
+[6.271305] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg/_turtle_array.py\n'}
+[6.282197] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg/_turtle_array_s.c\n'}
+[6.292975] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg/_turtle_s.c\n'}
+[6.304569] (-) TimerEvent: {}
+[6.305241] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/srv/__init__.py\n'}
+[6.316614] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/srv/_capture_turtle.py\n'}
+[6.328329] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/srv/_capture_turtle_s.c\n'}
+[6.347158] (lab_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/lab_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.347818] (lab_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/lab_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.348025] (lab_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/lab_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.348558] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/msg/Turtle.idl\n'}
+[6.360468] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/msg/TurtleArray.idl\n'}
+[6.372075] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/srv/CaptureTurtle.idl\n'}
+[6.384015] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/msg/Turtle.msg\n'}
+[6.395033] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/msg/TurtleArray.msg\n'}
+[6.414345] (-) TimerEvent: {}
+[6.415975] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/srv/CaptureTurtle.srv\n'}
+[6.428364] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/srv/CaptureTurtle_Request.msg\n'}
+[6.440324] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/srv/CaptureTurtle_Response.msg\n'}
+[6.458284] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/ament_index/resource_index/package_run_dependencies/lab_interfaces\n'}
+[6.464454] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/ament_index/resource_index/parent_prefix_path/lab_interfaces\n'}
+[6.475694] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/environment/ament_prefix_path.sh\n'}
+[6.487527] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/environment/ament_prefix_path.dsv\n'}
+[6.498326] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/environment/path.sh\n'}
+[6.510423] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/environment/path.dsv\n'}
+[6.518009] (-) TimerEvent: {}
+[6.521910] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/local_setup.bash\n'}
+[6.534184] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/local_setup.sh\n'}
+[6.545824] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/local_setup.zsh\n'}
+[6.559119] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/local_setup.dsv\n'}
+[6.570932] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.dsv\n'}
+[6.584310] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/ament_index/resource_index/packages/lab_interfaces\n'}
+[6.596068] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[6.607157] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.617832] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.618017] (-) TimerEvent: {}
+[6.629620] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.640996] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.653723] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.664861] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.677382] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfacesConfig.cmake\n'}
+[6.688647] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfacesConfig-version.cmake\n'}
+[6.700770] (lab_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.xml\n'}
+[6.712045] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_generator_c.so\n'}
+[6.712648] (lab_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_generator_c.so" to ""\n'}
+[6.712738] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[6.713384] (lab_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.713478] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[6.713820] (lab_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.714180] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_c.so\n'}
+[6.714663] (lab_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[6.714731] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.715555] (lab_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.715679] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[6.715834] (lab_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.716631] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_cpp.so\n'}
+[6.717491] (lab_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[6.718102] (-) TimerEvent: {}
+[6.757266] (lab_interfaces) StdoutLine: {'line': b"Listing '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces'...\n"}
+[6.757591] (lab_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/__init__.py'...\n"}
+[6.757848] (lab_interfaces) StdoutLine: {'line': b"Listing '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg'...\n"}
+[6.757992] (lab_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg/__init__.py'...\n"}
+[6.758055] (lab_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg/_turtle.py'...\n"}
+[6.758111] (lab_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/msg/_turtle_array.py'...\n"}
+[6.758164] (lab_interfaces) StdoutLine: {'line': b"Listing '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/srv'...\n"}
+[6.758214] (lab_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/srv/__init__.py'...\n"}
+[6.758264] (lab_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages/lab_interfaces/srv/_capture_turtle.py'...\n"}
+[6.758312] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_generator_py.so\n'}
+[6.758405] (lab_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/install/lab_interfaces/lib/liblab_interfaces__rosidl_generator_py.so" to ""\n'}
+[6.758464] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_generator_cExport.cmake\n'}
+[6.758515] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.758576] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.758653] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.758748] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.759010] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.759256] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[6.759499] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.759759] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_generator_cppExport.cmake\n'}
+[6.760031] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.760260] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.760503] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.760727] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.760973] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[6.761196] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/lab_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.761443] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_generator_pyExport.cmake\n'}
+[6.761673] (lab_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/cmake/export_lab_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.766684] (lab_interfaces) CommandEnded: {'returncode': 0}
+[6.826434] (-) TimerEvent: {}
+[6.926814] (-) TimerEvent: {}
+[7.027250] (-) TimerEvent: {}
+[7.117615] (lab_interfaces) JobEnded: {'identifier': 'lab_interfaces', 'rc': 0}
+[7.119098] (-) EventReactorShutdown: {}

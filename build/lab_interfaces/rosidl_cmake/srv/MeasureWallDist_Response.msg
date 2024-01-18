@@ -1,2 +1,0 @@
-
-WallDistanceArray wall_dist_array

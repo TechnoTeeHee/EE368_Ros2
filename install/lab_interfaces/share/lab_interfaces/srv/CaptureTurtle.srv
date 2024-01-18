@@ -1,4 +1,1 @@
-string name
----
-
-bool success
+/home/teehee/ros2_ws/src/lab_interfaces/srv/CaptureTurtle.srv

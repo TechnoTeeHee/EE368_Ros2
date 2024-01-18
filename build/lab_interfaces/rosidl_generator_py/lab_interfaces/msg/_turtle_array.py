@@ -59,11 +59,11 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
     """Message class 'TurtleArray'."""
 
     __slots__ = [
-        '_turtle_array',
+        '_turtles',
     ]
 
     _fields_and_field_types = {
-        'turtle_array': 'sequence<lab_interfaces/Turtle>',
+        'turtles': 'sequence<lab_interfaces/Turtle>',
     }
 
     SLOT_TYPES = (
@@ -74,7 +74,7 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.turtle_array = kwargs.get('turtle_array', [])
+        self.turtles = kwargs.get('turtles', [])
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -105,7 +105,7 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.turtle_array != other.turtle_array:
+        if self.turtles != other.turtles:
             return False
         return True
 
@@ -115,12 +115,12 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def turtle_array(self):
-        """Message field 'turtle_array'."""
-        return self._turtle_array
+    def turtles(self):
+        """Message field 'turtles'."""
+        return self._turtles
 
-    @turtle_array.setter
-    def turtle_array(self, value):
+    @turtles.setter
+    def turtles(self, value):
         if __debug__:
             from lab_interfaces.msg import Turtle
             from collections.abc import Sequence
@@ -135,5 +135,5 @@ class TurtleArray(metaclass=Metaclass_TurtleArray):
                  not isinstance(value, UserString) and
                  all(isinstance(v, Turtle) for v in value) and
                  True), \
-                "The 'turtle_array' field must be a set or sequence and each value of type 'Turtle'"
-        self._turtle_array = value
+                "The 'turtles' field must be a set or sequence and each value of type 'Turtle'"
+        self._turtles = value

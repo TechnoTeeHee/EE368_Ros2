@@ -56,13 +56,13 @@ cdr_serialize(
   const lab_interfaces::msg::TurtleArray & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: turtle_array
+  // Member: turtles
   {
-    size_t size = ros_message.turtle_array.size();
+    size_t size = ros_message.turtles.size();
     cdr << static_cast<uint32_t>(size);
     for (size_t i = 0; i < size; i++) {
       lab_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(
-        ros_message.turtle_array[i],
+        ros_message.turtles[i],
         cdr);
     }
   }
@@ -75,15 +75,15 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   lab_interfaces::msg::TurtleArray & ros_message)
 {
-  // Member: turtle_array
+  // Member: turtles
   {
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-    ros_message.turtle_array.resize(size);
+    ros_message.turtles.resize(size);
     for (size_t i = 0; i < size; i++) {
       lab_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-        cdr, ros_message.turtle_array[i]);
+        cdr, ros_message.turtles[i]);
     }
   }
 
@@ -103,9 +103,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: turtle_array
+  // Member: turtles
   {
-    size_t array_size = ros_message.turtle_array.size();
+    size_t array_size = ros_message.turtles.size();
 
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
@@ -113,7 +113,7 @@ get_serialized_size(
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
         lab_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
-        ros_message.turtle_array[index], current_alignment);
+        ros_message.turtles[index], current_alignment);
     }
   }
 
@@ -140,7 +140,7 @@ max_serialized_size_TurtleArray(
   is_plain = true;
 
 
-  // Member: turtle_array
+  // Member: turtles
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -171,7 +171,7 @@ max_serialized_size_TurtleArray(
     using DataType = lab_interfaces::msg::TurtleArray;
     is_plain =
       (
-      offsetof(DataType, turtle_array) +
+      offsetof(DataType, turtles) +
       last_member_size
       ) == ret_val;
   }

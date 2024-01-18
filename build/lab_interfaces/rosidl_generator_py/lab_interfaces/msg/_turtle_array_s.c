@@ -58,12 +58,12 @@ bool lab_interfaces__msg__turtle_array__convert_from_py(PyObject * _pymsg, void 
     assert(strncmp("lab_interfaces.msg._turtle_array.TurtleArray", full_classname_dest, 44) == 0);
   }
   lab_interfaces__msg__TurtleArray * ros_message = _ros_message;
-  {  // turtle_array
-    PyObject * field = PyObject_GetAttrString(_pymsg, "turtle_array");
+  {  // turtles
+    PyObject * field = PyObject_GetAttrString(_pymsg, "turtles");
     if (!field) {
       return false;
     }
-    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'turtle_array'");
+    PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'turtles'");
     if (!seq_field) {
       Py_DECREF(field);
       return false;
@@ -74,13 +74,13 @@ bool lab_interfaces__msg__turtle_array__convert_from_py(PyObject * _pymsg, void 
       Py_DECREF(field);
       return false;
     }
-    if (!lab_interfaces__msg__Turtle__Sequence__init(&(ros_message->turtle_array), size)) {
+    if (!lab_interfaces__msg__Turtle__Sequence__init(&(ros_message->turtles), size)) {
       PyErr_SetString(PyExc_RuntimeError, "unable to create lab_interfaces__msg__Turtle__Sequence ros_message");
       Py_DECREF(seq_field);
       Py_DECREF(field);
       return false;
     }
-    lab_interfaces__msg__Turtle * dest = ros_message->turtle_array.data;
+    lab_interfaces__msg__Turtle * dest = ros_message->turtles.data;
     for (Py_ssize_t i = 0; i < size; ++i) {
       if (!lab_interfaces__msg__turtle__convert_from_py(PySequence_Fast_GET_ITEM(seq_field, i), &dest[i])) {
         Py_DECREF(seq_field);
@@ -113,16 +113,16 @@ PyObject * lab_interfaces__msg__turtle_array__convert_to_py(void * raw_ros_messa
     }
   }
   lab_interfaces__msg__TurtleArray * ros_message = (lab_interfaces__msg__TurtleArray *)raw_ros_message;
-  {  // turtle_array
+  {  // turtles
     PyObject * field = NULL;
-    size_t size = ros_message->turtle_array.size;
+    size_t size = ros_message->turtles.size;
     field = PyList_New(size);
     if (!field) {
       return NULL;
     }
     lab_interfaces__msg__Turtle * item;
     for (size_t i = 0; i < size; ++i) {
-      item = &(ros_message->turtle_array.data[i]);
+      item = &(ros_message->turtles.data[i]);
       PyObject * pyitem = lab_interfaces__msg__turtle__convert_to_py(item);
       if (!pyitem) {
         Py_DECREF(field);
@@ -134,7 +134,7 @@ PyObject * lab_interfaces__msg__turtle_array__convert_to_py(void * raw_ros_messa
     }
     assert(PySequence_Check(field));
     {
-      int rc = PyObject_SetAttrString(_pymessage, "turtle_array", field);
+      int rc = PyObject_SetAttrString(_pymessage, "turtles", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

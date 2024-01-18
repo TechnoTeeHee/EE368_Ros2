@@ -1,0 +1,46 @@
+[1.645s] Invoking command in '/home/teehee/ros2_ws/src/lab_exam2_pkg': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/lab_exam2_pkg/prefix_override:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lab_exam2_pkg build --build-base /home/teehee/ros2_ws/build/lab_exam2_pkg/build install --record /home/teehee/ros2_ws/build/lab_exam2_pkg/install.log --single-version-externally-managed
+[1.901s] running egg_info
+[1.902s] creating ../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info
+[1.903s] writing ../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info/PKG-INFO
+[1.904s] writing dependency_links to ../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info/dependency_links.txt
+[1.904s] writing entry points to ../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info/entry_points.txt
+[1.904s] writing requirements to ../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info/requires.txt
+[1.905s] writing top-level names to ../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info/top_level.txt
+[1.905s] writing manifest file '../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info/SOURCES.txt'
+[1.907s] reading manifest file '../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info/SOURCES.txt'
+[1.908s] writing manifest file '../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info/SOURCES.txt'
+[1.909s] running build
+[1.909s] running build_py
+[1.909s] creating /home/teehee/ros2_ws/build/lab_exam2_pkg/build
+[1.909s] creating /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib
+[1.909s] creating /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg
+[1.909s] copying lab_exam2_pkg/movefile copy.py -> /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg
+[1.915s] copying lab_exam2_pkg/turtlesim_scan.py -> /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg
+[1.915s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.915s]   warnings.warn(
+[1.915s] copying lab_exam2_pkg/__init__.py -> /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg
+[1.915s] copying lab_exam2_pkg/movefile.py -> /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg
+[1.915s] running install
+[1.915s] running install_lib
+[1.915s] creating /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg
+[1.915s] copying /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg/movefile copy.py -> /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg
+[1.915s] copying /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg/turtlesim_scan.py -> /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg
+[1.915s] copying /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg/__init__.py -> /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg
+[1.915s] copying /home/teehee/ros2_ws/build/lab_exam2_pkg/build/lib/lab_exam2_pkg/movefile.py -> /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg
+[1.916s] byte-compiling /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg/movefile copy.py to movefile copy.cpython-310.pyc
+[1.917s] byte-compiling /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg/turtlesim_scan.py to turtlesim_scan.cpython-310.pyc
+[1.917s] byte-compiling /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg/__init__.py to __init__.cpython-310.pyc
+[1.918s] byte-compiling /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg/movefile.py to movefile.cpython-310.pyc
+[1.919s] running install_data
+[1.919s] creating /home/teehee/ros2_ws/install/lab_exam2_pkg/share/ament_index
+[1.919s] creating /home/teehee/ros2_ws/install/lab_exam2_pkg/share/ament_index/resource_index
+[1.919s] creating /home/teehee/ros2_ws/install/lab_exam2_pkg/share/ament_index/resource_index/packages
+[1.920s] copying resource/lab_exam2_pkg -> /home/teehee/ros2_ws/install/lab_exam2_pkg/share/ament_index/resource_index/packages
+[1.920s] copying package.xml -> /home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg
+[1.920s] running install_egg_info
+[1.922s] Copying ../../build/lab_exam2_pkg/lab_exam2_pkg.egg-info to /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages/lab_exam2_pkg-0.0.0-py3.10.egg-info
+[1.923s] running install_scripts
+[1.942s] Installing movefile script to /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/lab_exam2_pkg
+[1.943s] Installing turtlesim_scan script to /home/teehee/ros2_ws/install/lab_exam2_pkg/lib/lab_exam2_pkg
+[1.943s] writing list of installed files to '/home/teehee/ros2_ws/build/lab_exam2_pkg/install.log'
+[2.006s] Invoked command in '/home/teehee/ros2_ws/src/lab_exam2_pkg' returned '0': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/lab_exam2_pkg/prefix_override:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lab_exam2_pkg build --build-base /home/teehee/ros2_ws/build/lab_exam2_pkg/build install --record /home/teehee/ros2_ws/build/lab_exam2_pkg/install.log --single-version-externally-managed

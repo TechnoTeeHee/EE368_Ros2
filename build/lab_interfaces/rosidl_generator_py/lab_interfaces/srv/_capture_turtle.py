@@ -178,22 +178,26 @@ class CaptureTurtle_Response(metaclass=Metaclass_CaptureTurtle_Response):
     """Message class 'CaptureTurtle_Response'."""
 
     __slots__ = [
-        '_success',
+        '_status',
+        '_message',
     ]
 
     _fields_and_field_types = {
-        'success': 'boolean',
+        'status': 'boolean',
+        'message': 'string',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.success = kwargs.get('success', bool())
+        self.status = kwargs.get('status', bool())
+        self.message = kwargs.get('message', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -224,7 +228,9 @@ class CaptureTurtle_Response(metaclass=Metaclass_CaptureTurtle_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.success != other.success:
+        if self.status != other.status:
+            return False
+        if self.message != other.message:
             return False
         return True
 
@@ -234,17 +240,30 @@ class CaptureTurtle_Response(metaclass=Metaclass_CaptureTurtle_Response):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def success(self):
-        """Message field 'success'."""
-        return self._success
+    def status(self):
+        """Message field 'status'."""
+        return self._status
 
-    @success.setter
-    def success(self, value):
+    @status.setter
+    def status(self, value):
         if __debug__:
             assert \
                 isinstance(value, bool), \
-                "The 'success' field must be of type 'bool'"
-        self._success = value
+                "The 'status' field must be of type 'bool'"
+        self._status = value
+
+    @builtins.property
+    def message(self):
+        """Message field 'message'."""
+        return self._message
+
+    @message.setter
+    def message(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'message' field must be of type 'str'"
+        self._message = value
 
 
 class Metaclass_CaptureTurtle(type):

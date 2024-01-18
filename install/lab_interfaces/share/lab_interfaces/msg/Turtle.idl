@@ -1,18 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from lab_interfaces/msg/Turtle.msg
-// generated code does not contain a copyright notice
-
-
-module lab_interfaces {
-  module msg {
-    struct Turtle {
-      string name;
-
-      double x;
-
-      double y;
-
-      double theta;
-    };
-  };
-};
+/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/Turtle.idl

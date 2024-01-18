@@ -104,6 +104,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "lab_interfaces/srv/detail/capture_turtle__struct.h"
 
 
+// Include directives for member types
+// Member `message`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -123,16 +128,33 @@ void lab_interfaces__srv__CaptureTurtle_Response__rosidl_typesupport_introspecti
   lab_interfaces__srv__CaptureTurtle_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember lab_interfaces__srv__CaptureTurtle_Response__rosidl_typesupport_introspection_c__CaptureTurtle_Response_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember lab_interfaces__srv__CaptureTurtle_Response__rosidl_typesupport_introspection_c__CaptureTurtle_Response_message_member_array[2] = {
   {
-    "success",  // name
+    "status",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(lab_interfaces__srv__CaptureTurtle_Response, success),  // bytes offset in struct
+    offsetof(lab_interfaces__srv__CaptureTurtle_Response, status),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "message",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(lab_interfaces__srv__CaptureTurtle_Response, message),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -146,7 +168,7 @@ static rosidl_typesupport_introspection_c__MessageMember lab_interfaces__srv__Ca
 static const rosidl_typesupport_introspection_c__MessageMembers lab_interfaces__srv__CaptureTurtle_Response__rosidl_typesupport_introspection_c__CaptureTurtle_Response_message_members = {
   "lab_interfaces__srv",  // message namespace
   "CaptureTurtle_Response",  // message name
-  1,  // number of fields
+  2,  // number of fields
   sizeof(lab_interfaces__srv__CaptureTurtle_Response),
   lab_interfaces__srv__CaptureTurtle_Response__rosidl_typesupport_introspection_c__CaptureTurtle_Response_message_member_array,  // message members
   lab_interfaces__srv__CaptureTurtle_Response__rosidl_typesupport_introspection_c__CaptureTurtle_Response_init_function,  // function to initialize message memory (memory has to be allocated)

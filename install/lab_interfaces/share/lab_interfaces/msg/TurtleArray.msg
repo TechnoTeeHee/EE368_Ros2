@@ -1,1 +1,1 @@
-Turtle[] turtle_array
+/home/teehee/ros2_ws/src/lab_interfaces/msg/TurtleArray.msg

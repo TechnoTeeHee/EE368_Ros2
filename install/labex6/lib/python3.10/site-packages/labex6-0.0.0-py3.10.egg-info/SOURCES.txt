@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/labex6/labex6.egg-info/PKG-INFO
+../../build/labex6/labex6.egg-info/SOURCES.txt
+../../build/labex6/labex6.egg-info/dependency_links.txt
+../../build/labex6/labex6.egg-info/entry_points.txt
+../../build/labex6/labex6.egg-info/requires.txt
+../../build/labex6/labex6.egg-info/top_level.txt
+../../build/labex6/labex6.egg-info/zip-safe
+labex6/__init__.py
+labex6/tb4_drivesquare.py
+resource/labex6
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

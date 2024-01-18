@@ -1,1 +1,0 @@
-/home/teehee/ros2_ws/src/labs_pkg/setup.py

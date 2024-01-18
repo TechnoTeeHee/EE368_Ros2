@@ -1,1 +1,0 @@
-/home/teehee/ros2_ws/src/tf2_pkg/setup.py

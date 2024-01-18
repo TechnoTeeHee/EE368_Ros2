@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target lab_interfaces__rosidl_generator_c[0m
-failed to create symbolic link '/home/teehee/ros2_ws/build/lab_interfaces/ament_cmake_python/lab_interfaces/lab_interfaces' because existing path cannot be removed: Is a directory
-gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_lab_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_lab_interfaces] Error 1
-[  2%] Built target lab_interfaces__cpp
-gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_lab_interfaces.dir/all] Error 2
-gmake[1]: *** Waiting for unfinished jobs....
-[ 12%] Built target lab_interfaces__rosidl_generator_c
-gmake: *** [Makefile:146: all] Error 2

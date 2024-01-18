@@ -37,45 +37,45 @@ void TurtleArray_fini_function(void * message_memory)
   typed_message->~TurtleArray();
 }
 
-size_t size_function__TurtleArray__turtle_array(const void * untyped_member)
+size_t size_function__TurtleArray__turtles(const void * untyped_member)
 {
   const auto * member = reinterpret_cast<const std::vector<lab_interfaces::msg::Turtle> *>(untyped_member);
   return member->size();
 }
 
-const void * get_const_function__TurtleArray__turtle_array(const void * untyped_member, size_t index)
+const void * get_const_function__TurtleArray__turtles(const void * untyped_member, size_t index)
 {
   const auto & member =
     *reinterpret_cast<const std::vector<lab_interfaces::msg::Turtle> *>(untyped_member);
   return &member[index];
 }
 
-void * get_function__TurtleArray__turtle_array(void * untyped_member, size_t index)
+void * get_function__TurtleArray__turtles(void * untyped_member, size_t index)
 {
   auto & member =
     *reinterpret_cast<std::vector<lab_interfaces::msg::Turtle> *>(untyped_member);
   return &member[index];
 }
 
-void fetch_function__TurtleArray__turtle_array(
+void fetch_function__TurtleArray__turtles(
   const void * untyped_member, size_t index, void * untyped_value)
 {
   const auto & item = *reinterpret_cast<const lab_interfaces::msg::Turtle *>(
-    get_const_function__TurtleArray__turtle_array(untyped_member, index));
+    get_const_function__TurtleArray__turtles(untyped_member, index));
   auto & value = *reinterpret_cast<lab_interfaces::msg::Turtle *>(untyped_value);
   value = item;
 }
 
-void assign_function__TurtleArray__turtle_array(
+void assign_function__TurtleArray__turtles(
   void * untyped_member, size_t index, const void * untyped_value)
 {
   auto & item = *reinterpret_cast<lab_interfaces::msg::Turtle *>(
-    get_function__TurtleArray__turtle_array(untyped_member, index));
+    get_function__TurtleArray__turtles(untyped_member, index));
   const auto & value = *reinterpret_cast<const lab_interfaces::msg::Turtle *>(untyped_value);
   item = value;
 }
 
-void resize_function__TurtleArray__turtle_array(void * untyped_member, size_t size)
+void resize_function__TurtleArray__turtles(void * untyped_member, size_t size)
 {
   auto * member =
     reinterpret_cast<std::vector<lab_interfaces::msg::Turtle> *>(untyped_member);
@@ -84,21 +84,21 @@ void resize_function__TurtleArray__turtle_array(void * untyped_member, size_t si
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember TurtleArray_message_member_array[1] = {
   {
-    "turtle_array",  // name
+    "turtles",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
     ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<lab_interfaces::msg::Turtle>(),  // members of sub message
     true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(lab_interfaces::msg::TurtleArray, turtle_array),  // bytes offset in struct
+    offsetof(lab_interfaces::msg::TurtleArray, turtles),  // bytes offset in struct
     nullptr,  // default value
-    size_function__TurtleArray__turtle_array,  // size() function pointer
-    get_const_function__TurtleArray__turtle_array,  // get_const(index) function pointer
-    get_function__TurtleArray__turtle_array,  // get(index) function pointer
-    fetch_function__TurtleArray__turtle_array,  // fetch(index, &value) function pointer
-    assign_function__TurtleArray__turtle_array,  // assign(index, value) function pointer
-    resize_function__TurtleArray__turtle_array  // resize(index) function pointer
+    size_function__TurtleArray__turtles,  // size() function pointer
+    get_const_function__TurtleArray__turtles,  // get_const(index) function pointer
+    get_function__TurtleArray__turtles,  // get(index) function pointer
+    fetch_function__TurtleArray__turtles,  // fetch(index, &value) function pointer
+    assign_function__TurtleArray__turtles,  // assign(index, value) function pointer
+    resize_function__TurtleArray__turtles  // resize(index) function pointer
   }
 };
 
