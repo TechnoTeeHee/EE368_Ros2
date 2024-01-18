@@ -23,6 +23,7 @@ setup(
             "tf_broadcaster1 = tf2_pkg.tf_broadcaster1:main",
             "tf_broadcaster2 = tf2_pkg.tf_broadcaster2:main",
             "tf_broadcaster3 = tf2_pkg.tf_broadcaster3:main",
+            "tf_broadcaster_ex14 = tf2_pkg.tf_broadcaster_ex14:main",
             "tf_broadcaster4 = tf2_pkg.tf_broadcaster4:main",
             "tf_listener = tf2_pkg.tf_listener:main",
             "tf_listener1 = tf2_pkg.tf_listener1:main",
