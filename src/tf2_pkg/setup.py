@@ -26,6 +26,7 @@ setup(
             "tf_broadcaster4 = tf2_pkg.tf_broadcaster4:main",
             "tf_listener = tf2_pkg.tf_listener:main",
             "tf_listener1 = tf2_pkg.tf_listener1:main",
+            "tf_listener2 = tf2_pkg.tf_listener2:main",
             "transform_point = tf2_pkg.transform_point:main"
         ],
     },
