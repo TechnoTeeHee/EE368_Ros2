@@ -69,109 +69,39 @@ include CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/progress.ma
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/Num.idl
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/NumArray.idl
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/Turtle.idl
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/TurtleArray.idl
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/srv/MeasureWallDist.idl
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/srv/CaptureTurtle.idl
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/WallDistanceMeasurement.idl
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/WallDistanceArray.idl
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/WallDistanceStatistics.idl
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/Turtle.idl
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/msg/TurtleArray.idl
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/lab_interfaces/srv/CaptureTurtle.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support for eProsima Fast-RTPS"
 	/usr/bin/python3.10 /opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c --generator-arguments-file /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c__arguments.json
 
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__rosidl_typesupport_fastrtps_c.h
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp
 
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_c.h
 
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp
 
-rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__rosidl_typesupport_fastrtps_c.h
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_fastrtps_c.h
 
-rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
+rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__rosidl_typesupport_fastrtps_c.h
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__rosidl_typesupport_fastrtps_c.h
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__rosidl_typesupport_fastrtps_c.h
-
-rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp > CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.i
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.s
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp > CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.i
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.s
 
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp
 
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.i: cmake_force
@@ -185,7 +115,7 @@ CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp
 
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.i: cmake_force
@@ -196,24 +126,10 @@ CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.s
 
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp > CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.i
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.s
-
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp
 
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.i: cmake_force
@@ -224,72 +140,18 @@ CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.s
 
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp > CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.i
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.s
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp > CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.i
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.s
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o -MF CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o.d -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o -c /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp > CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.i
-
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp -o CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.s
-
 # Object files for target lab_interfaces__rosidl_typesupport_fastrtps_c
 lab_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
-"CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o" \
-"CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o" \
 "CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o" \
 "CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o" \
-"CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o" \
-"CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o" \
-"CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o" \
-"CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o" \
-"CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o"
+"CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o"
 
 # External object files for target lab_interfaces__rosidl_typesupport_fastrtps_c
 lab_interfaces__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
 
-liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp.o
-liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp.o
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp.o
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp.o
-liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp.o
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp.o
-liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp.o
-liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp.o
-liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp.o
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
@@ -299,7 +161,7 @@ liblab_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librmw.
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 liblab_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library liblab_interfaces__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library liblab_interfaces__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -310,24 +172,12 @@ CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/clean
 
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/num_array__type_support_c.cpp
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle__type_support_c.cpp
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/turtle_array__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_array__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_measurement__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/msg/detail/wall_distance_statistics__type_support_c.cpp
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/capture_turtle__type_support_c.cpp
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__rosidl_typesupport_fastrtps_c.h
-CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/lab_interfaces/srv/detail/measure_wall_dist__type_support_c.cpp
 	cd /home/teehee/ros2_ws/build/lab_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/teehee/ros2_ws/src/lab_interfaces /home/teehee/ros2_ws/src/lab_interfaces /home/teehee/ros2_ws/build/lab_interfaces /home/teehee/ros2_ws/build/lab_interfaces /home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_c.dir/depend
 

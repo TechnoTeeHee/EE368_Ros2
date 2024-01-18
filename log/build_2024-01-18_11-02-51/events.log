@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.003280] (-) JobUnselected: {'identifier': 'example_pkg'}
+[0.003427] (-) JobUnselected: {'identifier': 'lab_exam2_pkg'}
+[0.003499] (-) JobUnselected: {'identifier': 'labex6'}
+[0.003611] (-) JobUnselected: {'identifier': 'labs_bringup'}
+[0.003641] (-) JobUnselected: {'identifier': 'labs_pkg'}
+[0.003660] (-) JobUnselected: {'identifier': 'tf2_pkg'}
+[0.006905] (-) EventReactorShutdown: {}

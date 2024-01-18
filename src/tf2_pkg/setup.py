@@ -28,7 +28,10 @@ setup(
             "tf_listener = tf2_pkg.tf_listener:main",
             "tf_listener1 = tf2_pkg.tf_listener1:main",
             "tf_listener2 = tf2_pkg.tf_listener2:main",
-            "transform_point = tf2_pkg.transform_point:main"
+            "transform_point = tf2_pkg.transform_point:main",
+            "control_turtle = tf2_pkg.control_turtle:main",
+            "spawn_turtles = tf2_pkg.spawn_turtles:main",
+            "turtle_monitor = tf2_pkg.turtle_monitor:main"
         ],
     },
 )

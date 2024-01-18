@@ -66,19 +66,11 @@ include CMakeFiles/lab_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/lab_interfaces.dir/progress.make
 
-CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/msg/Num.msg
-CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/msg/NumArray.msg
 CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/msg/Turtle.msg
 CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/msg/TurtleArray.msg
-CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/srv/MeasureWallDist.srv
-CMakeFiles/lab_interfaces: rosidl_cmake/srv/MeasureWallDist_Request.msg
-CMakeFiles/lab_interfaces: rosidl_cmake/srv/MeasureWallDist_Response.msg
 CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/srv/CaptureTurtle.srv
 CMakeFiles/lab_interfaces: rosidl_cmake/srv/CaptureTurtle_Request.msg
 CMakeFiles/lab_interfaces: rosidl_cmake/srv/CaptureTurtle_Response.msg
-CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/msg/WallDistanceMeasurement.msg
-CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/msg/WallDistanceArray.msg
-CMakeFiles/lab_interfaces: /home/teehee/ros2_ws/src/lab_interfaces/msg/WallDistanceStatistics.msg
 
 lab_interfaces: CMakeFiles/lab_interfaces
 lab_interfaces: CMakeFiles/lab_interfaces.dir/build.make

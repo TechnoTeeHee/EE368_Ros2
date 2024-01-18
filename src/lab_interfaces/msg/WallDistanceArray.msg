@@ -1,1 +1,0 @@
-WallDistanceMeasurement[] dist_array

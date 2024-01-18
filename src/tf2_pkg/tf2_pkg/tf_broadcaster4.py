@@ -9,33 +9,26 @@ from geometry_msgs.msg import TransformStamped
 class TFBroadcaster4(Node):
     def __init__(self):
         super().__init__("tf_broadcaster4")
-        self.tf_broadcaster1_ = tf2_ros.StaticTransformBroadcaster(self)
-        self.get_logger().info("tf_broadcaster1 is ready")
         self.tf_broadcaster2_ = tf2_ros.TransformBroadcaster(self)
         self.step = 0.0
         self.yaw = 0.0
         self.get_logger().info("tf_broadcaster2 is ready")
-        self.broadcast_tf_message1()
         self.timer = self.create_timer(1, self.broadcast_tf_message2)
-
-    def broadcast_tf_message1(self):
+   
+    def broadcast_tf_message2(self):
         transform_stamped = TransformStamped()
         transform_stamped.header.frame_id = "world"
         transform_stamped.child_frame_id = "center"
         transform_stamped.header.stamp = self.get_clock().now().to_msg()
-        transform_stamped.transform.translation.z = 1.0
-        q = euler_to_quaternion(0,0,self.yaw)
+        transform_stamped.transform.translation.z = 1.0 
+        self.yaw = pi * self.step
+        q = euler_to_quaternion(0,0,-self.yaw)
         transform_stamped.transform.rotation.x = q[0]
         transform_stamped.transform.rotation.y = q[1]
         transform_stamped.transform.rotation.z = q[2]
         transform_stamped.transform.rotation.w = q[3]
-        self.yaw = pi * self.step
-        self.step += 0.2
-        if self.step > 2.1:
-            self.step = 0.0
-        self.tf_broadcaster1_.sendTransform(transform_stamped)
+        self.tf_broadcaster2_.sendTransform(transform_stamped)
         
-    def broadcast_tf_message2(self):
         transform_stamped1 = TransformStamped()
         transform_stamped1.header.frame_id = "center"
         transform_stamped1.child_frame_id = "center_y"
@@ -47,7 +40,6 @@ class TFBroadcaster4(Node):
         transform_stamped1.transform.rotation.y = q[1]
         transform_stamped1.transform.rotation.z = q[2]
         transform_stamped1.transform.rotation.w = q[3]
-        self.tf_broadcaster2_.sendTransform(transform_stamped1)
         transform_stamped2 = TransformStamped()
         transform_stamped2.header.frame_id = "center"
         transform_stamped2.child_frame_id = "center_x"
@@ -58,16 +50,23 @@ class TFBroadcaster4(Node):
         transform_stamped2.transform.rotation.y = q[1]
         transform_stamped2.transform.rotation.z = q[2]
         transform_stamped2.transform.rotation.w = q[3]
-        self.tf_broadcaster2_.sendTransform(transform_stamped2)
         transform_stamped3 = TransformStamped()
         transform_stamped3.header.frame_id = "center"
         transform_stamped3.child_frame_id = "center_up"
         transform_stamped3.header.stamp = self.get_clock().now().to_msg()
         transform_stamped3.transform.translation.z = 2.0 - self.step
-        self.tf_broadcaster2_.sendTransform(transform_stamped3)
+        q = euler_to_quaternion(0, 0, self.yaw)
+        transform_stamped3.transform.rotation.x = q[0]
+        transform_stamped3.transform.rotation.y = q[1]
+        transform_stamped3.transform.rotation.z = q[2]
+        transform_stamped3.transform.rotation.w = q[3]
+        transform_stamped3.transform.translation.z = 2.0 - self.step
         self.step += 0.2
         if self.step > 2.1:
             self.step = 0.0
+        self.tf_broadcaster2_.sendTransform(transform_stamped1)
+        self.tf_broadcaster2_.sendTransform(transform_stamped2)
+        self.tf_broadcaster2_.sendTransform(transform_stamped3)
         
 def euler_to_quaternion(roll, pitch, yaw):
     q = np.empty((4, ))

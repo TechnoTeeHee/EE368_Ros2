@@ -69,26 +69,14 @@ include lab_interfaces__py/CMakeFiles/lab_interfaces__py.dir/progress.make
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_c.c
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_num.py
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_num_array.py
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_turtle.py
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_turtle_array.py
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/_measure_wall_dist.py
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/_capture_turtle.py
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_measurement.py
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_array.py
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_statistics.py
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/__init__.py
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/__init__.py
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_num_s.c
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_num_array_s.c
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_turtle_s.c
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_turtle_array_s.c
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/_measure_wall_dist_s.c
 lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/_capture_turtle_s.c
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_measurement_s.c
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_array_s.c
-lab_interfaces__py/CMakeFiles/lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_statistics_s.c
 
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -103,15 +91,9 @@ rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastr
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/rosidl_generator_py/resource/_srv.py.em
-rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/msg/Num.idl
-rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/msg/NumArray.idl
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/msg/Turtle.idl
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/msg/TurtleArray.idl
-rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/srv/MeasureWallDist.idl
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/srv/CaptureTurtle.idl
-rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/msg/WallDistanceMeasurement.idl
-rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/msg/WallDistanceArray.idl
-rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/lab_interfaces/msg/WallDistanceStatistics.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/teehee/ros2_ws/build/lab_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/teehee/ros2_ws/build/lab_interfaces/lab_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/teehee/ros2_ws/build/lab_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -121,32 +103,14 @@ rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_intro
 rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_c.c
 
-rosidl_generator_py/lab_interfaces/msg/_num.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_num.py
-
-rosidl_generator_py/lab_interfaces/msg/_num_array.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_num_array.py
-
 rosidl_generator_py/lab_interfaces/msg/_turtle.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_turtle.py
 
 rosidl_generator_py/lab_interfaces/msg/_turtle_array.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_turtle_array.py
 
-rosidl_generator_py/lab_interfaces/srv/_measure_wall_dist.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/srv/_measure_wall_dist.py
-
 rosidl_generator_py/lab_interfaces/srv/_capture_turtle.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/srv/_capture_turtle.py
-
-rosidl_generator_py/lab_interfaces/msg/_wall_distance_measurement.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_wall_distance_measurement.py
-
-rosidl_generator_py/lab_interfaces/msg/_wall_distance_array.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_wall_distance_array.py
-
-rosidl_generator_py/lab_interfaces/msg/_wall_distance_statistics.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_wall_distance_statistics.py
 
 rosidl_generator_py/lab_interfaces/msg/__init__.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/__init__.py
@@ -154,57 +118,27 @@ rosidl_generator_py/lab_interfaces/msg/__init__.py: rosidl_generator_py/lab_inte
 rosidl_generator_py/lab_interfaces/srv/__init__.py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/srv/__init__.py
 
-rosidl_generator_py/lab_interfaces/msg/_num_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_num_s.c
-
-rosidl_generator_py/lab_interfaces/msg/_num_array_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_num_array_s.c
-
 rosidl_generator_py/lab_interfaces/msg/_turtle_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_turtle_s.c
 
 rosidl_generator_py/lab_interfaces/msg/_turtle_array_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_turtle_array_s.c
 
-rosidl_generator_py/lab_interfaces/srv/_measure_wall_dist_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/srv/_measure_wall_dist_s.c
-
 rosidl_generator_py/lab_interfaces/srv/_capture_turtle_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/srv/_capture_turtle_s.c
-
-rosidl_generator_py/lab_interfaces/msg/_wall_distance_measurement_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_wall_distance_measurement_s.c
-
-rosidl_generator_py/lab_interfaces/msg/_wall_distance_array_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_wall_distance_array_s.c
-
-rosidl_generator_py/lab_interfaces/msg/_wall_distance_statistics_s.c: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/lab_interfaces/msg/_wall_distance_statistics_s.c
 
 lab_interfaces__py: lab_interfaces__py/CMakeFiles/lab_interfaces__py
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_c.c
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/_lab_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/__init__.py
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_num.py
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_num_array.py
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_num_array_s.c
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_num_s.c
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_turtle.py
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_turtle_array.py
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_turtle_array_s.c
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_turtle_s.c
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_array.py
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_array_s.c
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_measurement.py
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_measurement_s.c
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_statistics.py
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/msg/_wall_distance_statistics_s.c
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/__init__.py
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/_capture_turtle.py
 lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/_capture_turtle_s.c
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/_measure_wall_dist.py
-lab_interfaces__py: rosidl_generator_py/lab_interfaces/srv/_measure_wall_dist_s.c
 lab_interfaces__py: lab_interfaces__py/CMakeFiles/lab_interfaces__py.dir/build.make
 .PHONY : lab_interfaces__py
 

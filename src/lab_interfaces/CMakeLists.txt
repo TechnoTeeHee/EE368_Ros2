@@ -10,15 +10,9 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Num.msg"
-  "msg/NumArray.msg"
   "msg/Turtle.msg"
   "msg/TurtleArray.msg"
-  "srv/MeasureWallDist.srv"
   "srv/CaptureTurtle.srv"
-  "msg/WallDistanceMeasurement.msg"
-  "msg/WallDistanceArray.msg"
-  "msg/WallDistanceStatistics.msg"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

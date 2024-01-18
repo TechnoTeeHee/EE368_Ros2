@@ -1,0 +1,10 @@
+[0.062s] Invoking command in '/home/teehee/ros2_ws/build/lab_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/lab_interfaces -- -j4 -l4
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target lab_interfaces__rosidl_generator_c[0m
+[0.173s] failed to create symbolic link '/home/teehee/ros2_ws/build/lab_interfaces/ament_cmake_python/lab_interfaces/lab_interfaces' because existing path cannot be removed: Is a directory
+[0.176s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_lab_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_lab_interfaces] Error 1
+[0.176s] [  2%] Built target lab_interfaces__cpp
+[0.177s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_lab_interfaces.dir/all] Error 2
+[0.177s] gmake[1]: *** Waiting for unfinished jobs....
+[0.180s] [ 12%] Built target lab_interfaces__rosidl_generator_c
+[0.181s] gmake: *** [Makefile:146: all] Error 2
+[0.185s] Invoked command in '/home/teehee/ros2_ws/build/lab_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/lab_interfaces -- -j4 -l4

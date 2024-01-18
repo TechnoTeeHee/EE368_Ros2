@@ -3,15 +3,9 @@
   "output_dir": "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_typesupport_cpp/lab_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_cpp/resource",
   "idl_tuples": [
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/Num.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/NumArray.idl",
     "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/Turtle.idl",
     "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/TurtleArray.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:srv/MeasureWallDist.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:srv/CaptureTurtle.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/WallDistanceMeasurement.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/WallDistanceArray.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:msg/WallDistanceStatistics.idl"
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces:srv/CaptureTurtle.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp",
@@ -20,14 +14,8 @@
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/idl__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_cpp/resource/srv__type_support.cpp.em",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/Num.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/NumArray.idl",
     "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/Turtle.idl",
     "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/TurtleArray.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/srv/MeasureWallDist.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/srv/CaptureTurtle.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/WallDistanceMeasurement.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/WallDistanceArray.idl",
-    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/msg/WallDistanceStatistics.idl"
+    "/home/teehee/ros2_ws/build/lab_interfaces/rosidl_adapter/lab_interfaces/srv/CaptureTurtle.idl"
   ]
 }

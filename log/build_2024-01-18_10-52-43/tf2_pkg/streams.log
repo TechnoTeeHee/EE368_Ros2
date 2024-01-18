@@ -1,0 +1,32 @@
+[0.652s] Invoking command in '/home/teehee/ros2_ws/build/tf2_pkg': PYTHONPATH=/home/teehee/ros2_ws/build/tf2_pkg/prefix_override:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/tf2_pkg/build --no-deps install_data
+[0.880s] running develop
+[0.881s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.881s]   warnings.warn(
+[0.882s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.882s]   warnings.warn(
+[1.017s] running egg_info
+[1.019s] writing tf2_pkg.egg-info/PKG-INFO
+[1.019s] writing dependency_links to tf2_pkg.egg-info/dependency_links.txt
+[1.019s] writing entry points to tf2_pkg.egg-info/entry_points.txt
+[1.019s] writing requirements to tf2_pkg.egg-info/requires.txt
+[1.020s] writing top-level names to tf2_pkg.egg-info/top_level.txt
+[1.021s] reading manifest file 'tf2_pkg.egg-info/SOURCES.txt'
+[1.022s] writing manifest file 'tf2_pkg.egg-info/SOURCES.txt'
+[1.023s] running build_ext
+[1.023s] Creating /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2-pkg.egg-link (link to .)
+[1.024s] Installing control_turtle script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.024s] Installing spawn_turtles script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.024s] Installing tf_broadcaster1 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.024s] Installing tf_broadcaster2 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.025s] Installing tf_broadcaster3 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.025s] Installing tf_broadcaster4 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.025s] Installing tf_broadcaster_ex14 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.025s] Installing tf_listener script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.025s] Installing tf_listener1 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.026s] Installing tf_listener2 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.026s] Installing transform_point script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.026s] Installing turtle_monitor script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+[1.026s] 
+[1.026s] Installed /home/teehee/ros2_ws/build/tf2_pkg
+[1.027s] running install_data
+[1.056s] Invoked command in '/home/teehee/ros2_ws/build/tf2_pkg' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/tf2_pkg/prefix_override:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/tf2_pkg/build --no-deps install_data

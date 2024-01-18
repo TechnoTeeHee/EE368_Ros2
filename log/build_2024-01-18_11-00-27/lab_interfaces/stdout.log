@@ -1,0 +1,16 @@
+[  2%] Built target lab_interfaces__cpp
+[  4%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 14%] Built target lab_interfaces__rosidl_generator_c
+[ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[35m[1mConsolidate compiler generated dependencies of target lab_interfaces__rosidl_typesupport_introspection_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target lab_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/srv/detail/capture_turtle__type_support.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/msg/detail/turtle__type_support.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lab_interfaces/msg/detail/turtle_array__type_support.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/turtle__type_support.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/msg/detail/dds_fastrtps/turtle_array__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/lab_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lab_interfaces/srv/detail/dds_fastrtps/capture_turtle__type_support.cpp.o[0m
+[ 31%] [32m[1mLinking CXX shared library liblab_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 31%] Built target lab_interfaces__rosidl_typesupport_introspection_cpp
+[ 34%] [32m[1mLinking CXX shared library liblab_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 34%] Built target lab_interfaces__rosidl_typesupport_fastrtps_cpp
