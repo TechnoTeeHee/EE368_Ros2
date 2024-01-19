@@ -31,7 +31,9 @@ setup(
             "transform_point = tf2_pkg.transform_point:main",
             "control_turtle = tf2_pkg.control_turtle:main",
             "spawn_turtles = tf2_pkg.spawn_turtles:main",
-            "turtle_monitor = tf2_pkg.turtle_monitor:main"
+            "turtle_monitor = tf2_pkg.turtle_monitor:main",
+            "turtle_broadcaster = tf2_pkg.turtle_broadcaster:main",
+            "turtle1_broadcaster = tf2_pkg.turtle1_broadcaster:main"
         ],
     },
 )

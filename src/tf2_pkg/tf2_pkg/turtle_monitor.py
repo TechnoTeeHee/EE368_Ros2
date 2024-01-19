@@ -31,7 +31,7 @@ class MyListenerNode(Node):
 
     def callback_capture_turtle(self, request, response):
         # Search for name in current list
-        self.get_logger().info("Received request to capture '" + str(request.name) + "'.")
+        #self.get_logger().info("Received request to capture '" + str(request.name) + "'.")
         found = False
         for i in range(len(self.turtle_array)):
             if self.turtle_array[i].name == request.name:
@@ -60,7 +60,7 @@ class MyListenerNode(Node):
             self.get_logger().warn("Waiting for turtlesim Server")
         request = Kill.Request()
         request.name = turtle_name
-        self.get_logger().info("Killing " + str(turtle_name))
+        #self.get_logger().info("Killing " + str(turtle_name))
         client.call_async(request)
 
 def main(args=None):
@@ -71,7 +71,6 @@ def main(args=None):
         rclpy.spin(node)
     except KeyboardInterrupt:
         node.destroy_node()
-        rclpy.try_shutdown()
 
 if __name__ == "__main__":
     main()

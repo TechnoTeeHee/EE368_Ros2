@@ -8,6 +8,16 @@ def generate_launch_description():
         package="turtlesim",
         executable="turtlesim_node"
     )
+    
+    turtle1_broadcaster_node = Node(
+        package="tf2_pkg",
+        executable="turtle1_broadcaster"
+    )
+    
+    turtle_broadcaster_node = Node(
+        package="tf2_pkg",
+        executable="turtle_broadcaster"
+    )
 
     control_turtle_node = Node(
         package="tf2_pkg",
@@ -36,7 +46,9 @@ def generate_launch_description():
     )
 
     ld.add_action(turtlesim_node)
+    ld.add_action(turtle1_broadcaster_node)
     ld.add_action(control_turtle_node)
     ld.add_action(turtle_monitor_node)
     ld.add_action(spawn_turtles_node)
+    #ld.add_action(turtle_broadcaster_node)
     return ld

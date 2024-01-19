@@ -26,7 +26,7 @@ class TurtlesimMoveNode(Node):
         self.alive_turtles_subscriber_ = self.create_subscription(TurtleArray, "alive_turtles", self.get_alive_turtles, 10)
         self.cmd_vel_publisher_ = self.create_publisher(Twist, "turtle1/cmd_vel", 10)
         self.move_timer_ = self.create_timer(0.01, self.turtle_move)
-        self.get_logger().info('The control monitor has started.')
+        #self.get_logger().info('The control monitor has started.')
 
     def get_alive_turtles(self, msg):
         self.alive_turtles = msg
@@ -48,7 +48,7 @@ class TurtlesimMoveNode(Node):
             y = self.alive_turtles.turtles[i].y - self.pose_.y
             distance = math.sqrt(x**2 + y**2)
             if closest == -1 or distance < closest:
-                index = i
+                index = ix
                 closest = distance
         self.goal_x = self.alive_turtles.turtles[index].x
         self.goal_y = self.alive_turtles.turtles[index].y
@@ -80,14 +80,14 @@ class TurtlesimMoveNode(Node):
             self.get_logger().warn("Waiting for turtlesim Server")
         request = CaptureTurtle.Request()
         request.name = turtle_name
-        self.get_logger().info("Sending request to capture turtle '" + str(turtle_name) + "'.")
+        #self.get_logger().info("Sending request to capture turtle '" + str(turtle_name) + "'.")
         future = client.call_async(request)
         future.add_done_callback(partial(self.callback_capture_turtle, name=turtle_name))
 
     def callback_capture_turtle(self, future, name):
         try:
             response = future.result()
-            self.get_logger().info("Service completed: " + str(response.message))
+            #self.get_logger().info("Service completed: " + str(response.message))
         except Exception as e:
             self.get_logger().error("Service call failed %r" % (e,))
 

@@ -10,5 +10,7 @@ tf_listener = tf2_pkg.tf_listener:main
 tf_listener1 = tf2_pkg.tf_listener1:main
 tf_listener2 = tf2_pkg.tf_listener2:main
 transform_point = tf2_pkg.transform_point:main
+turtle1_broadcaster = tf2_pkg.turtle1_broadcaster:main
+turtle_broadcaster = tf2_pkg.turtle_broadcaster:main
 turtle_monitor = tf2_pkg.turtle_monitor:main
 
