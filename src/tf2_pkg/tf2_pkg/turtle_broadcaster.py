@@ -14,30 +14,32 @@ from lab_interfaces.srv import CaptureTurtle
 class TurtleBroadcaster(Node):
     def __init__(self):
         super().__init__("turtle_broadcaster")
-        self.turtle_broadcaster = tf2_ros.TransformBroadcaster(self)
+        self.alive_turtles = None
+        self.alive_turtles_subscriber_ = self.create_subscription(TurtleArray, "alive_turtles", self.get_alive_turtles, 10)
+        self.turtle_broadcaster = tf2_ros.StaticTransformBroadcaster(self)
         self.broadcast_tf_message()
         self.timer = self.create_timer(0.1, self.broadcast_tf_message)
         self.get_logger().info("turtle_broadcaster is ready")
         
-    def get_turtle_pose(self, msg):
-        self.pose = msg
+    def get_alive_turtles(self, msg):
+        self.alive_turtles = msg
         
     def broadcast_tf_message(self):
-        if self.pose == None:
+        if self.alive_turtles == None or len(self.alive_turtles.turtles) == 0:
             return
-        #for i in turtles, enumerate  
-        self.transform_stamped = TransformStamped()
-        self.transform_stamped.header.frame_id = "world"
-        self.transform_stamped.child_frame_id = "turtle1"
-        self.transform_stamped.header.stamp = self.get_clock().now().to_msg()
-        self.transform_stamped.transform.translation.x = self.pose.x - 5.544445
-        self.transform_stamped.transform.translation.y = self.pose.y - 5.544445
-        q = euler_to_quaternion(0, 0, self.pose.theta)
-        self.transform_stamped.transform.rotation.x = q[0]
-        self.transform_stamped.transform.rotation.y = q[1]
-        self.transform_stamped.transform.rotation.z = q[2]
-        self.transform_stamped.transform.rotation.w = q[3]
-        self.turtle_broadcaster.sendTransform(self.transform_stamped)
+        for i in range(len(self.alive_turtles.turtles)):
+            self.transform_stamped = TransformStamped()
+            self.transform_stamped.header.frame_id = "world"
+            self.transform_stamped.child_frame_id = str(self.alive_turtles.turtles[int(i)].name)
+            self.transform_stamped.header.stamp = self.get_clock().now().to_msg()
+            self.transform_stamped.transform.translation.x = self.alive_turtles.turtles[int(i)].x
+            self.transform_stamped.transform.translation.y = self.alive_turtles.turtles[int(i)].y
+            q = euler_to_quaternion(0, 0, self.alive_turtles.turtles[int(i)].theta)
+            self.transform_stamped.transform.rotation.x = q[0]
+            self.transform_stamped.transform.rotation.y = q[1]
+            self.transform_stamped.transform.rotation.z = q[2]
+            self.transform_stamped.transform.rotation.w = q[3]
+            self.turtle_broadcaster.sendTransform(self.transform_stamped)
         
         
 def euler_to_quaternion(roll, pitch, yaw):

@@ -41,7 +41,7 @@ def generate_launch_description():
         name="spawn_turtles",
         parameters=[
             {"name_prefix": "turtle"},
-            {"spawn_rate": 1.0}
+            {"spawn_rate": 0.5}
         ]
     )
 
@@ -50,5 +50,5 @@ def generate_launch_description():
     ld.add_action(control_turtle_node)
     ld.add_action(turtle_monitor_node)
     ld.add_action(spawn_turtles_node)
-    #ld.add_action(turtle_broadcaster_node)
+    ld.add_action(turtle_broadcaster_node)
     return ld
