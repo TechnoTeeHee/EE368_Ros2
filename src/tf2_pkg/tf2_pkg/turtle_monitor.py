@@ -12,7 +12,6 @@ class MyListenerNode(Node):
     def __init__(self):
         super().__init__("turtle_monitor")
         self.subscriber_ = self.create_subscription(Turtle, "new_turtle", self.callback, 10)
-        time.sleep(0.1)
         self.publisher_ = self.create_publisher(TurtleArray, "alive_turtles", 10)
         self.turtle_array = []
         self.server_ = self.create_service(CaptureTurtle, "capture_turtle", self.callback_capture_turtle)
@@ -27,6 +26,7 @@ class MyListenerNode(Node):
         self.turtle_array.append(turtle)
         msg = TurtleArray()
         msg.turtles = self.turtle_array
+        time.sleep(0.1)
         self.publisher_.publish(msg)
 
     def callback_capture_turtle(self, request, response):

@@ -33,32 +33,32 @@ class TurtlesimMoveNode(Node):
         #self.get_logger().info('The control monitor has started.')
         self.tf_buffer_ = Buffer()
         self.tf_listener_ = TransformListener(self.tf_buffer_, self)
-        time.sleep(1.0)
-        self.timer = self.create_timer(0.01, self.listen_tf_message)
+
+    def get_alive_turtles(self, msg):
+        self.alive_turtles = msg
+
+    def turtle_move(self):
         
-        
-    def listen_tf_message(self):
         if self.alive_turtles == None or len(self.alive_turtles.turtles) == 0:
             return
         origin_frame = "world"
         dest_frame = "turtle1"
         try:
-            t = self.tf_buffer_.lookup_transform(origin_frame, dest_frame, rclpy.time.Time())
-            q = [t.transform.rotation.x, t.transform.rotation.y,
-            t.transform.rotation.z, t.transform.rotation.w]     
-            self.x = round(t.transform.translation.x,1)
-            self.y = round(t.transform.translation.y,1)
+            t = self.tf_buffer_.lookup_transform(origin_frame, dest_frame, rclpy.time.Time())   
+            self.x = round(t.transform.translation.x,5)
+            self.y = round(t.transform.translation.y,5)
             self.theta = t.transform.rotation.z*math.pi
         except tf2_ros.TransformException as ex:
             self.get_logger().info(f'Could not transform {origin_frame} to {dest_frame}: {ex}')
+            return
         
-        self.index = 0
         closest = -1
+        
         try:
             for i in range(len(self.alive_turtles.turtles)):
-                n = self.tf_buffer_.lookup_transform("turtle1", str(self.alive_turtles.turtles[i].name), rclpy.time.Time())
-                x = n.transform.translation.x
-                y = n.transform.translation.y
+                n = self.tf_buffer_.lookup_transform("world", str(self.alive_turtles.turtles[i].name), rclpy.time.Time())
+                x = n.transform.translation.x - self.x
+                y = n.transform.translation.y - self.y
                 distance = math.sqrt(x**2 + y**2)
                 if closest == -1 or distance < closest:
                     self.index = i
@@ -67,35 +67,26 @@ class TurtlesimMoveNode(Node):
             self.goal_x = g.transform.translation.x 
             self.goal_y = g.transform.translation.y
         except tf2_ros.TransformException as ex:
+            self.get_logger().info("Can't Find " + str(self.alive_turtles.turtles[self.index].name))
             return
-
-    def get_alive_turtles(self, msg):
-        self.alive_turtles = msg
-
-    def turtle_move(self):
-        if self.alive_turtles == None or len(self.alive_turtles.turtles) == 0 or self.goal_x == None:
-            return
-
         xdist_to_goal = self.goal_x - self.x
         ydist_to_goal = self.goal_y - self.y
         dist_to_goal = math.sqrt(xdist_to_goal**2 + ydist_to_goal**2)
         vel_msg = Twist()
         
-        if dist_to_goal > 0.5:
+        if dist_to_goal > 0.2:
             vel_msg.linear.x = self.kv * (dist_to_goal)
             goal_angle = math.atan2(ydist_to_goal, xdist_to_goal)
-            angle_error = goal_angle - self.theta
-            angle_error = math.atan2(math.sin(angle_error),math.cos(angle_error))
+            error = goal_angle - self.theta
+            angle_error = math.atan2(math.sin(error), math.cos(error))
             vel_msg.angular.z = self.ka * angle_error
         else:
             vel_msg.linear.x = 0.0
             vel_msg.angular.z = 0.0
             self.capture_turtle(str(self.alive_turtles.turtles[self.index].name))
             self.alive_turtles = None
-            self.goal_x = None
 
         self.cmd_vel_publisher_.publish(vel_msg)
-
         #self.get_logger().info('Angular velocity published: ' + str(vel_msg.angular.z))
         #self.get_logger().info('Linear velocity published: ' + str(vel_msg.linear.x))
 

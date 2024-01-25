@@ -73,11 +73,11 @@
     </joint>
 
     <xacro:property name="shaft_side_length" value="0.2" />
-    <xacro:property name="shaft_height" value="2"/>
+    <xacro:property name="shaft_height" value="1"/>
 
     <link name="shaft_link">
         <visual>
-            <origin xyz="0 0 ${shaft_height/2}" rpy="0 0 0"/>
+            <origin xyz="0 0 ${shaft_height/2+(cylinder_radius)}" rpy="0 0 0"/>
             <geometry>
                 <box size="${shaft_side_length} ${shaft_side_length} ${shaft_height}"/>
             </geometry>
@@ -95,14 +95,14 @@
     </link>
 
     <xacro:property name="topshaft_side_length" value="0.2" />
-    <xacro:property name="topshaft_height" value="1"/>
+    <xacro:property name="topshaft_height" value="2"/>
     
     <joint name="topshaft" type="prismatic">
-        <origin xyz="0 0 ${shaft_height+(topshaft_side_length/2)}" rpy="0 0 0"/>
+        <origin xyz="0 0 ${shaft_height+(topshaft_side_length/2)+(cylinder_radius)}" rpy="0 0 0"/>
         <parent link="shaft_link"/>
         <child link="topshaft_link"/>
         <axis xyz="1 0 0"/>
-        <limit lower="${-(topshaft_height/2-0.2)}" upper="${topshaft_height/2-0.2}" velocity="100" effort="100"/> 
+        <limit lower="${-(topshaft_height/2-0.2)}" upper="${topshaft_height/2-0.1}" velocity="100" effort="100"/> 
     </joint>
 
     <link name="topshaft_link">
