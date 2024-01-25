@@ -24,3 +24,8 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
+
+install(
+  DIRECTORY description launch worlds
+  DESTINATION share/${PROJECT_NAME}
+)

@@ -13,3 +13,7 @@
 /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/cmake/exersice_2_2Config.cmake
 /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/cmake/exersice_2_2Config-version.cmake
 /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/package.xml
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/description/colors.xacro
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/description/exercise_2_2.urdf.xacro
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/description/inertial.xacro
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/launch/rsp.launch.py

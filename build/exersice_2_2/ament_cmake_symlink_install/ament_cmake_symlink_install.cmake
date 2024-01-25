@@ -351,3 +351,6 @@ ament_cmake_symlink_install_files("/home/teehee/ros2_ws/src/exersice_2_2" FILES 
 
 # install(FILES "/home/teehee/ros2_ws/src/exersice_2_2/package.xml" "DESTINATION" "share/exersice_2_2")
 ament_cmake_symlink_install_files("/home/teehee/ros2_ws/src/exersice_2_2" FILES "/home/teehee/ros2_ws/src/exersice_2_2/package.xml" "DESTINATION" "share/exersice_2_2")
+
+# install(DIRECTORY "description" "launch" "worlds" "DESTINATION" "share/exersice_2_2")
+ament_cmake_symlink_install_directory("/home/teehee/ros2_ws/src/exersice_2_2" DIRECTORY "description" "launch" "worlds" "DESTINATION" "share/exersice_2_2")
