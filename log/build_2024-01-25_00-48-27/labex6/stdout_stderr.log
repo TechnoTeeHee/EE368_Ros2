@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/labex6/labex6.egg-info/PKG-INFO
+writing dependency_links to ../../build/labex6/labex6.egg-info/dependency_links.txt
+writing entry points to ../../build/labex6/labex6.egg-info/entry_points.txt
+writing requirements to ../../build/labex6/labex6.egg-info/requires.txt
+writing top-level names to ../../build/labex6/labex6.egg-info/top_level.txt
+reading manifest file '../../build/labex6/labex6.egg-info/SOURCES.txt'
+writing manifest file '../../build/labex6/labex6.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages/labex6-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/labex6/labex6.egg-info to /home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages/labex6-0.0.0-py3.10.egg-info
+running install_scripts
+Installing tb4_drivesquare script to /home/teehee/ros2_ws/install/labex6/lib/labex6
+writing list of installed files to '/home/teehee/ros2_ws/build/labex6/install.log'

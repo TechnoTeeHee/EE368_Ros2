@@ -1,0 +1,15 @@
+/home/teehee/ros2_ws/install/exersice_2_2/share/ament_index/resource_index/package_run_dependencies/exersice_2_2
+/home/teehee/ros2_ws/install/exersice_2_2/share/ament_index/resource_index/parent_prefix_path/exersice_2_2
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/environment/ament_prefix_path.sh
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/environment/ament_prefix_path.dsv
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/environment/path.sh
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/environment/path.dsv
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/local_setup.bash
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/local_setup.sh
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/local_setup.zsh
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/local_setup.dsv
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/package.dsv
+/home/teehee/ros2_ws/install/exersice_2_2/share/ament_index/resource_index/packages/exersice_2_2
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/cmake/exersice_2_2Config.cmake
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/cmake/exersice_2_2Config-version.cmake
+/home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/package.xml

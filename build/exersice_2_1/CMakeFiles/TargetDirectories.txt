@@ -1,0 +1,9 @@
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/uninstall.dir
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/exersice_2_1_uninstall.dir
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/test.dir
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/edit_cache.dir
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/rebuild_cache.dir
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/list_install_components.dir
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/install.dir
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/install/local.dir
+/home/teehee/ros2_ws/build/exersice_2_1/CMakeFiles/install/strip.dir

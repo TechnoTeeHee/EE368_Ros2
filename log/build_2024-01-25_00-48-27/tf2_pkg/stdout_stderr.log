@@ -1,0 +1,70 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+Removing /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2-pkg.egg-link (link to .)
+running egg_info
+writing ../../build/tf2_pkg/tf2_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/tf2_pkg/tf2_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/tf2_pkg/tf2_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/tf2_pkg/tf2_pkg.egg-info/requires.txt
+writing top-level names to ../../build/tf2_pkg/tf2_pkg.egg-info/top_level.txt
+reading manifest file '../../build/tf2_pkg/tf2_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/tf2_pkg/tf2_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+creating /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/tf_broadcaster4.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/__init__.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/turtle_monitor.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/tf_broadcaster2.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/transform_point.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/turtle1_broadcaster.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/tf_listener2.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/tf_broadcaster1.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/turtle_broadcaster.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/spawn_turtles.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/tf_broadcaster_ex14.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/tf_listener.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/control_turtle.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/tf_listener1.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+copying /home/teehee/ros2_ws/build/tf2_pkg/build/lib/tf2_pkg/tf_broadcaster3.py -> /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/tf_broadcaster4.py to tf_broadcaster4.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/turtle_monitor.py to turtle_monitor.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/tf_broadcaster2.py to tf_broadcaster2.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/transform_point.py to transform_point.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/turtle1_broadcaster.py to turtle1_broadcaster.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/tf_listener2.py to tf_listener2.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/tf_broadcaster1.py to tf_broadcaster1.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/turtle_broadcaster.py to turtle_broadcaster.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/spawn_turtles.py to spawn_turtles.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/tf_broadcaster_ex14.py to tf_broadcaster_ex14.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/tf_listener.py to tf_listener.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/control_turtle.py to control_turtle.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/tf_listener1.py to tf_listener1.cpython-310.pyc
+byte-compiling /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg/tf_broadcaster3.py to tf_broadcaster3.cpython-310.pyc
+running install_data
+running install_egg_info
+Copying ../../build/tf2_pkg/tf2_pkg.egg-info to /home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages/tf2_pkg-0.0.0-py3.10.egg-info
+running install_scripts
+Installing control_turtle script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing spawn_turtles script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing tf_broadcaster1 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing tf_broadcaster2 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing tf_broadcaster3 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing tf_broadcaster4 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing tf_broadcaster_ex14 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing tf_listener script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing tf_listener1 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing tf_listener2 script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing transform_point script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing turtle1_broadcaster script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing turtle_broadcaster script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+Installing turtle_monitor script to /home/teehee/ros2_ws/install/tf2_pkg/lib/tf2_pkg
+writing list of installed files to '/home/teehee/ros2_ws/build/tf2_pkg/install.log'

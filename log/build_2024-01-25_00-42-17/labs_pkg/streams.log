@@ -1,0 +1,46 @@
+[0.642s] Invoking command in '/home/teehee/ros2_ws/src/labs_pkg': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/labs_pkg/prefix_override:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/labs_pkg build --build-base /home/teehee/ros2_ws/build/labs_pkg/build install --record /home/teehee/ros2_ws/build/labs_pkg/install.log --single-version-externally-managed
+[0.747s] running egg_info
+[0.747s] writing ../../build/labs_pkg/labs_pkg.egg-info/PKG-INFO
+[0.748s] writing dependency_links to ../../build/labs_pkg/labs_pkg.egg-info/dependency_links.txt
+[0.748s] writing entry points to ../../build/labs_pkg/labs_pkg.egg-info/entry_points.txt
+[0.748s] writing requirements to ../../build/labs_pkg/labs_pkg.egg-info/requires.txt
+[0.748s] writing top-level names to ../../build/labs_pkg/labs_pkg.egg-info/top_level.txt
+[0.749s] reading manifest file '../../build/labs_pkg/labs_pkg.egg-info/SOURCES.txt'
+[0.750s] writing manifest file '../../build/labs_pkg/labs_pkg.egg-info/SOURCES.txt'
+[0.750s] running build
+[0.750s] running build_py
+[0.751s] running install
+[0.752s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.752s]   warnings.warn(
+[0.752s] running install_lib
+[0.754s] running install_data
+[0.754s] running install_egg_info
+[0.755s] removing '/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages/labs_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.762s] Copying ../../build/labs_pkg/labs_pkg.egg-info to /home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages/labs_pkg-0.0.0-py3.10.egg-info
+[0.763s] running install_scripts
+[0.786s] Installing add2ints_client script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.798s] Installing add2ints_client_no_oop script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.800s] Installing add2ints_server script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.800s] Installing array_adder script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.800s] Installing control_turtle script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.800s] Installing cumulative_adder script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.800s] Installing integer_array_publisher script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.800s] Installing integer_publisher script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.800s] Installing my_listener script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.800s] Installing my_talker script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.801s] Installing spawn_turtles script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.801s] Installing tb4_circles script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.801s] Installing tb4_stop_at_wall script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing turtle_monitor script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing turtlesim_circles script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing turtlesim_drivesquare script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing turtlesim_move script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing turtlesim_odom script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing turtlesim_scan script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing turtlesim_stop_at_wall script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing wall_dist_measurement script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.802s] Installing wall_dist_measurement_server script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.803s] Installing wall_dist_statistics script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.803s] Installing wall_dist_statistics_client script to /home/teehee/ros2_ws/install/labs_pkg/lib/labs_pkg
+[0.803s] writing list of installed files to '/home/teehee/ros2_ws/build/labs_pkg/install.log'
+[0.851s] Invoked command in '/home/teehee/ros2_ws/src/labs_pkg' returned '0': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/labs_pkg/prefix_override:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/labs_pkg build --build-base /home/teehee/ros2_ws/build/labs_pkg/build install --record /home/teehee/ros2_ws/build/labs_pkg/install.log --single-version-externally-managed

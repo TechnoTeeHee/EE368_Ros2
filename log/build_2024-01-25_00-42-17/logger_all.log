@@ -1,0 +1,593 @@
+[0.393s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.393s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f388b17f3d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f388b5b7b80>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f388b5b7b80>>)
+[0.415s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.415s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.415s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.415s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.415s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.415s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.415s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/teehee/ros2_ws'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extension 'ignore'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extension 'ignore_ament_install'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extensions ['colcon_pkg']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extension 'colcon_pkg'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extensions ['colcon_meta']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extension 'colcon_meta'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extensions ['ros']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_pkg) by extension 'ros'
+[0.427s] DEBUG:colcon.colcon_core.package_identification:Package 'src/example_pkg' with type 'ros.ament_python' and name 'example_pkg'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extensions ['ignore', 'ignore_ament_install']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extension 'ignore'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extension 'ignore_ament_install'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extensions ['colcon_pkg']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extension 'colcon_pkg'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extensions ['colcon_meta']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extension 'colcon_meta'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extensions ['ros']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/exersice_2_1) by extension 'ros'
+[0.428s] DEBUG:colcon.colcon_core.package_identification:Package 'src/exersice_2_1' with type 'ros.ament_cmake' and name 'exersice_2_1'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extension 'ignore'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extension 'ignore_ament_install'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extensions ['colcon_pkg']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extension 'colcon_pkg'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extensions ['colcon_meta']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extension 'colcon_meta'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extensions ['ros']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_exam2_pkg) by extension 'ros'
+[0.429s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab_exam2_pkg' with type 'ros.ament_python' and name 'lab_exam2_pkg'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extension 'ignore'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extension 'ignore_ament_install'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extensions ['colcon_pkg']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extension 'colcon_pkg'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extensions ['colcon_meta']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extension 'colcon_meta'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/lab_interfaces) by extension 'ros'
+[0.429s] DEBUG:colcon.colcon_core.package_identification:Package 'src/lab_interfaces' with type 'ros.ament_cmake' and name 'lab_interfaces'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extension 'ignore_ament_install'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extensions ['colcon_pkg']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extension 'colcon_pkg'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extensions ['colcon_meta']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extension 'colcon_meta'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extensions ['ros']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labex6) by extension 'ros'
+[0.430s] DEBUG:colcon.colcon_core.package_identification:Package 'src/labex6' with type 'ros.ament_python' and name 'labex6'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extension 'ignore'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extension 'ignore_ament_install'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extensions ['colcon_pkg']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extension 'colcon_pkg'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extensions ['colcon_meta']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extension 'colcon_meta'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extensions ['ros']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_bringup) by extension 'ros'
+[0.431s] DEBUG:colcon.colcon_core.package_identification:Package 'src/labs_bringup' with type 'ros.ament_cmake' and name 'labs_bringup'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extension 'ignore'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extension 'ignore_ament_install'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extensions ['colcon_pkg']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extension 'colcon_pkg'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extensions ['colcon_meta']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extension 'colcon_meta'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extensions ['ros']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(src/labs_pkg) by extension 'ros'
+[0.432s] DEBUG:colcon.colcon_core.package_identification:Package 'src/labs_pkg' with type 'ros.ament_python' and name 'labs_pkg'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extension 'ignore'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extension 'ignore_ament_install'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extensions ['colcon_pkg']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extension 'colcon_pkg'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extensions ['colcon_meta']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extension 'colcon_meta'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extensions ['ros']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_pkg) by extension 'ros'
+[0.432s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tf2_pkg' with type 'ros.ament_python' and name 'tf2_pkg'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extensions ['ignore', 'ignore_ament_install']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extension 'ignore'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extension 'ignore_ament_install'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extensions ['colcon_pkg']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extension 'colcon_pkg'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extensions ['colcon_meta']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extension 'colcon_meta'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extensions ['ros']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(src/urdf_example) by extension 'ros'
+[0.433s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urdf_example' with type 'ros.ament_cmake' and name 'urdf_example'
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.473s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.485s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 10 installed packages in /home/teehee/ros2_ws/install
+[0.491s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'cmake_args' from command line to 'None'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'cmake_target' from command line to 'None'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'example_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.532s] DEBUG:colcon.colcon_core.verb:Building package 'example_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/example_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/example_pkg', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/example_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'cmake_target' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'cmake_clean_cache' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'cmake_clean_first' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'cmake_force_configure' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'ament_cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'catkin_cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'exersice_2_1' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.538s] DEBUG:colcon.colcon_core.verb:Building package 'exersice_2_1' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/exersice_2_1', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/exersice_2_1', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/exersice_2_1', 'symlink_install': False, 'test_result_base': None}
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'lab_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.544s] DEBUG:colcon.colcon_core.verb:Building package 'lab_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/lab_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/lab_interfaces', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/lab_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'cmake_args' from command line to 'None'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'cmake_target' from command line to 'None'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'tf2_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.549s] DEBUG:colcon.colcon_core.verb:Building package 'tf2_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/tf2_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/tf2_pkg', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/tf2_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'cmake_args' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'cmake_target' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'cmake_clean_cache' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'cmake_clean_first' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'cmake_force_configure' from command line to 'False'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'ament_cmake_args' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'catkin_cmake_args' from command line to 'None'
+[0.555s] Level 5:colcon.colcon_core.verb:set package 'urdf_example' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.555s] DEBUG:colcon.colcon_core.verb:Building package 'urdf_example' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/urdf_example', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/urdf_example', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/urdf_example', 'symlink_install': False, 'test_result_base': None}
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'cmake_target' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.561s] Level 5:colcon.colcon_core.verb:set package 'lab_exam2_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.561s] DEBUG:colcon.colcon_core.verb:Building package 'lab_exam2_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/lab_exam2_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/lab_exam2_pkg', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/lab_exam2_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.566s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'cmake_target' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'cmake_clean_cache' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'cmake_clean_first' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'cmake_force_configure' from command line to 'False'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'ament_cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'catkin_cmake_args' from command line to 'None'
+[0.567s] Level 5:colcon.colcon_core.verb:set package 'labex6' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.567s] DEBUG:colcon.colcon_core.verb:Building package 'labex6' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/labex6', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/labex6', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/labex6', 'symlink_install': False, 'test_result_base': None}
+[0.572s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'cmake_target' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.573s] Level 5:colcon.colcon_core.verb:set package 'labs_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.573s] DEBUG:colcon.colcon_core.verb:Building package 'labs_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/labs_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/labs_bringup', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/labs_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'cmake_args' from command line to 'None'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'cmake_target' from command line to 'None'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'labs_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.579s] DEBUG:colcon.colcon_core.verb:Building package 'labs_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/teehee/ros2_ws/build/labs_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/teehee/ros2_ws/install/labs_pkg', 'merge_install': False, 'path': '/home/teehee/ros2_ws/src/labs_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.584s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.591s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.592s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/teehee/ros2_ws/src/lab_interfaces' with build type 'ament_cmake'
+[0.592s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/teehee/ros2_ws/src/lab_interfaces'
+[0.605s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.605s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.605s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.625s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/teehee/ros2_ws/src/tf2_pkg' with build type 'ament_python'
+[0.625s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf2_pkg', 'ament_prefix_path')
+[0.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/hook/ament_prefix_path.ps1'
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/hook/ament_prefix_path.dsv'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/hook/ament_prefix_path.sh'
+[0.641s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.641s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.659s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/teehee/ros2_ws/src/example_pkg' with build type 'ament_python'
+[0.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_pkg', 'ament_prefix_path')
+[0.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/hook/ament_prefix_path.ps1'
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/hook/ament_prefix_path.dsv'
+[0.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/hook/ament_prefix_path.sh'
+[0.677s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.677s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.712s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/teehee/ros2_ws/src/exersice_2_1' with build type 'ament_cmake'
+[0.712s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/teehee/ros2_ws/src/exersice_2_1'
+[0.718s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.719s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/lab_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/lab_interfaces -- -j4 -l4
+[0.868s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/teehee/ros2_ws/src/tf2_pkg'
+[0.874s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.875s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.008s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/teehee/ros2_ws/src/example_pkg'
+[1.014s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.014s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.045s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/exersice_2_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/exersice_2_1 -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/exersice_2_1
+[1.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/exersice_2_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/exersice_2_1 -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/exersice_2_1
+[1.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/exersice_2_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/exersice_2_1 -- -j4 -l4
+[1.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/tf2_pkg': PYTHONPATH=/home/teehee/ros2_ws/build/tf2_pkg/prefix_override:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/teehee/ros2_ws/build/tf2_pkg/build
+[1.256s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/exersice_2_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/exersice_2_1 -- -j4 -l4
+[1.268s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/src/example_pkg': PYTHONPATH=/home/teehee/ros2_ws/build/example_pkg/prefix_override:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/example_pkg build --build-base /home/teehee/ros2_ws/build/example_pkg/build install --record /home/teehee/ros2_ws/build/example_pkg/install.log --single-version-externally-managed
+[1.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/exersice_2_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/exersice_2_1
+[1.351s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(exersice_2_1)
+[1.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/exersice_2_1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/exersice_2_1
+[1.364s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1' for CMake module files
+[1.364s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1' for CMake config files
+[1.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('exersice_2_1', 'cmake_prefix_path')
+[1.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/hook/cmake_prefix_path.ps1'
+[1.370s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/hook/cmake_prefix_path.dsv'
+[1.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/hook/cmake_prefix_path.sh'
+[1.371s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1/bin'
+[1.371s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1/lib/pkgconfig/exersice_2_1.pc'
+[1.371s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1/lib/python3.10/site-packages'
+[1.371s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1/bin'
+[1.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.ps1'
+[1.378s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.dsv'
+[1.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.sh'
+[1.378s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.bash'
+[1.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.zsh'
+[1.379s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/exersice_2_1/share/colcon-core/packages/exersice_2_1)
+[1.443s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(exersice_2_1)
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1' for CMake module files
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1' for CMake config files
+[1.449s] Level 1:colcon.colcon_core.shell:create_environment_hook('exersice_2_1', 'cmake_prefix_path')
+[1.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/hook/cmake_prefix_path.ps1'
+[1.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/hook/cmake_prefix_path.dsv'
+[1.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/hook/cmake_prefix_path.sh'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1/bin'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1/lib/pkgconfig/exersice_2_1.pc'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1/lib/python3.10/site-packages'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/exersice_2_1/bin'
+[1.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.ps1'
+[1.464s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.dsv'
+[1.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.sh'
+[1.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.bash'
+[1.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/exersice_2_1/share/exersice_2_1/package.zsh'
+[1.465s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/exersice_2_1/share/colcon-core/packages/exersice_2_1)
+[1.466s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/teehee/ros2_ws/src/urdf_example' with build type 'ament_cmake'
+[1.466s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/teehee/ros2_ws/src/urdf_example'
+[1.475s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.475s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.496s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/src/example_pkg' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/example_pkg/prefix_override:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/example_pkg build --build-base /home/teehee/ros2_ws/build/example_pkg/build install --record /home/teehee/ros2_ws/build/example_pkg/install.log --single-version-externally-managed
+[1.503s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/example_pkg' for CMake module files
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/example_pkg' for CMake config files
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/example_pkg/lib'
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/example_pkg/bin'
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/example_pkg/lib/pkgconfig/example_pkg.pc'
+[1.504s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages'
+[1.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('example_pkg', 'pythonpath')
+[1.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/hook/pythonpath.ps1'
+[1.511s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/hook/pythonpath.dsv'
+[1.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/hook/pythonpath.sh'
+[1.511s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/example_pkg/bin'
+[1.511s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(example_pkg)
+[1.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/package.ps1'
+[1.518s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/package.dsv'
+[1.518s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/package.sh'
+[1.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/package.bash'
+[1.519s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/example_pkg/share/example_pkg/package.zsh'
+[1.519s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/example_pkg/share/colcon-core/packages/example_pkg)
+[1.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/urdf_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/urdf_example -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/urdf_example
+[1.526s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/tf2_pkg' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/tf2_pkg/prefix_override:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/teehee/ros2_ws/build/tf2_pkg/build
+[1.526s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/src/tf2_pkg': PYTHONPATH=/home/teehee/ros2_ws/build/tf2_pkg/prefix_override:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf2_pkg build --build-base /home/teehee/ros2_ws/build/tf2_pkg/build install --record /home/teehee/ros2_ws/build/tf2_pkg/install.log --single-version-externally-managed
+[1.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/urdf_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/urdf_example -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/urdf_example
+[1.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/urdf_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/urdf_example -- -j4 -l4
+[1.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/src/tf2_pkg' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/tf2_pkg/prefix_override:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tf2_pkg build --build-base /home/teehee/ros2_ws/build/tf2_pkg/build install --record /home/teehee/ros2_ws/build/tf2_pkg/install.log --single-version-externally-managed
+[1.771s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/tf2_pkg' for CMake module files
+[1.771s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/tf2_pkg' for CMake config files
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/tf2_pkg/lib'
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/tf2_pkg/bin'
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/tf2_pkg/lib/pkgconfig/tf2_pkg.pc'
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages'
+[1.772s] Level 1:colcon.colcon_core.shell:create_environment_hook('tf2_pkg', 'pythonpath')
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/hook/pythonpath.ps1'
+[1.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/hook/pythonpath.dsv'
+[1.785s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/hook/pythonpath.sh'
+[1.786s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/tf2_pkg/bin'
+[1.786s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tf2_pkg)
+[1.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/package.ps1'
+[1.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/package.dsv'
+[1.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/package.sh'
+[1.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/package.bash'
+[1.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/tf2_pkg/share/tf2_pkg/package.zsh'
+[1.794s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/tf2_pkg/share/colcon-core/packages/tf2_pkg)
+[1.795s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/teehee/ros2_ws/src/labs_bringup' with build type 'ament_cmake'
+[1.795s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/teehee/ros2_ws/src/labs_bringup'
+[1.810s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.810s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/labs_bringup': AMENT_PREFIX_PATH=/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble PYTHONPATH=/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake /home/teehee/ros2_ws/src/labs_bringup -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/labs_bringup
+[1.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/urdf_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/urdf_example -- -j4 -l4
+[1.969s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/urdf_example': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/urdf_example
+[1.998s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_example)
+[2.005s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example' for CMake module files
+[2.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/urdf_example' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/urdf_example
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example' for CMake config files
+[2.006s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_example', 'cmake_prefix_path')
+[2.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/hook/cmake_prefix_path.ps1'
+[2.018s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/hook/cmake_prefix_path.dsv'
+[2.018s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/hook/cmake_prefix_path.sh'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example/bin'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example/lib/pkgconfig/urdf_example.pc'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example/lib/python3.10/site-packages'
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example/bin'
+[2.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.ps1'
+[2.029s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.dsv'
+[2.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.sh'
+[2.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.bash'
+[2.030s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.zsh'
+[2.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/urdf_example/share/colcon-core/packages/urdf_example)
+[2.083s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urdf_example)
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example' for CMake module files
+[2.095s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example' for CMake config files
+[2.095s] Level 1:colcon.colcon_core.shell:create_environment_hook('urdf_example', 'cmake_prefix_path')
+[2.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/hook/cmake_prefix_path.ps1'
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/hook/cmake_prefix_path.dsv'
+[2.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/hook/cmake_prefix_path.sh'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example/bin'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example/lib/pkgconfig/urdf_example.pc'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example/lib/python3.10/site-packages'
+[2.102s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/urdf_example/bin'
+[2.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.ps1'
+[2.109s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.dsv'
+[2.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.sh'
+[2.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.bash'
+[2.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/urdf_example/share/urdf_example/package.zsh'
+[2.111s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/urdf_example/share/colcon-core/packages/urdf_example)
+[2.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/labs_bringup' returned '0': AMENT_PREFIX_PATH=/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble PYTHONPATH=/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake /home/teehee/ros2_ws/src/labs_bringup -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/install/labs_bringup
+[2.114s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/labs_bringup': AMENT_PREFIX_PATH=/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble PYTHONPATH=/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/teehee/ros2_ws/build/labs_bringup -- -j4 -l4
+[2.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/labs_bringup' returned '0': AMENT_PREFIX_PATH=/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble PYTHONPATH=/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/teehee/ros2_ws/build/labs_bringup -- -j4 -l4
+[2.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/labs_bringup': AMENT_PREFIX_PATH=/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble PYTHONPATH=/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/teehee/ros2_ws/build/labs_bringup
+[2.356s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(labs_bringup)
+[2.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/labs_bringup' returned '0': AMENT_PREFIX_PATH=/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble PYTHONPATH=/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages /usr/bin/cmake --install /home/teehee/ros2_ws/build/labs_bringup
+[2.364s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup' for CMake module files
+[2.364s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup' for CMake config files
+[2.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('labs_bringup', 'cmake_prefix_path')
+[2.372s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/hook/cmake_prefix_path.ps1'
+[2.372s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/hook/cmake_prefix_path.dsv'
+[2.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/hook/cmake_prefix_path.sh'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup/bin'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup/lib/pkgconfig/labs_bringup.pc'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup/lib/python3.10/site-packages'
+[2.374s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup/bin'
+[2.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.ps1'
+[2.381s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.dsv'
+[2.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.sh'
+[2.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.bash'
+[2.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.zsh'
+[2.383s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/labs_bringup/share/colcon-core/packages/labs_bringup)
+[2.502s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(labs_bringup)
+[2.508s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup' for CMake module files
+[2.525s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup' for CMake config files
+[2.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('labs_bringup', 'cmake_prefix_path')
+[2.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/hook/cmake_prefix_path.ps1'
+[2.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/hook/cmake_prefix_path.dsv'
+[2.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/hook/cmake_prefix_path.sh'
+[2.534s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup/bin'
+[2.534s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup/lib/pkgconfig/labs_bringup.pc'
+[2.534s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup/lib/python3.10/site-packages'
+[2.534s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_bringup/bin'
+[2.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.ps1'
+[2.542s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.dsv'
+[2.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.sh'
+[2.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.bash'
+[2.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_bringup/share/labs_bringup/package.zsh'
+[2.544s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/labs_bringup/share/colcon-core/packages/labs_bringup)
+[3.607s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/lab_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/lab_interfaces -- -j4 -l4
+[3.754s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/build/lab_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/lab_interfaces
+[3.823s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab_interfaces)
+[3.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/build/lab_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/lab_interfaces
+[3.830s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces' for CMake module files
+[3.831s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces' for CMake config files
+[3.831s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab_interfaces', 'cmake_prefix_path')
+[3.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/cmake_prefix_path.ps1'
+[3.837s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/cmake_prefix_path.dsv'
+[3.838s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/cmake_prefix_path.sh'
+[3.838s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/lib'
+[3.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab_interfaces', 'ld_library_path_lib')
+[3.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/ld_library_path_lib.ps1'
+[3.844s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/ld_library_path_lib.dsv'
+[3.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/ld_library_path_lib.sh'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/bin'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/lib/pkgconfig/lab_interfaces.pc'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/lib/python3.10/site-packages'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/bin'
+[3.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.ps1'
+[3.851s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.dsv'
+[3.851s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.sh'
+[3.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.bash'
+[3.852s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.zsh'
+[3.852s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/lab_interfaces/share/colcon-core/packages/lab_interfaces)
+[4.001s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab_interfaces)
+[4.008s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces' for CMake module files
+[4.008s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces' for CMake config files
+[4.009s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab_interfaces', 'cmake_prefix_path')
+[4.014s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/cmake_prefix_path.ps1'
+[4.014s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/cmake_prefix_path.dsv'
+[4.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/cmake_prefix_path.sh'
+[4.015s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/lib'
+[4.015s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab_interfaces', 'ld_library_path_lib')
+[4.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/ld_library_path_lib.ps1'
+[4.021s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/ld_library_path_lib.dsv'
+[4.022s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/hook/ld_library_path_lib.sh'
+[4.022s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/bin'
+[4.022s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/lib/pkgconfig/lab_interfaces.pc'
+[4.022s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/lib/python3.10/site-packages'
+[4.022s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_interfaces/bin'
+[4.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.ps1'
+[4.028s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.dsv'
+[4.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.sh'
+[4.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.bash'
+[4.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_interfaces/share/lab_interfaces/package.zsh'
+[4.030s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/lab_interfaces/share/colcon-core/packages/lab_interfaces)
+[4.030s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/teehee/ros2_ws/src/lab_exam2_pkg' with build type 'ament_python'
+[4.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab_exam2_pkg', 'ament_prefix_path')
+[4.040s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/hook/ament_prefix_path.ps1'
+[4.041s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/hook/ament_prefix_path.dsv'
+[4.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/hook/ament_prefix_path.sh'
+[4.047s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.047s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.069s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/teehee/ros2_ws/src/labex6' with build type 'ament_python'
+[4.069s] Level 1:colcon.colcon_core.shell:create_environment_hook('labex6', 'ament_prefix_path')
+[4.075s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labex6/share/labex6/hook/ament_prefix_path.ps1'
+[4.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/labex6/share/labex6/hook/ament_prefix_path.dsv'
+[4.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labex6/share/labex6/hook/ament_prefix_path.sh'
+[4.085s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.085s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.106s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/teehee/ros2_ws/src/labs_pkg' with build type 'ament_python'
+[4.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('labs_pkg', 'ament_prefix_path')
+[4.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/hook/ament_prefix_path.ps1'
+[4.113s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/hook/ament_prefix_path.dsv'
+[4.114s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/hook/ament_prefix_path.sh'
+[4.120s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.120s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.266s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/teehee/ros2_ws/src/lab_exam2_pkg'
+[4.271s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.271s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.409s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/teehee/ros2_ws/src/labex6'
+[4.415s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.416s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.556s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/teehee/ros2_ws/src/labs_pkg'
+[4.563s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.563s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/src/lab_exam2_pkg': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/lab_exam2_pkg/prefix_override:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lab_exam2_pkg build --build-base /home/teehee/ros2_ws/build/lab_exam2_pkg/build install --record /home/teehee/ros2_ws/build/lab_exam2_pkg/install.log --single-version-externally-managed
+[4.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/src/labex6': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/labex6/prefix_override:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/labex6 build --build-base /home/teehee/ros2_ws/build/labex6/build install --record /home/teehee/ros2_ws/build/labex6/install.log --single-version-externally-managed
+[4.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/teehee/ros2_ws/src/labs_pkg': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/labs_pkg/prefix_override:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/labs_pkg build --build-base /home/teehee/ros2_ws/build/labs_pkg/build install --record /home/teehee/ros2_ws/build/labs_pkg/install.log --single-version-externally-managed
+[4.887s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/src/lab_exam2_pkg' returned '0': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/lab_exam2_pkg/prefix_override:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/lab_exam2_pkg build --build-base /home/teehee/ros2_ws/build/lab_exam2_pkg/build install --record /home/teehee/ros2_ws/build/lab_exam2_pkg/install.log --single-version-externally-managed
+[4.912s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_exam2_pkg' for CMake module files
+[4.912s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_exam2_pkg' for CMake config files
+[4.913s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_exam2_pkg/lib'
+[4.913s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_exam2_pkg/bin'
+[4.913s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/pkgconfig/lab_exam2_pkg.pc'
+[4.913s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages'
+[4.913s] Level 1:colcon.colcon_core.shell:create_environment_hook('lab_exam2_pkg', 'pythonpath')
+[4.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/hook/pythonpath.ps1'
+[4.919s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/hook/pythonpath.dsv'
+[4.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/hook/pythonpath.sh'
+[4.920s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/lab_exam2_pkg/bin'
+[4.920s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(lab_exam2_pkg)
+[4.926s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/package.ps1'
+[4.926s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/package.dsv'
+[4.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/package.sh'
+[4.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/package.bash'
+[4.927s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/lab_exam2_pkg/share/lab_exam2_pkg/package.zsh'
+[4.928s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/lab_exam2_pkg/share/colcon-core/packages/lab_exam2_pkg)
+[4.933s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/src/labex6' returned '0': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/labex6/prefix_override:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/labex6 build --build-base /home/teehee/ros2_ws/build/labex6/build install --record /home/teehee/ros2_ws/build/labex6/install.log --single-version-externally-managed
+[4.938s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labex6' for CMake module files
+[4.938s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labex6' for CMake config files
+[4.938s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labex6/lib'
+[4.938s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labex6/bin'
+[4.938s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labex6/lib/pkgconfig/labex6.pc'
+[4.938s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages'
+[4.938s] Level 1:colcon.colcon_core.shell:create_environment_hook('labex6', 'pythonpath')
+[4.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labex6/share/labex6/hook/pythonpath.ps1'
+[4.945s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/labex6/share/labex6/hook/pythonpath.dsv'
+[4.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labex6/share/labex6/hook/pythonpath.sh'
+[4.946s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labex6/bin'
+[4.946s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(labex6)
+[4.952s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labex6/share/labex6/package.ps1'
+[4.952s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/labex6/share/labex6/package.dsv'
+[4.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labex6/share/labex6/package.sh'
+[4.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labex6/share/labex6/package.bash'
+[4.953s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labex6/share/labex6/package.zsh'
+[4.954s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/labex6/share/colcon-core/packages/labex6)
+[4.957s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/teehee/ros2_ws/src/labs_pkg' returned '0': CMAKE_PREFIX_PATH=/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup PYTHONPATH=/home/teehee/ros2_ws/build/labs_pkg/prefix_override:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/labs_pkg build --build-base /home/teehee/ros2_ws/build/labs_pkg/build install --record /home/teehee/ros2_ws/build/labs_pkg/install.log --single-version-externally-managed
+[4.962s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_pkg' for CMake module files
+[4.963s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_pkg' for CMake config files
+[4.963s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_pkg/lib'
+[4.963s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_pkg/bin'
+[4.963s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_pkg/lib/pkgconfig/labs_pkg.pc'
+[4.963s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages'
+[4.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('labs_pkg', 'pythonpath')
+[4.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/hook/pythonpath.ps1'
+[4.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/hook/pythonpath.dsv'
+[4.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/hook/pythonpath.sh'
+[4.971s] Level 1:colcon.colcon_core.environment:checking '/home/teehee/ros2_ws/install/labs_pkg/bin'
+[4.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(labs_pkg)
+[4.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/package.ps1'
+[4.977s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/package.dsv'
+[4.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/package.sh'
+[4.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/package.bash'
+[4.978s] INFO:colcon.colcon_core.shell:Creating package script '/home/teehee/ros2_ws/install/labs_pkg/share/labs_pkg/package.zsh'
+[4.979s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/teehee/ros2_ws/install/labs_pkg/share/colcon-core/packages/labs_pkg)
+[4.980s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.980s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.980s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.980s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.991s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.991s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.991s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.999s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.005s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/teehee/ros2_ws/install/local_setup.ps1'
+[5.006s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/teehee/ros2_ws/install/_local_setup_util_ps1.py'
+[5.007s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/teehee/ros2_ws/install/setup.ps1'
+[5.014s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/teehee/ros2_ws/install/local_setup.sh'
+[5.015s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/teehee/ros2_ws/install/_local_setup_util_sh.py'
+[5.015s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/teehee/ros2_ws/install/setup.sh'
+[5.021s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/teehee/ros2_ws/install/local_setup.bash'
+[5.022s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/teehee/ros2_ws/install/setup.bash'
+[5.028s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/teehee/ros2_ws/install/local_setup.zsh'
+[5.029s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/teehee/ros2_ws/install/setup.zsh'

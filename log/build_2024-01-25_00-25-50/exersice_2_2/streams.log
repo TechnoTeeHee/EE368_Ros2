@@ -1,0 +1,25 @@
+[0.046s] Invoking command in '/home/teehee/ros2_ws/build/exersice_2_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/exersice_2_2 -- -j4 -l4
+[0.072s] Invoked command in '/home/teehee/ros2_ws/build/exersice_2_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/exersice_2_2 -- -j4 -l4
+[0.103s] Invoking command in '/home/teehee/ros2_ws/build/exersice_2_2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/exersice_2_2
+[0.108s] -- Install configuration: ""
+[0.108s] -- Execute custom install script
+[0.108s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/ament_index/resource_index/package_run_dependencies/exersice_2_2
+[0.108s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/ament_index/resource_index/parent_prefix_path/exersice_2_2
+[0.108s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/environment/ament_prefix_path.sh
+[0.108s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/environment/ament_prefix_path.dsv
+[0.109s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/environment/path.sh
+[0.109s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/environment/path.dsv
+[0.109s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/local_setup.bash
+[0.109s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/local_setup.sh
+[0.115s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/local_setup.zsh
+[0.115s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/local_setup.dsv
+[0.116s] -- Symlinking: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/package.dsv
+[0.122s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/ament_index/resource_index/packages/exersice_2_2
+[0.122s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/cmake/exersice_2_2Config.cmake
+[0.122s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/cmake/exersice_2_2Config-version.cmake
+[0.122s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/package.xml
+[0.123s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/description/colors.xacro
+[0.123s] -- Symlinking: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/description/exercise_2_2.urdf.xacro
+[0.136s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/description/inertial.xacro
+[0.136s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/exersice_2_2/share/exersice_2_2/launch/rsp.launch.py
+[0.138s] Invoked command in '/home/teehee/ros2_ws/build/exersice_2_2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/exersice_2_2

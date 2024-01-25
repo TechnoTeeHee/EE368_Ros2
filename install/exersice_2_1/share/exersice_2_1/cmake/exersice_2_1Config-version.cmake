@@ -1,0 +1,1 @@
+/home/teehee/ros2_ws/build/exersice_2_1/ament_cmake_core/exersice_2_1Config-version.cmake
