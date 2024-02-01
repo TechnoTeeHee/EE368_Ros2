@@ -24,6 +24,14 @@
     <mu1 value="0.0"/>
     <mu2 value="0.0"/>
   </gazebo>
+  <gazebo>
+    <plugin filename="libignition-gazebo-joint-state-publisher-system" name="ignition::gazebo::systems::JointStatePublisher">
+        </plugin>
+    <plugin filename="libignition-gazebo-odometry-publisher-system" name="ignition::gazebo::systems::OdometryPublisher">
+      <odom_frame>world</odom_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+    </plugin>
+  </gazebo>
   <material name="white">
     <color rgba="1 1 1 1"/>
   </material>
@@ -138,7 +146,7 @@
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="0.24 0 0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.1"/>
       <inertia ixx="0.00010000000000000005" ixy="0.0" ixz="0.0" iyy="0.00010000000000000005" iyz="0.0" izz="0.00010000000000000005"/>
     </inertial>
