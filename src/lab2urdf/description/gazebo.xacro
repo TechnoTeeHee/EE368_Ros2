@@ -24,6 +24,8 @@
             filename="libignition-gazebo-joint-state-publisher-system"
             name="ignition::gazebo::systems::JointStatePublisher">
         </plugin>
+    </gazebo>
+    <gazebo>
         <plugin
             filename="libignition-gazebo-odometry-publisher-system"
             name="ignition::gazebo::systems::OdometryPublisher">

@@ -1,0 +1,266 @@
+<sdf version='1.9'>
+  <model name='robot'>
+    <link name='base'>
+      <inertial>
+        <pose>-1 -1 2.35 0 0 0</pose>
+        <mass>10</mass>
+        <inertia>
+          <ixx>719.35833333333323</ixx>
+          <ixy>-72.000000000000043</ixy>
+          <ixz>-16</ixz>
+          <iyy>519.35833333333335</iyy>
+          <iyz>-16</iyz>
+          <izz>1218</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_fixed_joint_lump__NE_tower_link_collision'>
+        <pose>5 5 2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>1</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__NW_tower_link_collision_1'>
+        <pose>-5 5 2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>1</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__SE_tower_link_collision_2'>
+        <pose>5 -5 2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>1</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__SW_tower_link_collision_3'>
+        <pose>-5 -5 2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>1</radius>
+          </cylinder>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__door_link_collision_4'>
+        <pose>-5 0 1.75 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>2 0.1 2</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__east_wall_link_collision_5'>
+        <pose>5 0 1 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>10 0.1 2</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__north_wall_link_collision_6'>
+        <pose>0 5 1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10 0.1 2</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__south_wall_link_collision_7'>
+        <pose>0 -5 1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10 0.1 2</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__west_wall1_link_collision_8'>
+        <pose>-5 3 1 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>4 0.1 2</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_fixed_joint_lump__west_wall2_link_collision_9'>
+        <pose>-5 -3 1 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>4 0.1 2</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='base_fixed_joint_lump__NE_tower_link_visual'>
+        <pose>5 5 2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>1</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>0.25 0.25 1 1</diffuse>
+          <ambient>0.25 0.25 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__NW_tower_link_visual_1'>
+        <pose>-5 5 2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>1</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__SE_tower_link_visual_2'>
+        <pose>5 -5 2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>1</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__SW_tower_link_visual_3'>
+        <pose>-5 -5 2 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>4</length>
+            <radius>1</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__door_link_visual_4'>
+        <pose>-5 0 1.75 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>2 0.1 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__east_wall_link_visual_5'>
+        <pose>5 0 1 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>10 0.1 2</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 1 1</diffuse>
+          <ambient>1 0 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__north_wall_link_visual_6'>
+        <pose>0 5 1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10 0.1 2</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.25 0.25 1 1</diffuse>
+          <ambient>0.25 0.25 1 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__south_wall_link_visual_7'>
+        <pose>0 -5 1 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>10 0.1 2</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__west_wall1_link_visual_8'>
+        <pose>-5 3 1 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>4 0.1 2</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_fixed_joint_lump__west_wall2_link_visual_9'>
+        <pose>-5 -3 1 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>4 0.1 2</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <frame name='NE_tower' attached_to='base'>
+      <pose>5 5 2 0 -0 0</pose>
+    </frame>
+    <frame name='NE_tower_link' attached_to='NE_tower'/>
+    <frame name='NW_tower' attached_to='base'>
+      <pose>-5 5 2 0 -0 0</pose>
+    </frame>
+    <frame name='NW_tower_link' attached_to='NW_tower'/>
+    <frame name='SE_tower' attached_to='base'>
+      <pose>5 -5 2 0 -0 0</pose>
+    </frame>
+    <frame name='SE_tower_link' attached_to='SE_tower'/>
+    <frame name='SW_tower' attached_to='base'>
+      <pose>-5 -5 2 0 -0 0</pose>
+    </frame>
+    <frame name='SW_tower_link' attached_to='SW_tower'/>
+    <frame name='door' attached_to='base'>
+      <pose>-5 0 1.75 0 -0 1.5708</pose>
+    </frame>
+    <frame name='door_link' attached_to='door'/>
+    <frame name='east_wall' attached_to='base'>
+      <pose>5 0 1 0 -0 1.5708</pose>
+    </frame>
+    <frame name='east_wall_link' attached_to='east_wall'/>
+    <frame name='north_wall' attached_to='base'>
+      <pose>0 5 1 0 -0 0</pose>
+    </frame>
+    <frame name='north_wall_link' attached_to='north_wall'/>
+    <frame name='south_wall' attached_to='base'>
+      <pose>0 -5 1 0 -0 0</pose>
+    </frame>
+    <frame name='south_wall_link' attached_to='south_wall'/>
+    <frame name='west_wall1' attached_to='base'>
+      <pose>-5 3 1 0 -0 1.5708</pose>
+    </frame>
+    <frame name='west_wall1_link' attached_to='west_wall1'/>
+    <frame name='west_wall2' attached_to='base'>
+      <pose>-5 -3 1 0 -0 1.5708</pose>
+    </frame>
+    <frame name='west_wall2_link' attached_to='west_wall2'/>
+  </model>
+</sdf>

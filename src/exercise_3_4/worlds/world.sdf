@@ -2,12 +2,12 @@
 <sdf version="1.9">
     <world name="my_world">
         <include>
-            <name>base_link</name>
-            <uri>file://src/excersice_3_2/description/robot.sdf</uri>
+            <name>castle_link</name>
+            <uri>file://src/exercise_3_4/description/castle.sdf</uri>
         </include>
         <include>
-            <name>base_link</name>
-            <uri>file://src/excersice_3_2/description/castle.sdf</uri>
+            <name>robot_link</name>
+            <uri>file://src/exercise_3_4/description/robot.sdf</uri>
         </include>          
         <physics name="1ms" type="ignored">
             <max_step_size>0.001</max_step_size>
