@@ -1,8 +1,0 @@
-{
-  "package_name": "lab_interfaces",
-  "non_idl_tuples": [
-    "/home/teehee/ros2_ws/src/lab_interfaces:msg/Turtle.msg",
-    "/home/teehee/ros2_ws/src/lab_interfaces:msg/TurtleArray.msg",
-    "/home/teehee/ros2_ws/src/lab_interfaces:srv/CaptureTurtle.srv"
-  ]
-}
