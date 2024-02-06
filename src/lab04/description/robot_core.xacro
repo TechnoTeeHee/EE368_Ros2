@@ -37,7 +37,7 @@
             <geometry>
                 <box size="${chassis_w} ${chassis_l} ${chassis_h}"/>
             </geometry>
-            <material name="white"/>
+            <material name="green"/>
         </visual>
         <collision>
             <origin xyz="${chassis_x} ${chassis_y} ${chassis_z}" rpy="${chassis_roll} ${chassis_pitch} ${chassis_yaw}"/>

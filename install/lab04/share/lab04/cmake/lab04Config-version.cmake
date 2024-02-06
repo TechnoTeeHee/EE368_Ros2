@@ -1,0 +1,1 @@
+/home/teehee/ros2_ws/build/lab04/ament_cmake_core/lab04Config-version.cmake
