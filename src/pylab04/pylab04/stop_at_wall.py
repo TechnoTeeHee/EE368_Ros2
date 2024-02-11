@@ -5,9 +5,9 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from sensor_msgs.msg import LaserScan
 
-class MoveNode(Node):
+class StopatWallNode(Node):
     def __init__(self):
-        super().__init__("move")
+        super().__init__("stop_at_wall")
         self.scan_subscriber_ = self.create_subscription(LaserScan, "scan", self.get_scan, 10)
         self.cmd_vel_publisher_ = self.create_publisher(Twist, "cmd_vel", 10)
         self.move_timer_ = self.create_timer(0.1, self.move)
@@ -22,9 +22,9 @@ class MoveNode(Node):
         vel_msg = Twist()
         vel_msg.angular.z = 0.0
         if (self.scan_ > 1.0):
-            vel_msg.linear.x = 0.3
+            vel_msg.linear.x = 1.0
         elif (self.scan_ <= 1.0 and self.scan_ > 0.5):
-            vel_msg.linear.x = (self.scan_-0.5)/3
+            vel_msg.linear.x = 0.1
         elif (self.scan_ <= 0.5):
             vel_msg.linear.x = 0.0
         self.cmd_vel_publisher_.publish(vel_msg)
@@ -32,7 +32,7 @@ class MoveNode(Node):
         
 def main(args=None):
     rclpy.init(args=args)
-    node = MoveNode()
+    node = StopatWallNode()
     rclpy.spin(node)
     rclpy.shutdown()
     

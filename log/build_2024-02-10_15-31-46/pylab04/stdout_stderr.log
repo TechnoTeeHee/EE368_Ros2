@@ -1,0 +1,26 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating pylab04.egg-info
+writing pylab04.egg-info/PKG-INFO
+writing dependency_links to pylab04.egg-info/dependency_links.txt
+writing entry points to pylab04.egg-info/entry_points.txt
+writing requirements to pylab04.egg-info/requires.txt
+writing top-level names to pylab04.egg-info/top_level.txt
+writing manifest file 'pylab04.egg-info/SOURCES.txt'
+reading manifest file 'pylab04.egg-info/SOURCES.txt'
+writing manifest file 'pylab04.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages/pylab04.egg-link (link to .)
+Installing stop_at_wall script to /home/teehee/ros2_ws/install/pylab04/lib/pylab04
+
+Installed /home/teehee/ros2_ws/build/pylab04
+running install_data
+creating /home/teehee/ros2_ws/install/pylab04/share/ament_index
+creating /home/teehee/ros2_ws/install/pylab04/share/ament_index/resource_index
+creating /home/teehee/ros2_ws/install/pylab04/share/ament_index/resource_index/packages
+copying resource/pylab04 -> /home/teehee/ros2_ws/install/pylab04/share/ament_index/resource_index/packages
+copying package.xml -> /home/teehee/ros2_ws/install/pylab04/share/pylab04
