@@ -4,19 +4,19 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
+from sensor_msgs.msg import Image, LaserScan
 from geometry_msgs.msg import Twist
 
 class MoveTowardsRedCube(Node):
     def __init__(self):
         super().__init__('move_towards_red_cube')
         self.br = CvBridge()
-        self.image_subscription = self.create_subscription(Image, '/your_camera_topic', self.process_camera, 10)
-        self.image_subscription
-
-        self.cmd_vel_publisher = self.create_publisher(Twist, '/your_robot_cmd_vel_topic', 10)
-
         self.cX = -1
         self.cY = -1
+        self.isOnCamera = False
+        self.publisher_ = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.subscription_camera = self.create_subscription(Image, '/camera/image_raw', self.process_camera, 10)
+        self.subscription_lidar = self.create_subscription(LaserScan, '/scan', self.lidar_callback, 10)
 
     def process_camera(self, msg):
         # “msg” is ROS 2 Image message
@@ -50,24 +50,26 @@ class MoveTowardsRedCube(Node):
         if M["m00"] != 0:
             self.cX = int(M["m10"] / M["m00"])
             self.cY = int(M["m01"] / M["m00"])
+            self.isOnCamera = abs(self.cX - 320) < 64
         else:
             self.cX = -1
             self.cY = -1
         self.get_logger().info(f"cX={self.cX} cY={self.cY}")
-        self.move_towards_red_cube()
 
 
-    def move_towards_red_cube(self):
-        linear_speed = 0.5
-        angular_speed = 0.1
-        twist_msg = Twist()
-        if self.cX != -1:
-            if self.cX > 320:  # Assuming the image width is 640
-                twist_msg.linear.x = linear_speed
-            elif self.cX < 320:
-                twist_msg.angular.z = angular_speed
-
-        self.cmd_vel_publisher.publish(twist_msg)
+    def lidar_callback(self, msg):
+        twist = Twist()
+        if any(distance < 0.5 for distance in msg.ranges):
+            twist.angular.z = 0.0
+        elif self.isOnCamera:
+            if self.isOnCamera:
+                twist.linear.x = 0.5
+                error = self.cX - 320  
+                twist.angular.z = -error * 0.01
+        else:
+            twist = Twist()
+            twist.angular.z = -0.5
+        self.publisher_.publish(twist)
 
 
 def main(args=None):
