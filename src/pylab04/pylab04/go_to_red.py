@@ -7,9 +7,9 @@ import numpy as np
 from sensor_msgs.msg import Image, LaserScan
 from geometry_msgs.msg import Twist
 
-class MoveTowardsRedCube(Node):
+class GoToRedNode(Node):
     def __init__(self):
-        super().__init__('move_towards_red_cube')
+        super().__init__('go_to_red')
         self.br = CvBridge()
         self.cX = -1
         self.cY = -1
@@ -73,7 +73,7 @@ class MoveTowardsRedCube(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    move_towards_red_cube = MoveTowardsRedCube()
+    move_towards_red_cube = GoToRedNode()
     rclpy.spin(move_towards_red_cube)
     move_towards_red_cube.destroy_node()
     rclpy.shutdown()

@@ -20,11 +20,11 @@ class AroundWallNode(Node):
         
     def get_scan(self, msg):
         self.scan = msg.ranges
-        self.get_logger().info('forward: ' + str(self.scan[180]))
-        self.get_logger().info('right: ' +str(self.scan[90]))
-        self.get_logger().info('backleft: ' +str(self.scan[45]))
-        self.get_logger().info('Counter: ' + str(self.timecounter))
-        self.get_logger().info('time: ' + str(self.timeadder))
+        #self.get_logger().info('forward: ' + str(self.scan[180]))
+        #self.get_logger().info('right: ' +str(self.scan[90]))
+        #self.get_logger().info('backleft: ' +str(self.scan[45]))
+        #self.get_logger().info('Counter: ' + str(self.timecounter))
+        #self.get_logger().info('time: ' + str(self.timeadder))
         if self.scan != None and self.counter == 0:
             self.get_to_wall()
         if self.scan != None and self.counter == 1:
