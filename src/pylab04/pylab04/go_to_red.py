@@ -62,7 +62,6 @@ class MoveTowardsRedCube(Node):
         if any(distance < 0.5 for distance in msg.ranges):
             twist.angular.z = 0.0
         elif self.isOnCamera:
-            if self.isOnCamera:
                 twist.linear.x = 0.5
                 error = self.cX - 320  
                 twist.angular.z = -error * 0.01
