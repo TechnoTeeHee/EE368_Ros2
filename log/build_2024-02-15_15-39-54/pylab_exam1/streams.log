@@ -1,0 +1,30 @@
+[0.792s] Invoking command in '/home/teehee/ros2_ws/build/pylab_exam1': PYTHONPATH=/home/teehee/ros2_ws/build/pylab_exam1/prefix_override:/home/teehee/ros2_ws/install/pylab_exam1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/pylab_exam1/build --no-deps install_data
+[1.023s] running develop
+[1.027s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.027s]   warnings.warn(
+[1.029s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.029s]   warnings.warn(
+[1.170s] running egg_info
+[1.170s] creating pylab_exam1.egg-info
+[1.170s] writing pylab_exam1.egg-info/PKG-INFO
+[1.170s] writing dependency_links to pylab_exam1.egg-info/dependency_links.txt
+[1.171s] writing entry points to pylab_exam1.egg-info/entry_points.txt
+[1.171s] writing requirements to pylab_exam1.egg-info/requires.txt
+[1.171s] writing top-level names to pylab_exam1.egg-info/top_level.txt
+[1.171s] writing manifest file 'pylab_exam1.egg-info/SOURCES.txt'
+[1.173s] reading manifest file 'pylab_exam1.egg-info/SOURCES.txt'
+[1.173s] writing manifest file 'pylab_exam1.egg-info/SOURCES.txt'
+[1.175s] running build_ext
+[1.175s] Creating /home/teehee/ros2_ws/install/pylab_exam1/lib/python3.10/site-packages/pylab-exam1.egg-link (link to .)
+[1.176s] Installing around_wall script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+[1.176s] Installing go_to_red script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+[1.177s] Installing stop_at_wall script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+[1.177s] 
+[1.177s] Installed /home/teehee/ros2_ws/build/pylab_exam1
+[1.177s] running install_data
+[1.177s] creating /home/teehee/ros2_ws/install/pylab_exam1/share/ament_index
+[1.177s] creating /home/teehee/ros2_ws/install/pylab_exam1/share/ament_index/resource_index
+[1.177s] creating /home/teehee/ros2_ws/install/pylab_exam1/share/ament_index/resource_index/packages
+[1.177s] copying resource/pylab_exam1 -> /home/teehee/ros2_ws/install/pylab_exam1/share/ament_index/resource_index/packages
+[1.177s] copying package.xml -> /home/teehee/ros2_ws/install/pylab_exam1/share/pylab_exam1
+[1.206s] Invoked command in '/home/teehee/ros2_ws/build/pylab_exam1' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/pylab_exam1/prefix_override:/home/teehee/ros2_ws/install/pylab_exam1/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/pylab_exam1/build --no-deps install_data

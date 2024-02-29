@@ -1,0 +1,330 @@
+<sdf version='1.9'>
+  <model name='castle'>
+    <link name='base_link'>
+      <inertial>
+        <pose>2.807692307692308 -3.076923076923077 0.25 0 0 0</pose>
+        <mass>6.5</mass>
+        <inertia>
+          <ixx>80.097684294871783</ixx>
+          <ixy>-0.90384615384616041</ixy>
+          <ixz>0</ixz>
+          <iyy>51.228990384615351</iyy>
+          <iyz>0</iyz>
+          <izz>131.0558413461539</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_fixed_joint_lump__wall_10_collision'>
+        <pose>3.5 -7 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_11_collision_1'>
+        <pose>3.5 -9 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>9 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_12_collision_2'>
+        <pose>8 -3 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>12 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_13_collision_3'>
+        <pose>3.5 3 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>9 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_1_collision_4'>
+        <pose>-1 0 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>2 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_2_collision_5'>
+        <pose>2.5 1 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>7 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_3_collision_6'>
+        <pose>1.5 -1 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_4_collision_7'>
+        <pose>6 -2 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>6 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_5_collision_8'>
+        <pose>4 -2 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>2 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_6_collision_9'>
+        <pose>1.5 -3 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_7_collision_10'>
+        <pose>3.5 -5 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_8_collision_11'>
+        <pose>-1 -6 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>6 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__wall_9_collision_12'>
+        <pose>1 -6 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>2 0.05 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='base_link_fixed_joint_lump__wall_10_visual'>
+        <pose>3.5 -7 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_11_visual_1'>
+        <pose>3.5 -9 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>9 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_12_visual_2'>
+        <pose>8 -3 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>12 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_13_visual_3'>
+        <pose>3.5 3 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>9 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_1_visual_4'>
+        <pose>-1 0 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>2 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_2_visual_5'>
+        <pose>2.5 1 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>7 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_3_visual_6'>
+        <pose>1.5 -1 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_4_visual_7'>
+        <pose>6 -2 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>6 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_5_visual_8'>
+        <pose>4 -2 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>2 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_6_visual_9'>
+        <pose>1.5 -3 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_7_visual_10'>
+        <pose>3.5 -5 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>5 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_8_visual_11'>
+        <pose>-1 -6 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>6 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__wall_9_visual_12'>
+        <pose>1 -6 0.25 0 0 1.570796326794896</pose>
+        <geometry>
+          <box>
+            <size>2 0.05 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>1 0 0 1</diffuse>
+          <ambient>1 0 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <frame name='wall_10_joint' attached_to='base_link'>
+      <pose>3.5 -7 0.25 0 -0 0</pose>
+    </frame>
+    <frame name='wall_10' attached_to='wall_10_joint'/>
+    <frame name='wall_11_joint' attached_to='base_link'>
+      <pose>3.5 -9 0.25 0 -0 0</pose>
+    </frame>
+    <frame name='wall_11' attached_to='wall_11_joint'/>
+    <frame name='wall_12_joint' attached_to='base_link'>
+      <pose>8 -3 0.25 0 -0 1.5708</pose>
+    </frame>
+    <frame name='wall_12' attached_to='wall_12_joint'/>
+    <frame name='wall_13_joint' attached_to='base_link'>
+      <pose>3.5 3 0.25 0 -0 0</pose>
+    </frame>
+    <frame name='wall_13' attached_to='wall_13_joint'/>
+    <frame name='wall_1_joint' attached_to='base_link'>
+      <pose>-1 0 0.25 0 -0 1.5708</pose>
+    </frame>
+    <frame name='wall_1' attached_to='wall_1_joint'/>
+    <frame name='wall_2_joint' attached_to='base_link'>
+      <pose>2.5 1 0.25 0 -0 0</pose>
+    </frame>
+    <frame name='wall_2' attached_to='wall_2_joint'/>
+    <frame name='wall_3_joint' attached_to='base_link'>
+      <pose>1.5 -1 0.25 0 -0 0</pose>
+    </frame>
+    <frame name='wall_3' attached_to='wall_3_joint'/>
+    <frame name='wall_4_joint' attached_to='base_link'>
+      <pose>6 -2 0.25 0 -0 1.5708</pose>
+    </frame>
+    <frame name='wall_4' attached_to='wall_4_joint'/>
+    <frame name='wall_5_joint' attached_to='base_link'>
+      <pose>4 -2 0.25 0 -0 1.5708</pose>
+    </frame>
+    <frame name='wall_5' attached_to='wall_5_joint'/>
+    <frame name='wall_6_joint' attached_to='base_link'>
+      <pose>1.5 -3 0.25 0 -0 0</pose>
+    </frame>
+    <frame name='wall_6' attached_to='wall_6_joint'/>
+    <frame name='wall_7_joint' attached_to='base_link'>
+      <pose>3.5 -5 0.25 0 -0 0</pose>
+    </frame>
+    <frame name='wall_7' attached_to='wall_7_joint'/>
+    <frame name='wall_8_joint' attached_to='base_link'>
+      <pose>-1 -6 0.25 0 -0 1.5708</pose>
+    </frame>
+    <frame name='wall_8' attached_to='wall_8_joint'/>
+    <frame name='wall_9_joint' attached_to='base_link'>
+      <pose>1 -6 0.25 0 -0 1.5708</pose>
+    </frame>
+    <frame name='wall_9' attached_to='wall_9_joint'/>
+  </model>
+</sdf>

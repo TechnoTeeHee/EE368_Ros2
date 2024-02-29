@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="castle">
+    <xacro:property name="wall_length" value="10" />
+    <xacro:property name="wall_thickness" value="0.1" />
+    <xacro:property name="wall_height" value="2" />
+  
+    <xacro:property name="tower_height" value="4" />
+    <xacro:property name="tower_radius" value="1" />
+
+    <xacro:property name="door_width" value="1" />
+    <xacro:property name="door_height" value="1.5" />
+    <xacro:property name="door_thickness" value="0.1" />
+
+    <xacro:include filename="colours.xacro" />
+    <xacro:include filename="inertial.xacro" />
+    <xacro:include filename="gazebo.xacro" />
+    <xacro:include filename="castle_core.xacro" />
+</robot>

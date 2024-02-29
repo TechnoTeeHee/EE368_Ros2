@@ -1,0 +1,24 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+writing pylab_exam1.egg-info/PKG-INFO
+writing dependency_links to pylab_exam1.egg-info/dependency_links.txt
+writing entry points to pylab_exam1.egg-info/entry_points.txt
+writing requirements to pylab_exam1.egg-info/requires.txt
+writing top-level names to pylab_exam1.egg-info/top_level.txt
+reading manifest file 'pylab_exam1.egg-info/SOURCES.txt'
+writing manifest file 'pylab_exam1.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/teehee/ros2_ws/install/pylab_exam1/lib/python3.10/site-packages/pylab-exam1.egg-link (link to .)
+Installing around_wall script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+Installing broadcast script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+Installing go_to_red script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+Installing labmaze script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+Installing listener script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+Installing stop_at_wall script to /home/teehee/ros2_ws/install/pylab_exam1/lib/pylab_exam1
+
+Installed /home/teehee/ros2_ws/build/pylab_exam1
+running install_data

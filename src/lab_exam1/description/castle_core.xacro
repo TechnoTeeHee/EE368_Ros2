@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <link name="base_link">
+    </link>
+    
+    <joint name="north_wall_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="north_wall"/>
+        <origin xyz="0 ${wall_length/2} ${wall_height/2}"/>
+    </joint>
+    <link name="north_wall">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${wall_length} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${wall_length} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="${wall_length}" y="${wall_thickness}" z="${wall_height}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+    
+    <joint name="south_wall_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="south_wall"/>
+        <origin xyz="0 -${wall_length/2} ${wall_height/2}"/>
+    </joint>
+    <link name="south_wall">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${wall_length} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${wall_length} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="${wall_length}" y="${wall_thickness}" z="${wall_height}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+    
+    <joint name="east_wall_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="east_wall"/>
+        <origin xyz="${wall_length/2} 0 ${wall_height/2}"/>
+    </joint>
+    <link name="east_wall">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <box size="${wall_length} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+            <material name="magenta"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <box size="${wall_length} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="${wall_length}" y="${wall_thickness}" z="${wall_height}">
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+        </xacro:inertial_box>
+    </link>
+    
+    <joint name="west_wall_joint_n" type="fixed">
+        <parent link="base_link"/>
+        <child link="west_wall_n"/>
+        <origin xyz="-${wall_length/2} ${wall_length/4} ${wall_height/2}" rpy="0 0 ${pi/2}"/>
+    </joint>
+    <link name="west_wall_n">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${wall_length/2-door_width} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${wall_length/2-door_width} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+         </collision>
+        <xacro:inertial_box mass="0.5" x="${wall_length/2}" y="${wall_thickness}" z="${wall_height}">
+            <origin xyz="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+    
+    <joint name="west_wall_joint_s" type="fixed">
+        <parent link="base_link"/>
+        <child link="west_wall_s"/>
+        <origin xyz="-${wall_length/2} -${wall_length/4} ${wall_height/2}" rpy="0 0 ${pi/2}"/>
+    </joint>
+    <link name="west_wall_s">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${wall_length/2-door_width} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${wall_length/2-door_width} ${wall_thickness} ${wall_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="${wall_length/2}" y="${wall_thickness}" z="${wall_height}">
+            <origin xyz="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+    
+    <joint name="west_wall_joint_u" type="fixed">
+        <parent link="base_link"/>
+        <child link="west_wall_u"/>
+        <origin xyz="-${wall_length/2} 0 ${door_height + (wall_height-door_height)/2}" rpy="0 0 ${pi/2}"/>
+    </joint>
+    <link name="west_wall_u">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${door_width*2} ${wall_thickness} ${wall_height-door_height}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${door_width*2} ${wall_thickness} ${wall_height-door_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="${door_width*2}" y="${wall_thickness}" z="${wall_height-door_height}">
+            <origin xyz="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+    
+    <joint name="ne_tower_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="ne_tower"/>
+        <origin xyz="${wall_length/2} ${wall_length/2} ${tower_height/2}"/>
+    </joint>
+    <link name="ne_tower">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <cylinder length="${tower_height}" radius="${tower_radius}" />
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <cylinder length="${tower_height}" radius="${tower_radius}" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.1" length="${tower_height}" radius="${tower_radius}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="se_tower_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="se_tower"/>
+        <origin xyz="${wall_length/2} -${wall_length/2} ${tower_height/2}"/>
+    </joint>
+    <link name="se_tower">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <cylinder length="${tower_height}" radius="${tower_radius}" />
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <cylinder length="${tower_height}" radius="${tower_radius}" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.1" length="${tower_height}" radius="${tower_radius}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="sw_tower_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="sw_tower"/>
+        <origin xyz="-${wall_length/2} -${wall_length/2} ${tower_height/2}"/>
+    </joint>
+    <link name="sw_tower">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <cylinder length="${tower_height}" radius="${tower_radius}" />
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <cylinder length="${tower_height}" radius="${tower_radius}" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.1" length="${tower_height}" radius="${tower_radius}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="nw_tower_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="nw_tower"/>
+        <origin xyz="-${wall_length/2} ${wall_length/2} ${tower_height/2}"/>
+    </joint>
+    <link name="nw_tower">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <cylinder length="${tower_height}" radius="${tower_radius}" />
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 ${pi/2}"/>
+            <geometry>
+                <cylinder length="${tower_height}" radius="${tower_radius}" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.1" length="${tower_height}" radius="${tower_radius}">
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+    
+    <joint name="rdoor" type="revolute">
+        <parent link="base_link"/>
+        <child link="rdoor_link"/>
+        <origin xyz="-${wall_length/2} -${door_width/2} ${door_height/2}" rpy="0 0 ${pi/2}"/>
+        <axis xyz="0 0 -1"/>
+        <limit lower="0" upper="${pi/2}" velocity="100" effort="100"/> 
+    </joint>
+    <link name="rdoor_link">
+        <visual>
+            <origin xyz="${door_width/4} 0 0"/>
+            <geometry>
+                <box size="${door_width/2} ${wall_thickness} ${door_height}"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${door_width/2} ${wall_thickness} ${door_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="${door_width/2}" y="${wall_thickness}" z="${door_height}">
+            <origin xyz="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+    <joint name="ldoor" type="revolute">
+        <parent link="base_link"/>
+        <child link="ldoor_link"/>
+        <origin xyz="-${wall_length/2} ${door_width/2} ${door_height/2}" rpy="0 0 ${pi/2}"/>
+        <axis xyz="0 0 -1"/>
+        <limit lower="0" upper="${pi/2}" velocity="100" effort="100"/>
+        <mimic joint="rdoor" multiplier="-1" offset="0.0"/>
+    </joint>
+    <link name="ldoor_link">
+        <visual>
+            <origin xyz="${-door_width/4} 0 0"/>
+            <geometry>
+                <box size="${door_width/2} ${wall_thickness} ${door_height}"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="${door_width/2} ${wall_thickness} ${door_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.5" x="${door_width/2}" y="${wall_thickness}" z="${door_height}">
+            <origin xyz="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+</robot>

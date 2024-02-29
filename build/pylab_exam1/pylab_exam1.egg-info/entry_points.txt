@@ -1,0 +1,8 @@
+[console_scripts]
+around_wall = pylab_exam1.around_wall:main
+broadcast = pylab_exam1.broadcast:main
+go_to_red = pylab_exam1.go_to_red:main
+labmaze = pylab_exam1.labmaze:main
+listener = pylab_exam1.listener:main
+stop_at_wall = pylab_exam1.stop_at_wall:main
+

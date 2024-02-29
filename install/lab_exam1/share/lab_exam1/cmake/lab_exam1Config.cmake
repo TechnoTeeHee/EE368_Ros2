@@ -1,0 +1,1 @@
+/home/teehee/ros2_ws/build/lab_exam1/ament_cmake_core/lab_exam1Config.cmake

@@ -1,0 +1,1 @@
+/home/teehee/ros2_ws/build/lab_exam1/ament_cmake_environment_hooks/local_setup.zsh

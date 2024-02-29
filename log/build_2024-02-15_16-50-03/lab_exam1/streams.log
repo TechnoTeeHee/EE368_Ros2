@@ -1,0 +1,30 @@
+[0.068s] Invoking command in '/home/teehee/ros2_ws/build/lab_exam1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/pylab_exam1:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/lab_exam1 -- -j4 -l4
+[0.135s] Invoked command in '/home/teehee/ros2_ws/build/lab_exam1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/pylab_exam1:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/lab_exam1 -- -j4 -l4
+[0.181s] Invoking command in '/home/teehee/ros2_ws/build/lab_exam1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/pylab_exam1:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/lab_exam1
+[0.189s] -- Install configuration: ""
+[0.189s] -- Execute custom install script
+[0.190s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/ament_index/resource_index/package_run_dependencies/lab_exam1
+[0.190s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/ament_index/resource_index/parent_prefix_path/lab_exam1
+[0.190s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/environment/ament_prefix_path.sh
+[0.190s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/environment/ament_prefix_path.dsv
+[0.190s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/environment/path.sh
+[0.191s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/environment/path.dsv
+[0.191s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/local_setup.bash
+[0.191s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/local_setup.sh
+[0.191s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/local_setup.zsh
+[0.191s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/local_setup.dsv
+[0.192s] -- Symlinking: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/package.dsv
+[0.205s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/ament_index/resource_index/packages/lab_exam1
+[0.205s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/cmake/lab_exam1Config.cmake
+[0.205s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/cmake/lab_exam1Config-version.cmake
+[0.205s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/package.xml
+[0.206s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/castle.sdf
+[0.206s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/castle.urdf
+[0.206s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/castle.urdf.xacro
+[0.206s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/castle_core.xacro
+[0.206s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/colours.xacro
+[0.207s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/gazebo.xacro
+[0.207s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/inertial.xacro
+[0.207s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/launch/rsp.launch.py
+[0.207s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/worlds/world.sdf
+[0.216s] Invoked command in '/home/teehee/ros2_ws/build/lab_exam1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/pylab_exam1:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/lab_exam1

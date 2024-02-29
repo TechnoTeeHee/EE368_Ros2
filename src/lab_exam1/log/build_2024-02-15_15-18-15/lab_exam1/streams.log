@@ -1,0 +1,67 @@
+[0.084s] Invoking command in '/home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/lab_exam1 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1
+[0.297s] -- The C compiler identification is GNU 11.4.0
+[0.497s] -- The CXX compiler identification is GNU 11.4.0
+[0.521s] -- Detecting C compiler ABI info
+[0.622s] -- Detecting C compiler ABI info - done
+[0.628s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.629s] -- Detecting C compile features
+[0.630s] -- Detecting C compile features - done
+[0.636s] -- Detecting CXX compiler ABI info
+[0.741s] -- Detecting CXX compiler ABI info - done
+[0.751s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.751s] -- Detecting CXX compile features
+[0.754s] -- Detecting CXX compile features - done
+[0.789s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.029s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.163s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.280s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.433s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.434s] -- Configured cppcheck include dirs: 
+[1.434s] -- Configured cppcheck exclude dirs and/or files: 
+[1.444s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.448s] -- Added test 'lint_cmake' to check CMake code style
+[1.451s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.461s] -- Added test 'uncrustify' to check C / C++ code style
+[1.461s] -- Configured uncrustify additional arguments: 
+[1.463s] -- Added test 'xmllint' to check XML markup files
+[1.470s] -- Configuring done
+[1.473s] -- Generating done
+[1.475s] -- Build files have been written to: /home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1
+[1.481s] Invoked command in '/home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake /home/teehee/ros2_ws/src/lab_exam1 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1
+[1.481s] Invoking command in '/home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1 -- -j4 -l4
+[1.545s] Invoked command in '/home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1 -- -j4 -l4
+[1.594s] Invoking command in '/home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1
+[1.603s] -- Install configuration: ""
+[1.604s] -- Execute custom install script
+[1.604s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/ament_index/resource_index/package_run_dependencies/lab_exam1
+[1.616s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/ament_index/resource_index/parent_prefix_path/lab_exam1
+[1.628s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/environment/ament_prefix_path.sh
+[1.639s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/environment/ament_prefix_path.dsv
+[1.651s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/environment/path.sh
+[1.668s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/environment/path.dsv
+[1.681s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/local_setup.bash
+[1.693s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/local_setup.sh
+[1.705s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/local_setup.zsh
+[1.717s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/local_setup.dsv
+[1.728s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/package.dsv
+[1.739s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/ament_index/resource_index/packages/lab_exam1
+[1.750s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/cmake/lab_exam1Config.cmake
+[1.770s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/cmake/lab_exam1Config-version.cmake
+[1.780s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/package.xml
+[1.792s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/box.sdf
+[1.803s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/box.urdf
+[1.814s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/box.urdf.xacro
+[1.825s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/box_core.xacro
+[1.836s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/bridges.yaml
+[1.847s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/colors.xacro
+[1.867s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/gazebo.xacro
+[1.879s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/inertial.xacro
+[1.890s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/lidar.xacro
+[1.901s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/redbox.urdf.xacro
+[1.912s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/robot.sdf
+[1.924s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/robot.urdf
+[1.935s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/robot.urdf.xacro
+[1.946s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/description/robot_core.xacro
+[1.989s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/launch/rsp.launch.py
+[1.990s] -- Symlinking: /home/teehee/ros2_ws/src/lab_exam1/install/lab_exam1/share/lab_exam1/worlds/world.sdf
+[2.025s] Invoked command in '/home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/src/lab_exam1/build/lab_exam1
