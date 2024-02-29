@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <link name="redbox">
+    </link>
+
+    <joint name="redbox_joint" type="fixed">
+        <parent link="redbox"/>
+        <child link="redbox_link"/>
+        <origin xyz="2 2 0.25"/>
+    </joint>
+
+    <link name="redbox_link">
+        <visual>
+            <origin xyz="0 0 0"/>
+            <geometry>
+                <box size="0.5 0.5 0.5"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.5 0.5 0.5"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="1" x="0" y="0" z="0">
+            <origin xyz="2 2 0.25" rpy="0 0 0"/>
+        </xacro:inertial_box>    
+    </link>
+</robot>
