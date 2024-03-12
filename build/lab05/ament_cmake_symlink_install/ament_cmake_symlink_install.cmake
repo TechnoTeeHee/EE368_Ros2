@@ -351,3 +351,6 @@ ament_cmake_symlink_install_files("/home/teehee/ros2_ws/src/lab05" FILES "/home/
 
 # install(FILES "/home/teehee/ros2_ws/src/lab05/package.xml" "DESTINATION" "share/lab05")
 ament_cmake_symlink_install_files("/home/teehee/ros2_ws/src/lab05" FILES "/home/teehee/ros2_ws/src/lab05/package.xml" "DESTINATION" "share/lab05")
+
+# install(DIRECTORY "description" "launch" "worlds" "DESTINATION" "share/lab05")
+ament_cmake_symlink_install_directory("/home/teehee/ros2_ws/src/lab05" DIRECTORY "description" "launch" "worlds" "DESTINATION" "share/lab05")

@@ -1,0 +1,6 @@
+[console_scripts]
+around_wall = pylab05.around_wall:main
+ex52_control = pylab05.ex52_control:main
+go_to_red = pylab05.go_to_red:main
+stop_at_wall = pylab05.stop_at_wall:main
+

@@ -1,0 +1,29 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating pylab05.egg-info
+writing pylab05.egg-info/PKG-INFO
+writing dependency_links to pylab05.egg-info/dependency_links.txt
+writing entry points to pylab05.egg-info/entry_points.txt
+writing requirements to pylab05.egg-info/requires.txt
+writing top-level names to pylab05.egg-info/top_level.txt
+writing manifest file 'pylab05.egg-info/SOURCES.txt'
+reading manifest file 'pylab05.egg-info/SOURCES.txt'
+writing manifest file 'pylab05.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/teehee/ros2_ws/install/pylab05/lib/python3.10/site-packages/pylab05.egg-link (link to .)
+Installing around_wall script to /home/teehee/ros2_ws/install/pylab05/lib/pylab05
+Installing ex52_control script to /home/teehee/ros2_ws/install/pylab05/lib/pylab05
+Installing go_to_red script to /home/teehee/ros2_ws/install/pylab05/lib/pylab05
+Installing stop_at_wall script to /home/teehee/ros2_ws/install/pylab05/lib/pylab05
+
+Installed /home/teehee/ros2_ws/build/pylab05
+running install_data
+creating /home/teehee/ros2_ws/install/pylab05/share/ament_index
+creating /home/teehee/ros2_ws/install/pylab05/share/ament_index/resource_index
+creating /home/teehee/ros2_ws/install/pylab05/share/ament_index/resource_index/packages
+copying resource/pylab05 -> /home/teehee/ros2_ws/install/pylab05/share/ament_index/resource_index/packages
+copying package.xml -> /home/teehee/ros2_ws/install/pylab05/share/pylab05
