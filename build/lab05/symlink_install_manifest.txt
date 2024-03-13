@@ -41,6 +41,7 @@
 /home/teehee/ros2_ws/install/lab05/share/lab05/description/robot.urdf
 /home/teehee/ros2_ws/install/lab05/share/lab05/description/robot.urdf.xacro
 /home/teehee/ros2_ws/install/lab05/share/lab05/description/robot_core.xacro
+/home/teehee/ros2_ws/install/lab05/share/lab05/launch/__pycache__/rsp.launch.cpython-310.pyc
 /home/teehee/ros2_ws/install/lab05/share/lab05/launch/rsp.launch.py
 /home/teehee/ros2_ws/install/lab05/share/lab05/worlds/construction_world.sdf
 /home/teehee/ros2_ws/install/lab05/share/lab05/worlds/ex_4_2.sdf

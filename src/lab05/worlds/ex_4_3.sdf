@@ -3,11 +3,11 @@
     <world name="my_world">
         <include>
             <name>base_link</name>
-            <uri>file://src/lab04/description/robot.sdf</uri>
+            <uri>file://src/lab05/description/robot.sdf</uri>
         </include>
         <include>
             <name>base</name>
-            <uri>file://src/lab04/description/box.sdf</uri>
+            <uri>file://src/lab05/description/box.sdf</uri>
         </include>             
         <physics name="1ms" type="ignored">
             <max_step_size>0.001</max_step_size>

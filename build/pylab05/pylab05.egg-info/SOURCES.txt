@@ -5,6 +5,7 @@ pylab05/__init__.py
 pylab05/around_wall.py
 pylab05/ex52_control.py
 pylab05/go_to_red.py
+pylab05/point_cloud2.py
 pylab05/stop_at_wall.py
 pylab05.egg-info/PKG-INFO
 pylab05.egg-info/SOURCES.txt

@@ -1,0 +1,24 @@
+[0.400s] Invoking command in '/home/teehee/ros2_ws/build/pylab05': PYTHONPATH=/home/teehee/ros2_ws/build/pylab05/prefix_override:/home/teehee/ros2_ws/install/pylab05/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/pylab05/build --no-deps install_data
+[0.526s] running develop
+[0.527s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.527s]   warnings.warn(
+[0.528s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.528s]   warnings.warn(
+[0.597s] running egg_info
+[0.598s] writing pylab05.egg-info/PKG-INFO
+[0.601s] writing dependency_links to pylab05.egg-info/dependency_links.txt
+[0.607s] writing entry points to pylab05.egg-info/entry_points.txt
+[0.611s] writing requirements to pylab05.egg-info/requires.txt
+[0.612s] writing top-level names to pylab05.egg-info/top_level.txt
+[0.616s] reading manifest file 'pylab05.egg-info/SOURCES.txt'
+[0.617s] writing manifest file 'pylab05.egg-info/SOURCES.txt'
+[0.618s] running build_ext
+[0.618s] Creating /home/teehee/ros2_ws/install/pylab05/lib/python3.10/site-packages/pylab05.egg-link (link to .)
+[0.619s] Installing around_wall script to /home/teehee/ros2_ws/install/pylab05/lib/pylab05
+[0.619s] Installing ex52_control script to /home/teehee/ros2_ws/install/pylab05/lib/pylab05
+[0.619s] Installing go_to_red script to /home/teehee/ros2_ws/install/pylab05/lib/pylab05
+[0.619s] Installing stop_at_wall script to /home/teehee/ros2_ws/install/pylab05/lib/pylab05
+[0.620s] 
+[0.620s] Installed /home/teehee/ros2_ws/build/pylab05
+[0.620s] running install_data
+[0.633s] Invoked command in '/home/teehee/ros2_ws/build/pylab05' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/pylab05/prefix_override:/home/teehee/ros2_ws/install/pylab05/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/pylab05/build --no-deps install_data

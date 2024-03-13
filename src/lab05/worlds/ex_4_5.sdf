@@ -3,19 +3,19 @@
     <world name="my_world">
         <include>
             <name>base_link</name>
-            <uri>file://src/lab04/description/robot.sdf</uri>
+            <uri>file://src/lab05/description/robot.sdf</uri>
         </include>
         <include>
             <name>greenbox</name>
-            <uri>file://src/lab04/description/greenbox.sdf</uri>
+            <uri>file://src/lab05/description/greenbox.sdf</uri>
         </include>
         <include>
             <name>greenbox2</name>
-            <uri>file://src/lab04/description/greenbox2.sdf</uri>
+            <uri>file://src/lab05/description/greenbox2.sdf</uri>
         </include>
         <include>
             <name>redbox</name>
-            <uri>file://src/lab04/description/redbox.sdf</uri>
+            <uri>file://src/lab05/description/redbox.sdf</uri>
         </include>              
         <physics name="1ms" type="ignored">
             <max_step_size>0.001</max_step_size>
