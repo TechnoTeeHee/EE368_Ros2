@@ -32,6 +32,14 @@
       <robot_base_frame>base_link</robot_base_frame>
     </plugin>
   </gazebo>
+  <gazebo reference="chassis">
+    <sensor name="imu_sensor" type="imu">
+      <always_on>1</always_on>
+      <update_rate>1</update_rate>
+      <visualize>true</visualize>
+      <topic>imu</topic>
+    </sensor>
+  </gazebo>
   <material name="white">
     <color rgba="1 1 1 1"/>
   </material>
@@ -153,8 +161,8 @@
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
-      <mass value="0.1"/>
-      <inertia ixx="0.00010000000000000005" ixy="0.0" ixz="0.0" iyy="0.00010000000000000005" iyz="0.0" izz="0.00010000000000000005"/>
+      <mass value="0.15"/>
+      <inertia ixx="0.00015000000000000001" ixy="0.0" ixz="0.0" iyy="0.00015000000000000001" iyz="0.0" izz="0.00015000000000000001"/>
     </inertial>
   </link>
   <joint name="laser_joint" type="fixed">
@@ -224,6 +232,11 @@
       </geometry>
       <material name="red"/>
     </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.5" radius="0.05"/>
+      </geometry>
+    </collision>
   </link>
   <joint name="camera_optical_joint" type="fixed">
     <origin rpy="-1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0"/>

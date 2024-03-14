@@ -18,8 +18,9 @@ class ControlNode(Node):
         data = list(gen)
         width = msg.width
         height = msg.height
+        arr = []
         top = data[int(width/2)][0]
-
+        
         if (top == np.inf):
             top_clear = 1
             reset = 0
@@ -27,13 +28,11 @@ class ControlNode(Node):
             top_clear = 0
             reset = 1
 
-        arr = []
-
         for i in range(1,height-1):
-            x = data[i*width + int(width/2)][0] 
-            z = (data[i*width + int(width/2)][2]) + 0.45
+            x = data[int(width*i + width/2)][0] 
+            z = (data[int(width*i + width/2)][2]) + 0.45
 
-            if (round(z, 1) != 0):
+            if (round(z, 2) != 0):
                 if (reset == 1 and x == np.inf):
                     reset = 0
                     arr.append(data[(i-1)*width + int(width/2)][2] + 0.45)
@@ -53,10 +52,6 @@ class ControlNode(Node):
                 self.get_logger().info('Door height ' + str(arr[0]))
         elif (len(arr) == 2):
             self.get_logger().info('Opening z ' + str(arr[0]) + ' to ' + str(arr[1]))
-
-        # "data" is a linear array of width x height "points"
-        # For each point, x=point[0], y=point[1], z=point[2]
-        # ...
         
 def main(args=None):
     rclpy.init(args=args)

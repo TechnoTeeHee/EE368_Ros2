@@ -31,4 +31,12 @@
             <robot_base_frame>base_link</robot_base_frame>
         </plugin>
     </gazebo>
+    <gazebo reference="chassis">
+        <sensor name="imu_sensor" type="imu">
+            <always_on>1</always_on>
+            <update_rate>1</update_rate>
+            <visualize>true</visualize>
+            <topic>imu</topic>
+        </sensor>
+    </gazebo>    
 </robot>

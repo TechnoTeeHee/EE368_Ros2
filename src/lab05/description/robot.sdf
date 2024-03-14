@@ -2,15 +2,15 @@
   <model name='robot'>
     <link name='base_link'>
       <inertial>
-        <pose>0.05571428571428574 0 0.07785714285714285 0 0 0</pose>
-        <mass>0.69999999999999996</mass>
+        <pose>0.06133333333333327 0 0.07266666666666666 0 0 0</pose>
+        <mass>0.75</mass>
         <inertia>
-          <ixx>0.0063226190476190491</ixx>
+          <ixx>0.0066554999999999991</ixx>
           <ixy>0</ixy>
-          <ixz>0.0011614285714285719</ixz>
-          <iyy>0.007359761904761895</iyy>
+          <ixz>0.0014676666666666629</ixz>
+          <iyy>0.0080241666666666829</iyy>
           <iyz>0</iyz>
-          <izz>0.008762142857142852</izz>
+          <izz>0.0091436666666666871</izz>
         </inertia>
       </inertial>
       <collision name='base_link_fixed_joint_lump__chassis_collision'>
@@ -20,8 +20,33 @@
             <size>0.3 0.3 0.15</size>
           </box>
         </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
-      <collision name='base_link_fixed_joint_lump__caster_wheel_collision_1'>
+      <collision name='base_link_fixed_joint_lump__camera_link_collision_1'>
+        <pose>0 0 0.4 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.5</length>
+            <radius>0.050000000000000003</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__caster_wheel_collision_2'>
         <pose>0.14 0 0 0 0 0</pose>
         <geometry>
           <sphere>
@@ -40,7 +65,7 @@
           </friction>
         </surface>
       </collision>
-      <collision name='base_link_fixed_joint_lump__laser_frame_collision_2'>
+      <collision name='base_link_fixed_joint_lump__laser_frame_collision_3'>
         <pose>0 0 0.17 0 0 0</pose>
         <geometry>
           <cylinder>
@@ -107,6 +132,13 @@
           <ambient>1 0 0 1</ambient>
         </material>
       </visual>
+      <sensor name='imu_sensor' type='imu'>
+        <always_on>true</always_on>
+        <update_rate>1</update_rate>
+        <visualize>true</visualize>
+        <topic>imu</topic>
+        <pose>-0.1 0 0 0 -0 0</pose>
+      </sensor>
       <sensor name='camera' type='depth'>
         <camera>
           <horizontal_fov>1.089</horizontal_fov>

@@ -24,6 +24,7 @@ setup(
             "around_wall = pylab05.around_wall:main",
             "go_to_red = pylab05.go_to_red:main",
             "ex52_control = pylab05.ex52_control:main",
+            "ex53_keyboard_control = pylab05.ex53_keyboard_control:main",
             "point_cloud2 = pylab05.point_cloud2:main",
         ],
     },
