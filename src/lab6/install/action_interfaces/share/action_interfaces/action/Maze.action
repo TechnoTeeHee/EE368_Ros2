@@ -1,11 +1,11 @@
-float32[] goal_positions
+float32[] goal_coordinates
 ---
-float32 final_time
+float32 goal_time
 ---
+float32 x
+float32 y
+float32 z
 float32[] current_goal
-int32 goal_num
-float32 current_x
-float32 current_y
-float32 yaw
+int32 n_goal
+bool goal_update
 float32 time 
-int32 goal_reached

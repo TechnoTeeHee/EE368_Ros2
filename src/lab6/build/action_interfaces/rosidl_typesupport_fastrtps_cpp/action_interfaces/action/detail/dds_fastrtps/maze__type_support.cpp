@@ -32,9 +32,9 @@ cdr_serialize(
   const action_interfaces::action::Maze_Goal & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: goal_positions
+  // Member: goal_coordinates
   {
-    cdr << ros_message.goal_positions;
+    cdr << ros_message.goal_coordinates;
   }
   return true;
 }
@@ -45,9 +45,9 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   action_interfaces::action::Maze_Goal & ros_message)
 {
-  // Member: goal_positions
+  // Member: goal_coordinates
   {
-    cdr >> ros_message.goal_positions;
+    cdr >> ros_message.goal_coordinates;
   }
 
   return true;
@@ -66,13 +66,13 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: goal_positions
+  // Member: goal_coordinates
   {
-    size_t array_size = ros_message.goal_positions.size();
+    size_t array_size = ros_message.goal_coordinates.size();
 
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
-    size_t item_size = sizeof(ros_message.goal_positions[0]);
+    size_t item_size = sizeof(ros_message.goal_coordinates[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -100,7 +100,7 @@ max_serialized_size_Maze_Goal(
   is_plain = true;
 
 
-  // Member: goal_positions
+  // Member: goal_coordinates
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -121,7 +121,7 @@ max_serialized_size_Maze_Goal(
     using DataType = action_interfaces::action::Maze_Goal;
     is_plain =
       (
-      offsetof(DataType, goal_positions) +
+      offsetof(DataType, goal_coordinates) +
       last_member_size
       ) == ret_val;
   }
@@ -256,8 +256,8 @@ cdr_serialize(
   const action_interfaces::action::Maze_Result & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: final_time
-  cdr << ros_message.final_time;
+  // Member: goal_time
+  cdr << ros_message.goal_time;
   return true;
 }
 
@@ -267,8 +267,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   action_interfaces::action::Maze_Result & ros_message)
 {
-  // Member: final_time
-  cdr >> ros_message.final_time;
+  // Member: goal_time
+  cdr >> ros_message.goal_time;
 
   return true;
 }
@@ -286,9 +286,9 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: final_time
+  // Member: goal_time
   {
-    size_t item_size = sizeof(ros_message.final_time);
+    size_t item_size = sizeof(ros_message.goal_time);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -316,7 +316,7 @@ max_serialized_size_Maze_Result(
   is_plain = true;
 
 
-  // Member: final_time
+  // Member: goal_time
   {
     size_t array_size = 1;
 
@@ -333,7 +333,7 @@ max_serialized_size_Maze_Result(
     using DataType = action_interfaces::action::Maze_Result;
     is_plain =
       (
-      offsetof(DataType, final_time) +
+      offsetof(DataType, goal_time) +
       last_member_size
       ) == ret_val;
   }
@@ -468,22 +468,22 @@ cdr_serialize(
   const action_interfaces::action::Maze_Feedback & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: x
+  cdr << ros_message.x;
+  // Member: y
+  cdr << ros_message.y;
+  // Member: z
+  cdr << ros_message.z;
   // Member: current_goal
   {
     cdr << ros_message.current_goal;
   }
-  // Member: goal_num
-  cdr << ros_message.goal_num;
-  // Member: current_x
-  cdr << ros_message.current_x;
-  // Member: current_y
-  cdr << ros_message.current_y;
-  // Member: yaw
-  cdr << ros_message.yaw;
+  // Member: n_goal
+  cdr << ros_message.n_goal;
+  // Member: goal_update
+  cdr << (ros_message.goal_update ? true : false);
   // Member: time
   cdr << ros_message.time;
-  // Member: goal_reached
-  cdr << ros_message.goal_reached;
   return true;
 }
 
@@ -493,28 +493,32 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   action_interfaces::action::Maze_Feedback & ros_message)
 {
+  // Member: x
+  cdr >> ros_message.x;
+
+  // Member: y
+  cdr >> ros_message.y;
+
+  // Member: z
+  cdr >> ros_message.z;
+
   // Member: current_goal
   {
     cdr >> ros_message.current_goal;
   }
 
-  // Member: goal_num
-  cdr >> ros_message.goal_num;
+  // Member: n_goal
+  cdr >> ros_message.n_goal;
 
-  // Member: current_x
-  cdr >> ros_message.current_x;
-
-  // Member: current_y
-  cdr >> ros_message.current_y;
-
-  // Member: yaw
-  cdr >> ros_message.yaw;
+  // Member: goal_update
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.goal_update = tmp ? true : false;
+  }
 
   // Member: time
   cdr >> ros_message.time;
-
-  // Member: goal_reached
-  cdr >> ros_message.goal_reached;
 
   return true;
 }
@@ -532,6 +536,24 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: x
+  {
+    size_t item_size = sizeof(ros_message.x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: y
+  {
+    size_t item_size = sizeof(ros_message.y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: z
+  {
+    size_t item_size = sizeof(ros_message.z);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: current_goal
   {
     size_t array_size = ros_message.current_goal.size();
@@ -542,39 +564,21 @@ get_serialized_size(
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: goal_num
+  // Member: n_goal
   {
-    size_t item_size = sizeof(ros_message.goal_num);
+    size_t item_size = sizeof(ros_message.n_goal);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: current_x
+  // Member: goal_update
   {
-    size_t item_size = sizeof(ros_message.current_x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: current_y
-  {
-    size_t item_size = sizeof(ros_message.current_y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: yaw
-  {
-    size_t item_size = sizeof(ros_message.yaw);
+    size_t item_size = sizeof(ros_message.goal_update);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // Member: time
   {
     size_t item_size = sizeof(ros_message.time);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: goal_reached
-  {
-    size_t item_size = sizeof(ros_message.goal_reached);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -602,6 +606,33 @@ max_serialized_size_Maze_Feedback(
   is_plain = true;
 
 
+  // Member: x
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: y
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: z
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   // Member: current_goal
   {
     size_t array_size = 0;
@@ -615,7 +646,7 @@ max_serialized_size_Maze_Feedback(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: goal_num
+  // Member: n_goal
   {
     size_t array_size = 1;
 
@@ -624,43 +655,15 @@ max_serialized_size_Maze_Feedback(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
-  // Member: current_x
+  // Member: goal_update
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: current_y
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: yaw
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
 
   // Member: time
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-
-  // Member: goal_reached
   {
     size_t array_size = 1;
 
@@ -677,7 +680,7 @@ max_serialized_size_Maze_Feedback(
     using DataType = action_interfaces::action::Maze_Feedback;
     is_plain =
       (
-      offsetof(DataType, goal_reached) +
+      offsetof(DataType, time) +
       last_member_size
       ) == ret_val;
   }

@@ -45,15 +45,15 @@ struct Maze_Goal_
   }
 
   // field types and members
-  using _goal_positions_type =
+  using _goal_coordinates_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
-  _goal_positions_type goal_positions;
+  _goal_coordinates_type goal_coordinates;
 
   // setters for named parameter idiom
-  Type & set__goal_positions(
+  Type & set__goal_coordinates(
     const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
-    this->goal_positions = _arg;
+    this->goal_coordinates = _arg;
     return *this;
   }
 
@@ -99,7 +99,7 @@ struct Maze_Goal_
   // comparison operators
   bool operator==(const Maze_Goal_ & other) const
   {
-    if (this->goal_positions != other.goal_positions) {
+    if (this->goal_coordinates != other.goal_coordinates) {
       return false;
     }
     return true;
@@ -144,7 +144,7 @@ struct Maze_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->final_time = 0.0f;
+      this->goal_time = 0.0f;
     }
   }
 
@@ -154,20 +154,20 @@ struct Maze_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->final_time = 0.0f;
+      this->goal_time = 0.0f;
     }
   }
 
   // field types and members
-  using _final_time_type =
+  using _goal_time_type =
     float;
-  _final_time_type final_time;
+  _goal_time_type goal_time;
 
   // setters for named parameter idiom
-  Type & set__final_time(
+  Type & set__goal_time(
     const float & _arg)
   {
-    this->final_time = _arg;
+    this->goal_time = _arg;
     return *this;
   }
 
@@ -213,7 +213,7 @@ struct Maze_Result_
   // comparison operators
   bool operator==(const Maze_Result_ & other) const
   {
-    if (this->final_time != other.final_time) {
+    if (this->goal_time != other.goal_time) {
       return false;
     }
     return true;
@@ -258,12 +258,12 @@ struct Maze_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->goal_num = 0l;
-      this->current_x = 0.0f;
-      this->current_y = 0.0f;
-      this->yaw = 0.0f;
+      this->x = 0.0f;
+      this->y = 0.0f;
+      this->z = 0.0f;
+      this->n_goal = 0l;
+      this->goal_update = false;
       this->time = 0.0f;
-      this->goal_reached = 0l;
     }
   }
 
@@ -273,79 +273,79 @@ struct Maze_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->goal_num = 0l;
-      this->current_x = 0.0f;
-      this->current_y = 0.0f;
-      this->yaw = 0.0f;
+      this->x = 0.0f;
+      this->y = 0.0f;
+      this->z = 0.0f;
+      this->n_goal = 0l;
+      this->goal_update = false;
       this->time = 0.0f;
-      this->goal_reached = 0l;
     }
   }
 
   // field types and members
+  using _x_type =
+    float;
+  _x_type x;
+  using _y_type =
+    float;
+  _y_type y;
+  using _z_type =
+    float;
+  _z_type z;
   using _current_goal_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _current_goal_type current_goal;
-  using _goal_num_type =
+  using _n_goal_type =
     int32_t;
-  _goal_num_type goal_num;
-  using _current_x_type =
-    float;
-  _current_x_type current_x;
-  using _current_y_type =
-    float;
-  _current_y_type current_y;
-  using _yaw_type =
-    float;
-  _yaw_type yaw;
+  _n_goal_type n_goal;
+  using _goal_update_type =
+    bool;
+  _goal_update_type goal_update;
   using _time_type =
     float;
   _time_type time;
-  using _goal_reached_type =
-    int32_t;
-  _goal_reached_type goal_reached;
 
   // setters for named parameter idiom
+  Type & set__x(
+    const float & _arg)
+  {
+    this->x = _arg;
+    return *this;
+  }
+  Type & set__y(
+    const float & _arg)
+  {
+    this->y = _arg;
+    return *this;
+  }
+  Type & set__z(
+    const float & _arg)
+  {
+    this->z = _arg;
+    return *this;
+  }
   Type & set__current_goal(
     const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->current_goal = _arg;
     return *this;
   }
-  Type & set__goal_num(
+  Type & set__n_goal(
     const int32_t & _arg)
   {
-    this->goal_num = _arg;
+    this->n_goal = _arg;
     return *this;
   }
-  Type & set__current_x(
-    const float & _arg)
+  Type & set__goal_update(
+    const bool & _arg)
   {
-    this->current_x = _arg;
-    return *this;
-  }
-  Type & set__current_y(
-    const float & _arg)
-  {
-    this->current_y = _arg;
-    return *this;
-  }
-  Type & set__yaw(
-    const float & _arg)
-  {
-    this->yaw = _arg;
+    this->goal_update = _arg;
     return *this;
   }
   Type & set__time(
     const float & _arg)
   {
     this->time = _arg;
-    return *this;
-  }
-  Type & set__goal_reached(
-    const int32_t & _arg)
-  {
-    this->goal_reached = _arg;
     return *this;
   }
 
@@ -391,25 +391,25 @@ struct Maze_Feedback_
   // comparison operators
   bool operator==(const Maze_Feedback_ & other) const
   {
+    if (this->x != other.x) {
+      return false;
+    }
+    if (this->y != other.y) {
+      return false;
+    }
+    if (this->z != other.z) {
+      return false;
+    }
     if (this->current_goal != other.current_goal) {
       return false;
     }
-    if (this->goal_num != other.goal_num) {
+    if (this->n_goal != other.n_goal) {
       return false;
     }
-    if (this->current_x != other.current_x) {
-      return false;
-    }
-    if (this->current_y != other.current_y) {
-      return false;
-    }
-    if (this->yaw != other.yaw) {
+    if (this->goal_update != other.goal_update) {
       return false;
     }
     if (this->time != other.time) {
-      return false;
-    }
-    if (this->goal_reached != other.goal_reached) {
       return false;
     }
     return true;

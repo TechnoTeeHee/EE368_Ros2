@@ -5,7 +5,7 @@
 
 # Import statements for member types
 
-# Member 'goal_positions'
+# Member 'goal_coordinates'
 import array  # noqa: E402, I100
 
 import builtins  # noqa: E402, I100
@@ -60,11 +60,11 @@ class Maze_Goal(metaclass=Metaclass_Maze_Goal):
     """Message class 'Maze_Goal'."""
 
     __slots__ = [
-        '_goal_positions',
+        '_goal_coordinates',
     ]
 
     _fields_and_field_types = {
-        'goal_positions': 'sequence<float>',
+        'goal_coordinates': 'sequence<float>',
     }
 
     SLOT_TYPES = (
@@ -75,7 +75,7 @@ class Maze_Goal(metaclass=Metaclass_Maze_Goal):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.goal_positions = array.array('f', kwargs.get('goal_positions', []))
+        self.goal_coordinates = array.array('f', kwargs.get('goal_coordinates', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -106,7 +106,7 @@ class Maze_Goal(metaclass=Metaclass_Maze_Goal):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.goal_positions != other.goal_positions:
+        if self.goal_coordinates != other.goal_coordinates:
             return False
         return True
 
@@ -116,16 +116,16 @@ class Maze_Goal(metaclass=Metaclass_Maze_Goal):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def goal_positions(self):
-        """Message field 'goal_positions'."""
-        return self._goal_positions
+    def goal_coordinates(self):
+        """Message field 'goal_coordinates'."""
+        return self._goal_coordinates
 
-    @goal_positions.setter
-    def goal_positions(self, value):
+    @goal_coordinates.setter
+    def goal_coordinates(self, value):
         if isinstance(value, array.array):
             assert value.typecode == 'f', \
-                "The 'goal_positions' array.array() must have the type code of 'f'"
-            self._goal_positions = value
+                "The 'goal_coordinates' array.array() must have the type code of 'f'"
+            self._goal_coordinates = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -140,8 +140,8 @@ class Maze_Goal(metaclass=Metaclass_Maze_Goal):
                  not isinstance(value, UserString) and
                  all(isinstance(v, float) for v in value) and
                  all(not (val < -3.402823466e+38 or val > 3.402823466e+38) or math.isinf(val) for val in value)), \
-                "The 'goal_positions' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
-        self._goal_positions = array.array('f', value)
+                "The 'goal_coordinates' field must be a set or sequence and each value of type 'float' and each float in [-340282346600000016151267322115014000640.000000, 340282346600000016151267322115014000640.000000]"
+        self._goal_coordinates = array.array('f', value)
 
 
 # Import statements for member types
@@ -201,11 +201,11 @@ class Maze_Result(metaclass=Metaclass_Maze_Result):
     """Message class 'Maze_Result'."""
 
     __slots__ = [
-        '_final_time',
+        '_goal_time',
     ]
 
     _fields_and_field_types = {
-        'final_time': 'float',
+        'goal_time': 'float',
     }
 
     SLOT_TYPES = (
@@ -216,7 +216,7 @@ class Maze_Result(metaclass=Metaclass_Maze_Result):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.final_time = kwargs.get('final_time', float())
+        self.goal_time = kwargs.get('goal_time', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -247,7 +247,7 @@ class Maze_Result(metaclass=Metaclass_Maze_Result):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.final_time != other.final_time:
+        if self.goal_time != other.goal_time:
             return False
         return True
 
@@ -257,19 +257,19 @@ class Maze_Result(metaclass=Metaclass_Maze_Result):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def final_time(self):
-        """Message field 'final_time'."""
-        return self._final_time
+    def goal_time(self):
+        """Message field 'goal_time'."""
+        return self._goal_time
 
-    @final_time.setter
-    def final_time(self, value):
+    @goal_time.setter
+    def goal_time(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'final_time' field must be of type 'float'"
+                "The 'goal_time' field must be of type 'float'"
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'final_time' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._final_time = value
+                "The 'goal_time' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._goal_time = value
 
 
 # Import statements for member types
@@ -333,46 +333,46 @@ class Maze_Feedback(metaclass=Metaclass_Maze_Feedback):
     """Message class 'Maze_Feedback'."""
 
     __slots__ = [
+        '_x',
+        '_y',
+        '_z',
         '_current_goal',
-        '_goal_num',
-        '_current_x',
-        '_current_y',
-        '_yaw',
+        '_n_goal',
+        '_goal_update',
         '_time',
-        '_goal_reached',
     ]
 
     _fields_and_field_types = {
+        'x': 'float',
+        'y': 'float',
+        'z': 'float',
         'current_goal': 'sequence<float>',
-        'goal_num': 'int32',
-        'current_x': 'float',
-        'current_y': 'float',
-        'yaw': 'float',
+        'n_goal': 'int32',
+        'goal_update': 'boolean',
         'time': 'float',
-        'goal_reached': 'int32',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('float'),  # noqa: E501
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.x = kwargs.get('x', float())
+        self.y = kwargs.get('y', float())
+        self.z = kwargs.get('z', float())
         self.current_goal = array.array('f', kwargs.get('current_goal', []))
-        self.goal_num = kwargs.get('goal_num', int())
-        self.current_x = kwargs.get('current_x', float())
-        self.current_y = kwargs.get('current_y', float())
-        self.yaw = kwargs.get('yaw', float())
+        self.n_goal = kwargs.get('n_goal', int())
+        self.goal_update = kwargs.get('goal_update', bool())
         self.time = kwargs.get('time', float())
-        self.goal_reached = kwargs.get('goal_reached', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -403,19 +403,19 @@ class Maze_Feedback(metaclass=Metaclass_Maze_Feedback):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.x != other.x:
+            return False
+        if self.y != other.y:
+            return False
+        if self.z != other.z:
+            return False
         if self.current_goal != other.current_goal:
             return False
-        if self.goal_num != other.goal_num:
+        if self.n_goal != other.n_goal:
             return False
-        if self.current_x != other.current_x:
-            return False
-        if self.current_y != other.current_y:
-            return False
-        if self.yaw != other.yaw:
+        if self.goal_update != other.goal_update:
             return False
         if self.time != other.time:
-            return False
-        if self.goal_reached != other.goal_reached:
             return False
         return True
 
@@ -423,6 +423,51 @@ class Maze_Feedback(metaclass=Metaclass_Maze_Feedback):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def x(self):
+        """Message field 'x'."""
+        return self._x
+
+    @x.setter
+    def x(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'x' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'x' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._x = value
+
+    @builtins.property
+    def y(self):
+        """Message field 'y'."""
+        return self._y
+
+    @y.setter
+    def y(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'y' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'y' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._y = value
+
+    @builtins.property
+    def z(self):
+        """Message field 'z'."""
+        return self._z
+
+    @z.setter
+    def z(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'z' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'z' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._z = value
 
     @builtins.property
     def current_goal(self):
@@ -453,64 +498,32 @@ class Maze_Feedback(metaclass=Metaclass_Maze_Feedback):
         self._current_goal = array.array('f', value)
 
     @builtins.property
-    def goal_num(self):
-        """Message field 'goal_num'."""
-        return self._goal_num
+    def n_goal(self):
+        """Message field 'n_goal'."""
+        return self._n_goal
 
-    @goal_num.setter
-    def goal_num(self, value):
+    @n_goal.setter
+    def n_goal(self, value):
         if __debug__:
             assert \
                 isinstance(value, int), \
-                "The 'goal_num' field must be of type 'int'"
+                "The 'n_goal' field must be of type 'int'"
             assert value >= -2147483648 and value < 2147483648, \
-                "The 'goal_num' field must be an integer in [-2147483648, 2147483647]"
-        self._goal_num = value
+                "The 'n_goal' field must be an integer in [-2147483648, 2147483647]"
+        self._n_goal = value
 
     @builtins.property
-    def current_x(self):
-        """Message field 'current_x'."""
-        return self._current_x
+    def goal_update(self):
+        """Message field 'goal_update'."""
+        return self._goal_update
 
-    @current_x.setter
-    def current_x(self, value):
+    @goal_update.setter
+    def goal_update(self, value):
         if __debug__:
             assert \
-                isinstance(value, float), \
-                "The 'current_x' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'current_x' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._current_x = value
-
-    @builtins.property
-    def current_y(self):
-        """Message field 'current_y'."""
-        return self._current_y
-
-    @current_y.setter
-    def current_y(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'current_y' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'current_y' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._current_y = value
-
-    @builtins.property
-    def yaw(self):
-        """Message field 'yaw'."""
-        return self._yaw
-
-    @yaw.setter
-    def yaw(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'yaw' field must be of type 'float'"
-            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
-                "The 'yaw' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
-        self._yaw = value
+                isinstance(value, bool), \
+                "The 'goal_update' field must be of type 'bool'"
+        self._goal_update = value
 
     @builtins.property
     def time(self):
@@ -526,21 +539,6 @@ class Maze_Feedback(metaclass=Metaclass_Maze_Feedback):
             assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
                 "The 'time' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
         self._time = value
-
-    @builtins.property
-    def goal_reached(self):
-        """Message field 'goal_reached'."""
-        return self._goal_reached
-
-    @goal_reached.setter
-    def goal_reached(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, int), \
-                "The 'goal_reached' field must be of type 'int'"
-            assert value >= -2147483648 and value < 2147483648, \
-                "The 'goal_reached' field must be an integer in [-2147483648, 2147483647]"
-        self._goal_reached = value
 
 
 # Import statements for member types

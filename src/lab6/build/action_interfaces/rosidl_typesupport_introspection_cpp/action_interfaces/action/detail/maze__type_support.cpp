@@ -37,45 +37,45 @@ void Maze_Goal_fini_function(void * message_memory)
   typed_message->~Maze_Goal();
 }
 
-size_t size_function__Maze_Goal__goal_positions(const void * untyped_member)
+size_t size_function__Maze_Goal__goal_coordinates(const void * untyped_member)
 {
   const auto * member = reinterpret_cast<const std::vector<float> *>(untyped_member);
   return member->size();
 }
 
-const void * get_const_function__Maze_Goal__goal_positions(const void * untyped_member, size_t index)
+const void * get_const_function__Maze_Goal__goal_coordinates(const void * untyped_member, size_t index)
 {
   const auto & member =
     *reinterpret_cast<const std::vector<float> *>(untyped_member);
   return &member[index];
 }
 
-void * get_function__Maze_Goal__goal_positions(void * untyped_member, size_t index)
+void * get_function__Maze_Goal__goal_coordinates(void * untyped_member, size_t index)
 {
   auto & member =
     *reinterpret_cast<std::vector<float> *>(untyped_member);
   return &member[index];
 }
 
-void fetch_function__Maze_Goal__goal_positions(
+void fetch_function__Maze_Goal__goal_coordinates(
   const void * untyped_member, size_t index, void * untyped_value)
 {
   const auto & item = *reinterpret_cast<const float *>(
-    get_const_function__Maze_Goal__goal_positions(untyped_member, index));
+    get_const_function__Maze_Goal__goal_coordinates(untyped_member, index));
   auto & value = *reinterpret_cast<float *>(untyped_value);
   value = item;
 }
 
-void assign_function__Maze_Goal__goal_positions(
+void assign_function__Maze_Goal__goal_coordinates(
   void * untyped_member, size_t index, const void * untyped_value)
 {
   auto & item = *reinterpret_cast<float *>(
-    get_function__Maze_Goal__goal_positions(untyped_member, index));
+    get_function__Maze_Goal__goal_coordinates(untyped_member, index));
   const auto & value = *reinterpret_cast<const float *>(untyped_value);
   item = value;
 }
 
-void resize_function__Maze_Goal__goal_positions(void * untyped_member, size_t size)
+void resize_function__Maze_Goal__goal_coordinates(void * untyped_member, size_t size)
 {
   auto * member =
     reinterpret_cast<std::vector<float> *>(untyped_member);
@@ -84,21 +84,21 @@ void resize_function__Maze_Goal__goal_positions(void * untyped_member, size_t si
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Maze_Goal_message_member_array[1] = {
   {
-    "goal_positions",  // name
+    "goal_coordinates",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     true,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(action_interfaces::action::Maze_Goal, goal_positions),  // bytes offset in struct
+    offsetof(action_interfaces::action::Maze_Goal, goal_coordinates),  // bytes offset in struct
     nullptr,  // default value
-    size_function__Maze_Goal__goal_positions,  // size() function pointer
-    get_const_function__Maze_Goal__goal_positions,  // get_const(index) function pointer
-    get_function__Maze_Goal__goal_positions,  // get(index) function pointer
-    fetch_function__Maze_Goal__goal_positions,  // fetch(index, &value) function pointer
-    assign_function__Maze_Goal__goal_positions,  // assign(index, value) function pointer
-    resize_function__Maze_Goal__goal_positions  // resize(index) function pointer
+    size_function__Maze_Goal__goal_coordinates,  // size() function pointer
+    get_const_function__Maze_Goal__goal_coordinates,  // get_const(index) function pointer
+    get_function__Maze_Goal__goal_coordinates,  // get(index) function pointer
+    fetch_function__Maze_Goal__goal_coordinates,  // fetch(index, &value) function pointer
+    assign_function__Maze_Goal__goal_coordinates,  // assign(index, value) function pointer
+    resize_function__Maze_Goal__goal_coordinates  // resize(index) function pointer
   }
 };
 
@@ -203,14 +203,14 @@ void Maze_Result_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Maze_Result_message_member_array[1] = {
   {
-    "final_time",  // name
+    "goal_time",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(action_interfaces::action::Maze_Result, final_time),  // bytes offset in struct
+    offsetof(action_interfaces::action::Maze_Result, goal_time),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -367,6 +367,57 @@ void resize_function__Maze_Feedback__current_goal(void * untyped_member, size_t 
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Maze_Feedback_message_member_array[7] = {
   {
+    "x",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(action_interfaces::action::Maze_Feedback, x),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "y",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(action_interfaces::action::Maze_Feedback, y),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "z",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(action_interfaces::action::Maze_Feedback, z),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "current_goal",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
@@ -384,14 +435,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Maze_Feedback
     resize_function__Maze_Feedback__current_goal  // resize(index) function pointer
   },
   {
-    "goal_num",  // name
+    "n_goal",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(action_interfaces::action::Maze_Feedback, goal_num),  // bytes offset in struct
+    offsetof(action_interfaces::action::Maze_Feedback, n_goal),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -401,48 +452,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Maze_Feedback
     nullptr  // resize(index) function pointer
   },
   {
-    "current_x",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    "goal_update",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(action_interfaces::action::Maze_Feedback, current_x),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "current_y",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(action_interfaces::action::Maze_Feedback, current_y),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "yaw",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(action_interfaces::action::Maze_Feedback, yaw),  // bytes offset in struct
+    offsetof(action_interfaces::action::Maze_Feedback, goal_update),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -460,23 +477,6 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Maze_Feedback
     0,  // array size
     false,  // is upper bound
     offsetof(action_interfaces::action::Maze_Feedback, time),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr,  // fetch(index, &value) function pointer
-    nullptr,  // assign(index, value) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "goal_reached",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(action_interfaces::action::Maze_Feedback, goal_reached),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

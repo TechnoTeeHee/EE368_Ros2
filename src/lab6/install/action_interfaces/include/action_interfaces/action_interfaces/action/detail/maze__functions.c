@@ -12,7 +12,7 @@
 
 
 // Include directives for member types
-// Member `goal_positions`
+// Member `goal_coordinates`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
@@ -21,8 +21,8 @@ action_interfaces__action__Maze_Goal__init(action_interfaces__action__Maze_Goal 
   if (!msg) {
     return false;
   }
-  // goal_positions
-  if (!rosidl_runtime_c__float__Sequence__init(&msg->goal_positions, 0)) {
+  // goal_coordinates
+  if (!rosidl_runtime_c__float__Sequence__init(&msg->goal_coordinates, 0)) {
     action_interfaces__action__Maze_Goal__fini(msg);
     return false;
   }
@@ -35,8 +35,8 @@ action_interfaces__action__Maze_Goal__fini(action_interfaces__action__Maze_Goal 
   if (!msg) {
     return;
   }
-  // goal_positions
-  rosidl_runtime_c__float__Sequence__fini(&msg->goal_positions);
+  // goal_coordinates
+  rosidl_runtime_c__float__Sequence__fini(&msg->goal_coordinates);
 }
 
 bool
@@ -45,9 +45,9 @@ action_interfaces__action__Maze_Goal__are_equal(const action_interfaces__action_
   if (!lhs || !rhs) {
     return false;
   }
-  // goal_positions
+  // goal_coordinates
   if (!rosidl_runtime_c__float__Sequence__are_equal(
-      &(lhs->goal_positions), &(rhs->goal_positions)))
+      &(lhs->goal_coordinates), &(rhs->goal_coordinates)))
   {
     return false;
   }
@@ -62,9 +62,9 @@ action_interfaces__action__Maze_Goal__copy(
   if (!input || !output) {
     return false;
   }
-  // goal_positions
+  // goal_coordinates
   if (!rosidl_runtime_c__float__Sequence__copy(
-      &(input->goal_positions), &(output->goal_positions)))
+      &(input->goal_coordinates), &(output->goal_coordinates)))
   {
     return false;
   }
@@ -257,7 +257,7 @@ action_interfaces__action__Maze_Result__init(action_interfaces__action__Maze_Res
   if (!msg) {
     return false;
   }
-  // final_time
+  // goal_time
   return true;
 }
 
@@ -267,7 +267,7 @@ action_interfaces__action__Maze_Result__fini(action_interfaces__action__Maze_Res
   if (!msg) {
     return;
   }
-  // final_time
+  // goal_time
 }
 
 bool
@@ -276,8 +276,8 @@ action_interfaces__action__Maze_Result__are_equal(const action_interfaces__actio
   if (!lhs || !rhs) {
     return false;
   }
-  // final_time
-  if (lhs->final_time != rhs->final_time) {
+  // goal_time
+  if (lhs->goal_time != rhs->goal_time) {
     return false;
   }
   return true;
@@ -291,8 +291,8 @@ action_interfaces__action__Maze_Result__copy(
   if (!input || !output) {
     return false;
   }
-  // final_time
-  output->final_time = input->final_time;
+  // goal_time
+  output->goal_time = input->goal_time;
   return true;
 }
 
@@ -487,17 +487,17 @@ action_interfaces__action__Maze_Feedback__init(action_interfaces__action__Maze_F
   if (!msg) {
     return false;
   }
+  // x
+  // y
+  // z
   // current_goal
   if (!rosidl_runtime_c__float__Sequence__init(&msg->current_goal, 0)) {
     action_interfaces__action__Maze_Feedback__fini(msg);
     return false;
   }
-  // goal_num
-  // current_x
-  // current_y
-  // yaw
+  // n_goal
+  // goal_update
   // time
-  // goal_reached
   return true;
 }
 
@@ -507,14 +507,14 @@ action_interfaces__action__Maze_Feedback__fini(action_interfaces__action__Maze_F
   if (!msg) {
     return;
   }
+  // x
+  // y
+  // z
   // current_goal
   rosidl_runtime_c__float__Sequence__fini(&msg->current_goal);
-  // goal_num
-  // current_x
-  // current_y
-  // yaw
+  // n_goal
+  // goal_update
   // time
-  // goal_reached
 }
 
 bool
@@ -523,34 +523,34 @@ action_interfaces__action__Maze_Feedback__are_equal(const action_interfaces__act
   if (!lhs || !rhs) {
     return false;
   }
+  // x
+  if (lhs->x != rhs->x) {
+    return false;
+  }
+  // y
+  if (lhs->y != rhs->y) {
+    return false;
+  }
+  // z
+  if (lhs->z != rhs->z) {
+    return false;
+  }
   // current_goal
   if (!rosidl_runtime_c__float__Sequence__are_equal(
       &(lhs->current_goal), &(rhs->current_goal)))
   {
     return false;
   }
-  // goal_num
-  if (lhs->goal_num != rhs->goal_num) {
+  // n_goal
+  if (lhs->n_goal != rhs->n_goal) {
     return false;
   }
-  // current_x
-  if (lhs->current_x != rhs->current_x) {
-    return false;
-  }
-  // current_y
-  if (lhs->current_y != rhs->current_y) {
-    return false;
-  }
-  // yaw
-  if (lhs->yaw != rhs->yaw) {
+  // goal_update
+  if (lhs->goal_update != rhs->goal_update) {
     return false;
   }
   // time
   if (lhs->time != rhs->time) {
-    return false;
-  }
-  // goal_reached
-  if (lhs->goal_reached != rhs->goal_reached) {
     return false;
   }
   return true;
@@ -564,24 +564,24 @@ action_interfaces__action__Maze_Feedback__copy(
   if (!input || !output) {
     return false;
   }
+  // x
+  output->x = input->x;
+  // y
+  output->y = input->y;
+  // z
+  output->z = input->z;
   // current_goal
   if (!rosidl_runtime_c__float__Sequence__copy(
       &(input->current_goal), &(output->current_goal)))
   {
     return false;
   }
-  // goal_num
-  output->goal_num = input->goal_num;
-  // current_x
-  output->current_x = input->current_x;
-  // current_y
-  output->current_y = input->current_y;
-  // yaw
-  output->yaw = input->yaw;
+  // n_goal
+  output->n_goal = input->n_goal;
+  // goal_update
+  output->goal_update = input->goal_update;
   // time
   output->time = input->time;
-  // goal_reached
-  output->goal_reached = input->goal_reached;
   return true;
 }
 

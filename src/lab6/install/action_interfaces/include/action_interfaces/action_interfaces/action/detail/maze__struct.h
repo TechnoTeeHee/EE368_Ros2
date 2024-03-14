@@ -18,13 +18,13 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'goal_positions'
+// Member 'goal_coordinates'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in action/Maze in the package action_interfaces.
 typedef struct action_interfaces__action__Maze_Goal
 {
-  rosidl_runtime_c__float__Sequence goal_positions;
+  rosidl_runtime_c__float__Sequence goal_coordinates;
 } action_interfaces__action__Maze_Goal;
 
 // Struct for a sequence of action_interfaces__action__Maze_Goal.
@@ -43,7 +43,7 @@ typedef struct action_interfaces__action__Maze_Goal__Sequence
 /// Struct defined in action/Maze in the package action_interfaces.
 typedef struct action_interfaces__action__Maze_Result
 {
-  float final_time;
+  float goal_time;
 } action_interfaces__action__Maze_Result;
 
 // Struct for a sequence of action_interfaces__action__Maze_Result.
@@ -67,13 +67,13 @@ typedef struct action_interfaces__action__Maze_Result__Sequence
 /// Struct defined in action/Maze in the package action_interfaces.
 typedef struct action_interfaces__action__Maze_Feedback
 {
+  float x;
+  float y;
+  float z;
   rosidl_runtime_c__float__Sequence current_goal;
-  int32_t goal_num;
-  float current_x;
-  float current_y;
-  float yaw;
+  int32_t n_goal;
+  bool goal_update;
   float time;
-  int32_t goal_reached;
 } action_interfaces__action__Maze_Feedback;
 
 // Struct for a sequence of action_interfaces__action__Maze_Feedback.

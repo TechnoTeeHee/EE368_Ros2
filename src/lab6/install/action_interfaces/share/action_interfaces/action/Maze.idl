@@ -6,25 +6,25 @@
 module action_interfaces {
   module action {
     struct Maze_Goal {
-      sequence<float> goal_positions;
+      sequence<float> goal_coordinates;
     };
     struct Maze_Result {
-      float final_time;
+      float goal_time;
     };
     struct Maze_Feedback {
+      float x;
+
+      float y;
+
+      float z;
+
       sequence<float> current_goal;
 
-      int32 goal_num;
+      int32 n_goal;
 
-      float current_x;
-
-      float current_y;
-
-      float yaw;
+      boolean goal_update;
 
       float time;
-
-      int32 goal_reached;
     };
   };
 };

@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // goal_positions
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // goal_positions
+#include "rosidl_runtime_c/primitives_sequence.h"  // goal_coordinates
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // goal_coordinates
 
 // forward declare type support functions
 
@@ -51,10 +51,10 @@ static bool _Maze_Goal__cdr_serialize(
     return false;
   }
   const _Maze_Goal__ros_msg_type * ros_message = static_cast<const _Maze_Goal__ros_msg_type *>(untyped_ros_message);
-  // Field name: goal_positions
+  // Field name: goal_coordinates
   {
-    size_t size = ros_message->goal_positions.size;
-    auto array_ptr = ros_message->goal_positions.data;
+    size_t size = ros_message->goal_coordinates.size;
+    auto array_ptr = ros_message->goal_coordinates.data;
     cdr << static_cast<uint32_t>(size);
     cdr.serializeArray(array_ptr, size);
   }
@@ -71,19 +71,19 @@ static bool _Maze_Goal__cdr_deserialize(
     return false;
   }
   _Maze_Goal__ros_msg_type * ros_message = static_cast<_Maze_Goal__ros_msg_type *>(untyped_ros_message);
-  // Field name: goal_positions
+  // Field name: goal_coordinates
   {
     uint32_t cdrSize;
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
-    if (ros_message->goal_positions.data) {
-      rosidl_runtime_c__float__Sequence__fini(&ros_message->goal_positions);
+    if (ros_message->goal_coordinates.data) {
+      rosidl_runtime_c__float__Sequence__fini(&ros_message->goal_coordinates);
     }
-    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->goal_positions, size)) {
-      fprintf(stderr, "failed to create array for field 'goal_positions'");
+    if (!rosidl_runtime_c__float__Sequence__init(&ros_message->goal_coordinates, size)) {
+      fprintf(stderr, "failed to create array for field 'goal_coordinates'");
       return false;
     }
-    auto array_ptr = ros_message->goal_positions.data;
+    auto array_ptr = ros_message->goal_coordinates.data;
     cdr.deserializeArray(array_ptr, size);
   }
 
@@ -104,10 +104,10 @@ size_t get_serialized_size_action_interfaces__action__Maze_Goal(
   (void)padding;
   (void)wchar_size;
 
-  // field.name goal_positions
+  // field.name goal_coordinates
   {
-    size_t array_size = ros_message->goal_positions.size;
-    auto array_ptr = ros_message->goal_positions.data;
+    size_t array_size = ros_message->goal_coordinates.size;
+    auto array_ptr = ros_message->goal_coordinates.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     (void)array_ptr;
@@ -144,7 +144,7 @@ size_t max_serialized_size_action_interfaces__action__Maze_Goal(
   full_bounded = true;
   is_plain = true;
 
-  // member: goal_positions
+  // member: goal_coordinates
   {
     size_t array_size = 0;
     full_bounded = false;
@@ -165,7 +165,7 @@ size_t max_serialized_size_action_interfaces__action__Maze_Goal(
     using DataType = action_interfaces__action__Maze_Goal;
     is_plain =
       (
-      offsetof(DataType, goal_positions) +
+      offsetof(DataType, goal_coordinates) +
       last_member_size
       ) == ret_val;
   }
@@ -268,9 +268,9 @@ static bool _Maze_Result__cdr_serialize(
     return false;
   }
   const _Maze_Result__ros_msg_type * ros_message = static_cast<const _Maze_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: final_time
+  // Field name: goal_time
   {
-    cdr << ros_message->final_time;
+    cdr << ros_message->goal_time;
   }
 
   return true;
@@ -285,9 +285,9 @@ static bool _Maze_Result__cdr_deserialize(
     return false;
   }
   _Maze_Result__ros_msg_type * ros_message = static_cast<_Maze_Result__ros_msg_type *>(untyped_ros_message);
-  // Field name: final_time
+  // Field name: goal_time
   {
-    cdr >> ros_message->final_time;
+    cdr >> ros_message->goal_time;
   }
 
   return true;
@@ -307,9 +307,9 @@ size_t get_serialized_size_action_interfaces__action__Maze_Result(
   (void)padding;
   (void)wchar_size;
 
-  // field.name final_time
+  // field.name goal_time
   {
-    size_t item_size = sizeof(ros_message->final_time);
+    size_t item_size = sizeof(ros_message->goal_time);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -342,7 +342,7 @@ size_t max_serialized_size_action_interfaces__action__Maze_Result(
   full_bounded = true;
   is_plain = true;
 
-  // member: final_time
+  // member: goal_time
   {
     size_t array_size = 1;
 
@@ -359,7 +359,7 @@ size_t max_serialized_size_action_interfaces__action__Maze_Result(
     using DataType = action_interfaces__action__Maze_Result;
     is_plain =
       (
-      offsetof(DataType, final_time) +
+      offsetof(DataType, goal_time) +
       last_member_size
       ) == ret_val;
   }
@@ -466,6 +466,21 @@ static bool _Maze_Feedback__cdr_serialize(
     return false;
   }
   const _Maze_Feedback__ros_msg_type * ros_message = static_cast<const _Maze_Feedback__ros_msg_type *>(untyped_ros_message);
+  // Field name: x
+  {
+    cdr << ros_message->x;
+  }
+
+  // Field name: y
+  {
+    cdr << ros_message->y;
+  }
+
+  // Field name: z
+  {
+    cdr << ros_message->z;
+  }
+
   // Field name: current_goal
   {
     size_t size = ros_message->current_goal.size;
@@ -474,34 +489,19 @@ static bool _Maze_Feedback__cdr_serialize(
     cdr.serializeArray(array_ptr, size);
   }
 
-  // Field name: goal_num
+  // Field name: n_goal
   {
-    cdr << ros_message->goal_num;
+    cdr << ros_message->n_goal;
   }
 
-  // Field name: current_x
+  // Field name: goal_update
   {
-    cdr << ros_message->current_x;
-  }
-
-  // Field name: current_y
-  {
-    cdr << ros_message->current_y;
-  }
-
-  // Field name: yaw
-  {
-    cdr << ros_message->yaw;
+    cdr << (ros_message->goal_update ? true : false);
   }
 
   // Field name: time
   {
     cdr << ros_message->time;
-  }
-
-  // Field name: goal_reached
-  {
-    cdr << ros_message->goal_reached;
   }
 
   return true;
@@ -516,6 +516,21 @@ static bool _Maze_Feedback__cdr_deserialize(
     return false;
   }
   _Maze_Feedback__ros_msg_type * ros_message = static_cast<_Maze_Feedback__ros_msg_type *>(untyped_ros_message);
+  // Field name: x
+  {
+    cdr >> ros_message->x;
+  }
+
+  // Field name: y
+  {
+    cdr >> ros_message->y;
+  }
+
+  // Field name: z
+  {
+    cdr >> ros_message->z;
+  }
+
   // Field name: current_goal
   {
     uint32_t cdrSize;
@@ -532,34 +547,21 @@ static bool _Maze_Feedback__cdr_deserialize(
     cdr.deserializeArray(array_ptr, size);
   }
 
-  // Field name: goal_num
+  // Field name: n_goal
   {
-    cdr >> ros_message->goal_num;
+    cdr >> ros_message->n_goal;
   }
 
-  // Field name: current_x
+  // Field name: goal_update
   {
-    cdr >> ros_message->current_x;
-  }
-
-  // Field name: current_y
-  {
-    cdr >> ros_message->current_y;
-  }
-
-  // Field name: yaw
-  {
-    cdr >> ros_message->yaw;
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->goal_update = tmp ? true : false;
   }
 
   // Field name: time
   {
     cdr >> ros_message->time;
-  }
-
-  // Field name: goal_reached
-  {
-    cdr >> ros_message->goal_reached;
   }
 
   return true;
@@ -579,6 +581,24 @@ size_t get_serialized_size_action_interfaces__action__Maze_Feedback(
   (void)padding;
   (void)wchar_size;
 
+  // field.name x
+  {
+    size_t item_size = sizeof(ros_message->x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name y
+  {
+    size_t item_size = sizeof(ros_message->y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name z
+  {
+    size_t item_size = sizeof(ros_message->z);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name current_goal
   {
     size_t array_size = ros_message->current_goal.size;
@@ -590,39 +610,21 @@ size_t get_serialized_size_action_interfaces__action__Maze_Feedback(
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name goal_num
+  // field.name n_goal
   {
-    size_t item_size = sizeof(ros_message->goal_num);
+    size_t item_size = sizeof(ros_message->n_goal);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name current_x
+  // field.name goal_update
   {
-    size_t item_size = sizeof(ros_message->current_x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name current_y
-  {
-    size_t item_size = sizeof(ros_message->current_y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name yaw
-  {
-    size_t item_size = sizeof(ros_message->yaw);
+    size_t item_size = sizeof(ros_message->goal_update);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
   // field.name time
   {
     size_t item_size = sizeof(ros_message->time);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name goal_reached
-  {
-    size_t item_size = sizeof(ros_message->goal_reached);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -655,6 +657,30 @@ size_t max_serialized_size_action_interfaces__action__Maze_Feedback(
   full_bounded = true;
   is_plain = true;
 
+  // member: x
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: y
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: z
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
   // member: current_goal
   {
     size_t array_size = 0;
@@ -667,7 +693,7 @@ size_t max_serialized_size_action_interfaces__action__Maze_Feedback(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: goal_num
+  // member: n_goal
   {
     size_t array_size = 1;
 
@@ -675,39 +701,14 @@ size_t max_serialized_size_action_interfaces__action__Maze_Feedback(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
-  // member: current_x
+  // member: goal_update
   {
     size_t array_size = 1;
 
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: current_y
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: yaw
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
   }
   // member: time
-  {
-    size_t array_size = 1;
-
-    last_member_size = array_size * sizeof(uint32_t);
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
-  }
-  // member: goal_reached
   {
     size_t array_size = 1;
 
@@ -724,7 +725,7 @@ size_t max_serialized_size_action_interfaces__action__Maze_Feedback(
     using DataType = action_interfaces__action__Maze_Feedback;
     is_plain =
       (
-      offsetof(DataType, goal_reached) +
+      offsetof(DataType, time) +
       last_member_size
       ) == ret_val;
   }

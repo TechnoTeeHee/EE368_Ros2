@@ -53,8 +53,8 @@ bool action_interfaces__action__maze__goal__convert_from_py(PyObject * _pymsg, v
     assert(strncmp("action_interfaces.action._maze.Maze_Goal", full_classname_dest, 40) == 0);
   }
   action_interfaces__action__Maze_Goal * ros_message = _ros_message;
-  {  // coordinates
-    PyObject * field = PyObject_GetAttrString(_pymsg, "coordinates");
+  {  // goal_coordinates
+    PyObject * field = PyObject_GetAttrString(_pymsg, "goal_coordinates");
     if (!field) {
       return false;
     }
@@ -67,13 +67,13 @@ bool action_interfaces__action__maze__goal__convert_from_py(PyObject * _pymsg, v
         return false;
       }
       Py_ssize_t size = view.len / sizeof(float);
-      if (!rosidl_runtime_c__float__Sequence__init(&(ros_message->coordinates), size)) {
+      if (!rosidl_runtime_c__float__Sequence__init(&(ros_message->goal_coordinates), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create float__Sequence ros_message");
         PyBuffer_Release(&view);
         Py_DECREF(field);
         return false;
       }
-      float * dest = ros_message->coordinates.data;
+      float * dest = ros_message->goal_coordinates.data;
       rc = PyBuffer_ToContiguous(dest, &view, view.len, 'C');
       if (rc < 0) {
         PyBuffer_Release(&view);
@@ -82,7 +82,7 @@ bool action_interfaces__action__maze__goal__convert_from_py(PyObject * _pymsg, v
       }
       PyBuffer_Release(&view);
     } else {
-      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'coordinates'");
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'goal_coordinates'");
       if (!seq_field) {
         Py_DECREF(field);
         return false;
@@ -93,13 +93,13 @@ bool action_interfaces__action__maze__goal__convert_from_py(PyObject * _pymsg, v
         Py_DECREF(field);
         return false;
       }
-      if (!rosidl_runtime_c__float__Sequence__init(&(ros_message->coordinates), size)) {
+      if (!rosidl_runtime_c__float__Sequence__init(&(ros_message->goal_coordinates), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create float__Sequence ros_message");
         Py_DECREF(seq_field);
         Py_DECREF(field);
         return false;
       }
-      float * dest = ros_message->coordinates.data;
+      float * dest = ros_message->goal_coordinates.data;
       for (Py_ssize_t i = 0; i < size; ++i) {
         PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
         if (!item) {
@@ -137,9 +137,9 @@ PyObject * action_interfaces__action__maze__goal__convert_to_py(void * raw_ros_m
     }
   }
   action_interfaces__action__Maze_Goal * ros_message = (action_interfaces__action__Maze_Goal *)raw_ros_message;
-  {  // coordinates
+  {  // goal_coordinates
     PyObject * field = NULL;
-    field = PyObject_GetAttrString(_pymessage, "coordinates");
+    field = PyObject_GetAttrString(_pymessage, "goal_coordinates");
     if (!field) {
       return NULL;
     }
@@ -176,12 +176,12 @@ PyObject * action_interfaces__action__maze__goal__convert_to_py(void * raw_ros_m
       }
       Py_DECREF(pop);
     }
-    if (ros_message->coordinates.size > 0) {
+    if (ros_message->goal_coordinates.size > 0) {
       // populating the array.array using the frombytes method
       PyObject * frombytes = PyObject_GetAttrString(field, "frombytes");
       assert(frombytes != NULL);
-      float * src = &(ros_message->coordinates.data[0]);
-      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->coordinates.size * sizeof(float));
+      float * src = &(ros_message->goal_coordinates.data[0]);
+      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->goal_coordinates.size * sizeof(float));
       assert(data != NULL);
       PyObject * ret = PyObject_CallFunctionObjArgs(frombytes, data, NULL);
       Py_DECREF(data);
@@ -347,6 +347,33 @@ bool action_interfaces__action__maze__feedback__convert_from_py(PyObject * _pyms
     assert(strncmp("action_interfaces.action._maze.Maze_Feedback", full_classname_dest, 44) == 0);
   }
   action_interfaces__action__Maze_Feedback * ros_message = _ros_message;
+  {  // x
+    PyObject * field = PyObject_GetAttrString(_pymsg, "x");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->x = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // y
+    PyObject * field = PyObject_GetAttrString(_pymsg, "y");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->y = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // z
+    PyObject * field = PyObject_GetAttrString(_pymsg, "z");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->z = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
   {  // current_goal
     PyObject * field = PyObject_GetAttrString(_pymsg, "current_goal");
     if (!field) {
@@ -409,40 +436,22 @@ bool action_interfaces__action__maze__feedback__convert_from_py(PyObject * _pyms
     }
     Py_DECREF(field);
   }
-  {  // i
-    PyObject * field = PyObject_GetAttrString(_pymsg, "i");
+  {  // n_goal
+    PyObject * field = PyObject_GetAttrString(_pymsg, "n_goal");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->i = (int32_t)PyLong_AsLong(field);
+    ros_message->n_goal = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
-  {  // x
-    PyObject * field = PyObject_GetAttrString(_pymsg, "x");
+  {  // goal_update
+    PyObject * field = PyObject_GetAttrString(_pymsg, "goal_update");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->x = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // y
-    PyObject * field = PyObject_GetAttrString(_pymsg, "y");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->y = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // yaw
-    PyObject * field = PyObject_GetAttrString(_pymsg, "yaw");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->yaw = (float)PyFloat_AS_DOUBLE(field);
+    assert(PyBool_Check(field));
+    ros_message->goal_update = (Py_True == field);
     Py_DECREF(field);
   }
   {  // time
@@ -452,15 +461,6 @@ bool action_interfaces__action__maze__feedback__convert_from_py(PyObject * _pyms
     }
     assert(PyFloat_Check(field));
     ros_message->time = (float)PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // done
-    PyObject * field = PyObject_GetAttrString(_pymsg, "done");
-    if (!field) {
-      return false;
-    }
-    assert(PyLong_Check(field));
-    ros_message->done = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
 
@@ -485,6 +485,39 @@ PyObject * action_interfaces__action__maze__feedback__convert_to_py(void * raw_r
     }
   }
   action_interfaces__action__Maze_Feedback * ros_message = (action_interfaces__action__Maze_Feedback *)raw_ros_message;
+  {  // x
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->x);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "x", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // y
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->y);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "y", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // z
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->z);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "z", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // current_goal
     PyObject * field = NULL;
     field = PyObject_GetAttrString(_pymessage, "current_goal");
@@ -542,44 +575,22 @@ PyObject * action_interfaces__action__maze__feedback__convert_to_py(void * raw_r
     }
     Py_DECREF(field);
   }
-  {  // i
+  {  // n_goal
     PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->i);
+    field = PyLong_FromLong(ros_message->n_goal);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "i", field);
+      int rc = PyObject_SetAttrString(_pymessage, "n_goal", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // x
+  {  // goal_update
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->x);
+    field = PyBool_FromLong(ros_message->goal_update ? 1 : 0);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "x", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // y
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->y);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "y", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // yaw
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->yaw);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "yaw", field);
+      int rc = PyObject_SetAttrString(_pymessage, "goal_update", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -591,17 +602,6 @@ PyObject * action_interfaces__action__maze__feedback__convert_to_py(void * raw_r
     field = PyFloat_FromDouble(ros_message->time);
     {
       int rc = PyObject_SetAttrString(_pymessage, "time", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // done
-    PyObject * field = NULL;
-    field = PyLong_FromLong(ros_message->done);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "done", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

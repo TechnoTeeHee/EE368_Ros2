@@ -25,14 +25,14 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: goal_positions
+  // member: goal_coordinates
   {
-    if (msg.goal_positions.size() == 0) {
-      out << "goal_positions: []";
+    if (msg.goal_coordinates.size() == 0) {
+      out << "goal_coordinates: []";
     } else {
-      out << "goal_positions: [";
-      size_t pending_items = msg.goal_positions.size();
-      for (auto item : msg.goal_positions) {
+      out << "goal_coordinates: [";
+      size_t pending_items = msg.goal_coordinates.size();
+      for (auto item : msg.goal_coordinates) {
         rosidl_generator_traits::value_to_yaml(item, out);
         if (--pending_items > 0) {
           out << ", ";
@@ -48,16 +48,16 @@ inline void to_block_style_yaml(
   const Maze_Goal & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: goal_positions
+  // member: goal_coordinates
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    if (msg.goal_positions.size() == 0) {
-      out << "goal_positions: []\n";
+    if (msg.goal_coordinates.size() == 0) {
+      out << "goal_coordinates: []\n";
     } else {
-      out << "goal_positions:\n";
-      for (auto item : msg.goal_positions) {
+      out << "goal_coordinates:\n";
+      for (auto item : msg.goal_coordinates) {
         if (indentation > 0) {
           out << std::string(indentation, ' ');
         }
@@ -138,10 +138,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: final_time
+  // member: goal_time
   {
-    out << "final_time: ";
-    rosidl_generator_traits::value_to_yaml(msg.final_time, out);
+    out << "goal_time: ";
+    rosidl_generator_traits::value_to_yaml(msg.goal_time, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -150,13 +150,13 @@ inline void to_block_style_yaml(
   const Maze_Result & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: final_time
+  // member: goal_time
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "final_time: ";
-    rosidl_generator_traits::value_to_yaml(msg.final_time, out);
+    out << "goal_time: ";
+    rosidl_generator_traits::value_to_yaml(msg.goal_time, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -230,6 +230,27 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: x
+  {
+    out << "x: ";
+    rosidl_generator_traits::value_to_yaml(msg.x, out);
+    out << ", ";
+  }
+
+  // member: y
+  {
+    out << "y: ";
+    rosidl_generator_traits::value_to_yaml(msg.y, out);
+    out << ", ";
+  }
+
+  // member: z
+  {
+    out << "z: ";
+    rosidl_generator_traits::value_to_yaml(msg.z, out);
+    out << ", ";
+  }
+
   // member: current_goal
   {
     if (msg.current_goal.size() == 0) {
@@ -248,31 +269,17 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: goal_num
+  // member: n_goal
   {
-    out << "goal_num: ";
-    rosidl_generator_traits::value_to_yaml(msg.goal_num, out);
+    out << "n_goal: ";
+    rosidl_generator_traits::value_to_yaml(msg.n_goal, out);
     out << ", ";
   }
 
-  // member: current_x
+  // member: goal_update
   {
-    out << "current_x: ";
-    rosidl_generator_traits::value_to_yaml(msg.current_x, out);
-    out << ", ";
-  }
-
-  // member: current_y
-  {
-    out << "current_y: ";
-    rosidl_generator_traits::value_to_yaml(msg.current_y, out);
-    out << ", ";
-  }
-
-  // member: yaw
-  {
-    out << "yaw: ";
-    rosidl_generator_traits::value_to_yaml(msg.yaw, out);
+    out << "goal_update: ";
+    rosidl_generator_traits::value_to_yaml(msg.goal_update, out);
     out << ", ";
   }
 
@@ -280,13 +287,6 @@ inline void to_flow_style_yaml(
   {
     out << "time: ";
     rosidl_generator_traits::value_to_yaml(msg.time, out);
-    out << ", ";
-  }
-
-  // member: goal_reached
-  {
-    out << "goal_reached: ";
-    rosidl_generator_traits::value_to_yaml(msg.goal_reached, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -295,6 +295,36 @@ inline void to_block_style_yaml(
   const Maze_Feedback & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: x
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "x: ";
+    rosidl_generator_traits::value_to_yaml(msg.x, out);
+    out << "\n";
+  }
+
+  // member: y
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "y: ";
+    rosidl_generator_traits::value_to_yaml(msg.y, out);
+    out << "\n";
+  }
+
+  // member: z
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "z: ";
+    rosidl_generator_traits::value_to_yaml(msg.z, out);
+    out << "\n";
+  }
+
   // member: current_goal
   {
     if (indentation > 0) {
@@ -315,43 +345,23 @@ inline void to_block_style_yaml(
     }
   }
 
-  // member: goal_num
+  // member: n_goal
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "goal_num: ";
-    rosidl_generator_traits::value_to_yaml(msg.goal_num, out);
+    out << "n_goal: ";
+    rosidl_generator_traits::value_to_yaml(msg.n_goal, out);
     out << "\n";
   }
 
-  // member: current_x
+  // member: goal_update
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "current_x: ";
-    rosidl_generator_traits::value_to_yaml(msg.current_x, out);
-    out << "\n";
-  }
-
-  // member: current_y
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "current_y: ";
-    rosidl_generator_traits::value_to_yaml(msg.current_y, out);
-    out << "\n";
-  }
-
-  // member: yaw
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "yaw: ";
-    rosidl_generator_traits::value_to_yaml(msg.yaw, out);
+    out << "goal_update: ";
+    rosidl_generator_traits::value_to_yaml(msg.goal_update, out);
     out << "\n";
   }
 
@@ -362,16 +372,6 @@ inline void to_block_style_yaml(
     }
     out << "time: ";
     rosidl_generator_traits::value_to_yaml(msg.time, out);
-    out << "\n";
-  }
-
-  // member: goal_reached
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "goal_reached: ";
-    rosidl_generator_traits::value_to_yaml(msg.goal_reached, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

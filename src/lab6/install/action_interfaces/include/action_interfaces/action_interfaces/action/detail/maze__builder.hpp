@@ -21,15 +21,15 @@ namespace action
 namespace builder
 {
 
-class Init_Maze_Goal_goal_positions
+class Init_Maze_Goal_goal_coordinates
 {
 public:
-  Init_Maze_Goal_goal_positions()
+  Init_Maze_Goal_goal_coordinates()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::action_interfaces::action::Maze_Goal goal_positions(::action_interfaces::action::Maze_Goal::_goal_positions_type arg)
+  ::action_interfaces::action::Maze_Goal goal_coordinates(::action_interfaces::action::Maze_Goal::_goal_coordinates_type arg)
   {
-    msg_.goal_positions = std::move(arg);
+    msg_.goal_coordinates = std::move(arg);
     return std::move(msg_);
   }
 
@@ -48,7 +48,7 @@ template<>
 inline
 auto build<::action_interfaces::action::Maze_Goal>()
 {
-  return action_interfaces::action::builder::Init_Maze_Goal_goal_positions();
+  return action_interfaces::action::builder::Init_Maze_Goal_goal_coordinates();
 }
 
 }  // namespace action_interfaces
@@ -63,15 +63,15 @@ namespace action
 namespace builder
 {
 
-class Init_Maze_Result_final_time
+class Init_Maze_Result_goal_time
 {
 public:
-  Init_Maze_Result_final_time()
+  Init_Maze_Result_goal_time()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::action_interfaces::action::Maze_Result final_time(::action_interfaces::action::Maze_Result::_final_time_type arg)
+  ::action_interfaces::action::Maze_Result goal_time(::action_interfaces::action::Maze_Result::_goal_time_type arg)
   {
-    msg_.final_time = std::move(arg);
+    msg_.goal_time = std::move(arg);
     return std::move(msg_);
   }
 
@@ -90,7 +90,7 @@ template<>
 inline
 auto build<::action_interfaces::action::Maze_Result>()
 {
-  return action_interfaces::action::builder::Init_Maze_Result_final_time();
+  return action_interfaces::action::builder::Init_Maze_Result_goal_time();
 }
 
 }  // namespace action_interfaces
@@ -105,15 +105,15 @@ namespace action
 namespace builder
 {
 
-class Init_Maze_Feedback_goal_reached
+class Init_Maze_Feedback_time
 {
 public:
-  explicit Init_Maze_Feedback_goal_reached(::action_interfaces::action::Maze_Feedback & msg)
+  explicit Init_Maze_Feedback_time(::action_interfaces::action::Maze_Feedback & msg)
   : msg_(msg)
   {}
-  ::action_interfaces::action::Maze_Feedback goal_reached(::action_interfaces::action::Maze_Feedback::_goal_reached_type arg)
+  ::action_interfaces::action::Maze_Feedback time(::action_interfaces::action::Maze_Feedback::_time_type arg)
   {
-    msg_.goal_reached = std::move(arg);
+    msg_.time = std::move(arg);
     return std::move(msg_);
   }
 
@@ -121,31 +121,15 @@ private:
   ::action_interfaces::action::Maze_Feedback msg_;
 };
 
-class Init_Maze_Feedback_time
+class Init_Maze_Feedback_goal_update
 {
 public:
-  explicit Init_Maze_Feedback_time(::action_interfaces::action::Maze_Feedback & msg)
+  explicit Init_Maze_Feedback_goal_update(::action_interfaces::action::Maze_Feedback & msg)
   : msg_(msg)
   {}
-  Init_Maze_Feedback_goal_reached time(::action_interfaces::action::Maze_Feedback::_time_type arg)
+  Init_Maze_Feedback_time goal_update(::action_interfaces::action::Maze_Feedback::_goal_update_type arg)
   {
-    msg_.time = std::move(arg);
-    return Init_Maze_Feedback_goal_reached(msg_);
-  }
-
-private:
-  ::action_interfaces::action::Maze_Feedback msg_;
-};
-
-class Init_Maze_Feedback_yaw
-{
-public:
-  explicit Init_Maze_Feedback_yaw(::action_interfaces::action::Maze_Feedback & msg)
-  : msg_(msg)
-  {}
-  Init_Maze_Feedback_time yaw(::action_interfaces::action::Maze_Feedback::_yaw_type arg)
-  {
-    msg_.yaw = std::move(arg);
+    msg_.goal_update = std::move(arg);
     return Init_Maze_Feedback_time(msg_);
   }
 
@@ -153,48 +137,16 @@ private:
   ::action_interfaces::action::Maze_Feedback msg_;
 };
 
-class Init_Maze_Feedback_current_y
+class Init_Maze_Feedback_n_goal
 {
 public:
-  explicit Init_Maze_Feedback_current_y(::action_interfaces::action::Maze_Feedback & msg)
+  explicit Init_Maze_Feedback_n_goal(::action_interfaces::action::Maze_Feedback & msg)
   : msg_(msg)
   {}
-  Init_Maze_Feedback_yaw current_y(::action_interfaces::action::Maze_Feedback::_current_y_type arg)
+  Init_Maze_Feedback_goal_update n_goal(::action_interfaces::action::Maze_Feedback::_n_goal_type arg)
   {
-    msg_.current_y = std::move(arg);
-    return Init_Maze_Feedback_yaw(msg_);
-  }
-
-private:
-  ::action_interfaces::action::Maze_Feedback msg_;
-};
-
-class Init_Maze_Feedback_current_x
-{
-public:
-  explicit Init_Maze_Feedback_current_x(::action_interfaces::action::Maze_Feedback & msg)
-  : msg_(msg)
-  {}
-  Init_Maze_Feedback_current_y current_x(::action_interfaces::action::Maze_Feedback::_current_x_type arg)
-  {
-    msg_.current_x = std::move(arg);
-    return Init_Maze_Feedback_current_y(msg_);
-  }
-
-private:
-  ::action_interfaces::action::Maze_Feedback msg_;
-};
-
-class Init_Maze_Feedback_goal_num
-{
-public:
-  explicit Init_Maze_Feedback_goal_num(::action_interfaces::action::Maze_Feedback & msg)
-  : msg_(msg)
-  {}
-  Init_Maze_Feedback_current_x goal_num(::action_interfaces::action::Maze_Feedback::_goal_num_type arg)
-  {
-    msg_.goal_num = std::move(arg);
-    return Init_Maze_Feedback_current_x(msg_);
+    msg_.n_goal = std::move(arg);
+    return Init_Maze_Feedback_goal_update(msg_);
   }
 
 private:
@@ -204,13 +156,61 @@ private:
 class Init_Maze_Feedback_current_goal
 {
 public:
-  Init_Maze_Feedback_current_goal()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_Maze_Feedback_current_goal(::action_interfaces::action::Maze_Feedback & msg)
+  : msg_(msg)
   {}
-  Init_Maze_Feedback_goal_num current_goal(::action_interfaces::action::Maze_Feedback::_current_goal_type arg)
+  Init_Maze_Feedback_n_goal current_goal(::action_interfaces::action::Maze_Feedback::_current_goal_type arg)
   {
     msg_.current_goal = std::move(arg);
-    return Init_Maze_Feedback_goal_num(msg_);
+    return Init_Maze_Feedback_n_goal(msg_);
+  }
+
+private:
+  ::action_interfaces::action::Maze_Feedback msg_;
+};
+
+class Init_Maze_Feedback_z
+{
+public:
+  explicit Init_Maze_Feedback_z(::action_interfaces::action::Maze_Feedback & msg)
+  : msg_(msg)
+  {}
+  Init_Maze_Feedback_current_goal z(::action_interfaces::action::Maze_Feedback::_z_type arg)
+  {
+    msg_.z = std::move(arg);
+    return Init_Maze_Feedback_current_goal(msg_);
+  }
+
+private:
+  ::action_interfaces::action::Maze_Feedback msg_;
+};
+
+class Init_Maze_Feedback_y
+{
+public:
+  explicit Init_Maze_Feedback_y(::action_interfaces::action::Maze_Feedback & msg)
+  : msg_(msg)
+  {}
+  Init_Maze_Feedback_z y(::action_interfaces::action::Maze_Feedback::_y_type arg)
+  {
+    msg_.y = std::move(arg);
+    return Init_Maze_Feedback_z(msg_);
+  }
+
+private:
+  ::action_interfaces::action::Maze_Feedback msg_;
+};
+
+class Init_Maze_Feedback_x
+{
+public:
+  Init_Maze_Feedback_x()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_Maze_Feedback_y x(::action_interfaces::action::Maze_Feedback::_x_type arg)
+  {
+    msg_.x = std::move(arg);
+    return Init_Maze_Feedback_y(msg_);
   }
 
 private:
@@ -228,7 +228,7 @@ template<>
 inline
 auto build<::action_interfaces::action::Maze_Feedback>()
 {
-  return action_interfaces::action::builder::Init_Maze_Feedback_current_goal();
+  return action_interfaces::action::builder::Init_Maze_Feedback_x();
 }
 
 }  // namespace action_interfaces
