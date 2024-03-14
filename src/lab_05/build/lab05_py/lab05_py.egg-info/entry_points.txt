@@ -1,0 +1,4 @@
+[console_scripts]
+depth_camera = lab05_py.depth_camera:main
+keyboard_control = lab05_py.keyboard_control:main
+

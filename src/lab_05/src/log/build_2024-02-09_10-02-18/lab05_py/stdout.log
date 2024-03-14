@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating lab05_py.egg-info
+writing lab05_py.egg-info/PKG-INFO
+writing dependency_links to lab05_py.egg-info/dependency_links.txt
+writing entry points to lab05_py.egg-info/entry_points.txt
+writing requirements to lab05_py.egg-info/requires.txt
+writing top-level names to lab05_py.egg-info/top_level.txt
+writing manifest file 'lab05_py.egg-info/SOURCES.txt'
+reading manifest file 'lab05_py.egg-info/SOURCES.txt'
+writing manifest file 'lab05_py.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/.engr-ece/rgz834/lab_05/src/install/lab05_py/lib/python3.10/site-packages/lab05-py.egg-link (link to .)
+Installing depth_camera script to /home/.engr-ece/rgz834/lab_05/src/install/lab05_py/lib/lab05_py
+
+Installed /home/.engr-ece/rgz834/lab_05/src/build/lab05_py
+running install_data
+creating /home/.engr-ece/rgz834/lab_05/src/install/lab05_py/share/ament_index
+creating /home/.engr-ece/rgz834/lab_05/src/install/lab05_py/share/ament_index/resource_index
+creating /home/.engr-ece/rgz834/lab_05/src/install/lab05_py/share/ament_index/resource_index/packages
+copying resource/lab05_py -> /home/.engr-ece/rgz834/lab_05/src/install/lab05_py/share/ament_index/resource_index/packages
+copying package.xml -> /home/.engr-ece/rgz834/lab_05/src/install/lab05_py/share/lab05_py
