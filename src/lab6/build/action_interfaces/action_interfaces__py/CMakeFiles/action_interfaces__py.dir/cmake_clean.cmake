@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/action_interfaces/action/_bubblesort_s.c"
   "../rosidl_generator_py/action_interfaces/action/_fibonacci.py"
   "../rosidl_generator_py/action_interfaces/action/_fibonacci_s.c"
+  "../rosidl_generator_py/action_interfaces/action/_maze.py"
+  "../rosidl_generator_py/action_interfaces/action/_maze_s.c"
   "CMakeFiles/action_interfaces__py"
 )
 

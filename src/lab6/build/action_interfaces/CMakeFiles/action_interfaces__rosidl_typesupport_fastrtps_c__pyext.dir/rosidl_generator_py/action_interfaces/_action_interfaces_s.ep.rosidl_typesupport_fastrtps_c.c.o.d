@@ -210,4 +210,7 @@ CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_ge
  /home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_c/action_interfaces/action/detail/fibonacci__functions.h \
  /home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_c/action_interfaces/action/detail/bubblesort__type_support.h \
  /home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_c/action_interfaces/action/detail/bubblesort__struct.h \
- /home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_c/action_interfaces/action/detail/bubblesort__functions.h
+ /home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_c/action_interfaces/action/detail/bubblesort__functions.h \
+ /home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_c/action_interfaces/action/detail/maze__type_support.h \
+ /home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_c/action_interfaces/action/detail/maze__struct.h \
+ /home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_c/action_interfaces/action/detail/maze__functions.h

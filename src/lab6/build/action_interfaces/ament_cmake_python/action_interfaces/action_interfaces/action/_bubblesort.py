@@ -5,7 +5,7 @@
 
 # Import statements for member types
 
-# Member 'in_order'
+# Member 'order'
 import array  # noqa: E402, I100
 
 import builtins  # noqa: E402, I100
@@ -58,11 +58,11 @@ class Bubblesort_Goal(metaclass=Metaclass_Bubblesort_Goal):
     """Message class 'Bubblesort_Goal'."""
 
     __slots__ = [
-        '_in_order',
+        '_order',
     ]
 
     _fields_and_field_types = {
-        'in_order': 'sequence<int32>',
+        'order': 'sequence<int32>',
     }
 
     SLOT_TYPES = (
@@ -73,7 +73,7 @@ class Bubblesort_Goal(metaclass=Metaclass_Bubblesort_Goal):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.in_order = array.array('i', kwargs.get('in_order', []))
+        self.order = array.array('i', kwargs.get('order', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -104,7 +104,7 @@ class Bubblesort_Goal(metaclass=Metaclass_Bubblesort_Goal):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.in_order != other.in_order:
+        if self.order != other.order:
             return False
         return True
 
@@ -114,16 +114,16 @@ class Bubblesort_Goal(metaclass=Metaclass_Bubblesort_Goal):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def in_order(self):
-        """Message field 'in_order'."""
-        return self._in_order
+    def order(self):
+        """Message field 'order'."""
+        return self._order
 
-    @in_order.setter
-    def in_order(self, value):
+    @order.setter
+    def order(self, value):
         if isinstance(value, array.array):
             assert value.typecode == 'i', \
-                "The 'in_order' array.array() must have the type code of 'i'"
-            self._in_order = value
+                "The 'order' array.array() must have the type code of 'i'"
+            self._order = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -138,13 +138,13 @@ class Bubblesort_Goal(metaclass=Metaclass_Bubblesort_Goal):
                  not isinstance(value, UserString) and
                  all(isinstance(v, int) for v in value) and
                  all(val >= -2147483648 and val < 2147483648 for val in value)), \
-                "The 'in_order' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
-        self._in_order = array.array('i', value)
+                "The 'order' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
+        self._order = array.array('i', value)
 
 
 # Import statements for member types
 
-# Member 'order'
+# Member 'sequence'
 # already imported above
 # import array
 
@@ -200,13 +200,13 @@ class Bubblesort_Result(metaclass=Metaclass_Bubblesort_Result):
     """Message class 'Bubblesort_Result'."""
 
     __slots__ = [
-        '_order',
+        '_sequence',
         '_i',
         '_j',
     ]
 
     _fields_and_field_types = {
-        'order': 'sequence<int32>',
+        'sequence': 'sequence<int32>',
         'i': 'int32',
         'j': 'int32',
     }
@@ -221,7 +221,7 @@ class Bubblesort_Result(metaclass=Metaclass_Bubblesort_Result):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.order = array.array('i', kwargs.get('order', []))
+        self.sequence = array.array('i', kwargs.get('sequence', []))
         self.i = kwargs.get('i', int())
         self.j = kwargs.get('j', int())
 
@@ -254,7 +254,7 @@ class Bubblesort_Result(metaclass=Metaclass_Bubblesort_Result):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.order != other.order:
+        if self.sequence != other.sequence:
             return False
         if self.i != other.i:
             return False
@@ -268,16 +268,16 @@ class Bubblesort_Result(metaclass=Metaclass_Bubblesort_Result):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def order(self):
-        """Message field 'order'."""
-        return self._order
+    def sequence(self):
+        """Message field 'sequence'."""
+        return self._sequence
 
-    @order.setter
-    def order(self, value):
+    @sequence.setter
+    def sequence(self, value):
         if isinstance(value, array.array):
             assert value.typecode == 'i', \
-                "The 'order' array.array() must have the type code of 'i'"
-            self._order = value
+                "The 'sequence' array.array() must have the type code of 'i'"
+            self._sequence = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -292,8 +292,8 @@ class Bubblesort_Result(metaclass=Metaclass_Bubblesort_Result):
                  not isinstance(value, UserString) and
                  all(isinstance(v, int) for v in value) and
                  all(val >= -2147483648 and val < 2147483648 for val in value)), \
-                "The 'order' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
-        self._order = array.array('i', value)
+                "The 'sequence' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
+        self._sequence = array.array('i', value)
 
     @builtins.property
     def i(self):
@@ -328,7 +328,7 @@ class Bubblesort_Result(metaclass=Metaclass_Bubblesort_Result):
 
 # Import statements for member types
 
-# Member 'temp_order'
+# Member 'partial_sequence'
 # already imported above
 # import array
 
@@ -384,13 +384,13 @@ class Bubblesort_Feedback(metaclass=Metaclass_Bubblesort_Feedback):
     """Message class 'Bubblesort_Feedback'."""
 
     __slots__ = [
-        '_temp_order',
+        '_partial_sequence',
         '_i',
         '_j',
     ]
 
     _fields_and_field_types = {
-        'temp_order': 'sequence<int32>',
+        'partial_sequence': 'sequence<int32>',
         'i': 'int32',
         'j': 'int32',
     }
@@ -405,7 +405,7 @@ class Bubblesort_Feedback(metaclass=Metaclass_Bubblesort_Feedback):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.temp_order = array.array('i', kwargs.get('temp_order', []))
+        self.partial_sequence = array.array('i', kwargs.get('partial_sequence', []))
         self.i = kwargs.get('i', int())
         self.j = kwargs.get('j', int())
 
@@ -438,7 +438,7 @@ class Bubblesort_Feedback(metaclass=Metaclass_Bubblesort_Feedback):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.temp_order != other.temp_order:
+        if self.partial_sequence != other.partial_sequence:
             return False
         if self.i != other.i:
             return False
@@ -452,16 +452,16 @@ class Bubblesort_Feedback(metaclass=Metaclass_Bubblesort_Feedback):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def temp_order(self):
-        """Message field 'temp_order'."""
-        return self._temp_order
+    def partial_sequence(self):
+        """Message field 'partial_sequence'."""
+        return self._partial_sequence
 
-    @temp_order.setter
-    def temp_order(self, value):
+    @partial_sequence.setter
+    def partial_sequence(self, value):
         if isinstance(value, array.array):
             assert value.typecode == 'i', \
-                "The 'temp_order' array.array() must have the type code of 'i'"
-            self._temp_order = value
+                "The 'partial_sequence' array.array() must have the type code of 'i'"
+            self._partial_sequence = value
             return
         if __debug__:
             from collections.abc import Sequence
@@ -476,8 +476,8 @@ class Bubblesort_Feedback(metaclass=Metaclass_Bubblesort_Feedback):
                  not isinstance(value, UserString) and
                  all(isinstance(v, int) for v in value) and
                  all(val >= -2147483648 and val < 2147483648 for val in value)), \
-                "The 'temp_order' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
-        self._temp_order = array.array('i', value)
+                "The 'partial_sequence' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
+        self._partial_sequence = array.array('i', value)
 
     @builtins.property
     def i(self):

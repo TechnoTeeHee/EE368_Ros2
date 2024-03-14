@@ -24,10 +24,9 @@ if(BUILD_TESTING)
 endif()
 
 find_package(rosidl_default_generators REQUIRED)
-
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/Fibonacci.action"
   "action/Bubblesort.action"
+  "action/Maze.action"
 )
-
 ament_package()

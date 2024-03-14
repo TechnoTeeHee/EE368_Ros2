@@ -19,6 +19,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/action/_bubblesort_s.c" "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/action/_fibonacci.py" "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/action/_fibonacci_s.c" "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/action/_maze.py" "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/action/_maze_s.c" "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

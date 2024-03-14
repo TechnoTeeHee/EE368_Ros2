@@ -3,10 +3,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/bubblesort__type_support.cpp.o.d"
   "CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/fibonacci__type_support.cpp.o"
   "CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/fibonacci__type_support.cpp.o.d"
+  "CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/maze__type_support.cpp.o"
+  "CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/maze__type_support.cpp.o.d"
   "libaction_interfaces__rosidl_typesupport_c.pdb"
   "libaction_interfaces__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/action_interfaces/action/bubblesort__type_support.cpp"
   "rosidl_typesupport_c/action_interfaces/action/fibonacci__type_support.cpp"
+  "rosidl_typesupport_c/action_interfaces/action/maze__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

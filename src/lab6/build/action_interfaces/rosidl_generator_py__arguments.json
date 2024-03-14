@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
     "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces:action/Fibonacci.idl",
-    "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces:action/Bubblesort.idl"
+    "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces:action/Bubblesort.idl",
+    "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces:action/Maze.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
@@ -31,6 +32,7 @@
     "/opt/ros/humble/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
     "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces/action/Fibonacci.idl",
     "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces/action/Bubblesort.idl",
+    "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces/action/Maze.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",

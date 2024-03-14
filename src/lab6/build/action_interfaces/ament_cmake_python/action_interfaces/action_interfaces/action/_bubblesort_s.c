@@ -53,8 +53,8 @@ bool action_interfaces__action__bubblesort__goal__convert_from_py(PyObject * _py
     assert(strncmp("action_interfaces.action._bubblesort.Bubblesort_Goal", full_classname_dest, 52) == 0);
   }
   action_interfaces__action__Bubblesort_Goal * ros_message = _ros_message;
-  {  // in_order
-    PyObject * field = PyObject_GetAttrString(_pymsg, "in_order");
+  {  // order
+    PyObject * field = PyObject_GetAttrString(_pymsg, "order");
     if (!field) {
       return false;
     }
@@ -67,13 +67,13 @@ bool action_interfaces__action__bubblesort__goal__convert_from_py(PyObject * _py
         return false;
       }
       Py_ssize_t size = view.len / sizeof(int32_t);
-      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->in_order), size)) {
+      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->order), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create int32__Sequence ros_message");
         PyBuffer_Release(&view);
         Py_DECREF(field);
         return false;
       }
-      int32_t * dest = ros_message->in_order.data;
+      int32_t * dest = ros_message->order.data;
       rc = PyBuffer_ToContiguous(dest, &view, view.len, 'C');
       if (rc < 0) {
         PyBuffer_Release(&view);
@@ -82,7 +82,7 @@ bool action_interfaces__action__bubblesort__goal__convert_from_py(PyObject * _py
       }
       PyBuffer_Release(&view);
     } else {
-      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'in_order'");
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'order'");
       if (!seq_field) {
         Py_DECREF(field);
         return false;
@@ -93,13 +93,13 @@ bool action_interfaces__action__bubblesort__goal__convert_from_py(PyObject * _py
         Py_DECREF(field);
         return false;
       }
-      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->in_order), size)) {
+      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->order), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create int32__Sequence ros_message");
         Py_DECREF(seq_field);
         Py_DECREF(field);
         return false;
       }
-      int32_t * dest = ros_message->in_order.data;
+      int32_t * dest = ros_message->order.data;
       for (Py_ssize_t i = 0; i < size; ++i) {
         PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
         if (!item) {
@@ -137,9 +137,9 @@ PyObject * action_interfaces__action__bubblesort__goal__convert_to_py(void * raw
     }
   }
   action_interfaces__action__Bubblesort_Goal * ros_message = (action_interfaces__action__Bubblesort_Goal *)raw_ros_message;
-  {  // in_order
+  {  // order
     PyObject * field = NULL;
-    field = PyObject_GetAttrString(_pymessage, "in_order");
+    field = PyObject_GetAttrString(_pymessage, "order");
     if (!field) {
       return NULL;
     }
@@ -176,12 +176,12 @@ PyObject * action_interfaces__action__bubblesort__goal__convert_to_py(void * raw
       }
       Py_DECREF(pop);
     }
-    if (ros_message->in_order.size > 0) {
+    if (ros_message->order.size > 0) {
       // populating the array.array using the frombytes method
       PyObject * frombytes = PyObject_GetAttrString(field, "frombytes");
       assert(frombytes != NULL);
-      int32_t * src = &(ros_message->in_order.data[0]);
-      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->in_order.size * sizeof(int32_t));
+      int32_t * src = &(ros_message->order.data[0]);
+      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->order.size * sizeof(int32_t));
       assert(data != NULL);
       PyObject * ret = PyObject_CallFunctionObjArgs(frombytes, data, NULL);
       Py_DECREF(data);
@@ -252,8 +252,8 @@ bool action_interfaces__action__bubblesort__result__convert_from_py(PyObject * _
     assert(strncmp("action_interfaces.action._bubblesort.Bubblesort_Result", full_classname_dest, 54) == 0);
   }
   action_interfaces__action__Bubblesort_Result * ros_message = _ros_message;
-  {  // order
-    PyObject * field = PyObject_GetAttrString(_pymsg, "order");
+  {  // sequence
+    PyObject * field = PyObject_GetAttrString(_pymsg, "sequence");
     if (!field) {
       return false;
     }
@@ -266,13 +266,13 @@ bool action_interfaces__action__bubblesort__result__convert_from_py(PyObject * _
         return false;
       }
       Py_ssize_t size = view.len / sizeof(int32_t);
-      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->order), size)) {
+      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->sequence), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create int32__Sequence ros_message");
         PyBuffer_Release(&view);
         Py_DECREF(field);
         return false;
       }
-      int32_t * dest = ros_message->order.data;
+      int32_t * dest = ros_message->sequence.data;
       rc = PyBuffer_ToContiguous(dest, &view, view.len, 'C');
       if (rc < 0) {
         PyBuffer_Release(&view);
@@ -281,7 +281,7 @@ bool action_interfaces__action__bubblesort__result__convert_from_py(PyObject * _
       }
       PyBuffer_Release(&view);
     } else {
-      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'order'");
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'sequence'");
       if (!seq_field) {
         Py_DECREF(field);
         return false;
@@ -292,13 +292,13 @@ bool action_interfaces__action__bubblesort__result__convert_from_py(PyObject * _
         Py_DECREF(field);
         return false;
       }
-      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->order), size)) {
+      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->sequence), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create int32__Sequence ros_message");
         Py_DECREF(seq_field);
         Py_DECREF(field);
         return false;
       }
-      int32_t * dest = ros_message->order.data;
+      int32_t * dest = ros_message->sequence.data;
       for (Py_ssize_t i = 0; i < size; ++i) {
         PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
         if (!item) {
@@ -354,9 +354,9 @@ PyObject * action_interfaces__action__bubblesort__result__convert_to_py(void * r
     }
   }
   action_interfaces__action__Bubblesort_Result * ros_message = (action_interfaces__action__Bubblesort_Result *)raw_ros_message;
-  {  // order
+  {  // sequence
     PyObject * field = NULL;
-    field = PyObject_GetAttrString(_pymessage, "order");
+    field = PyObject_GetAttrString(_pymessage, "sequence");
     if (!field) {
       return NULL;
     }
@@ -393,12 +393,12 @@ PyObject * action_interfaces__action__bubblesort__result__convert_to_py(void * r
       }
       Py_DECREF(pop);
     }
-    if (ros_message->order.size > 0) {
+    if (ros_message->sequence.size > 0) {
       // populating the array.array using the frombytes method
       PyObject * frombytes = PyObject_GetAttrString(field, "frombytes");
       assert(frombytes != NULL);
-      int32_t * src = &(ros_message->order.data[0]);
-      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->order.size * sizeof(int32_t));
+      int32_t * src = &(ros_message->sequence.data[0]);
+      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->sequence.size * sizeof(int32_t));
       assert(data != NULL);
       PyObject * ret = PyObject_CallFunctionObjArgs(frombytes, data, NULL);
       Py_DECREF(data);
@@ -491,8 +491,8 @@ bool action_interfaces__action__bubblesort__feedback__convert_from_py(PyObject *
     assert(strncmp("action_interfaces.action._bubblesort.Bubblesort_Feedback", full_classname_dest, 56) == 0);
   }
   action_interfaces__action__Bubblesort_Feedback * ros_message = _ros_message;
-  {  // temp_order
-    PyObject * field = PyObject_GetAttrString(_pymsg, "temp_order");
+  {  // partial_sequence
+    PyObject * field = PyObject_GetAttrString(_pymsg, "partial_sequence");
     if (!field) {
       return false;
     }
@@ -505,13 +505,13 @@ bool action_interfaces__action__bubblesort__feedback__convert_from_py(PyObject *
         return false;
       }
       Py_ssize_t size = view.len / sizeof(int32_t);
-      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->temp_order), size)) {
+      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->partial_sequence), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create int32__Sequence ros_message");
         PyBuffer_Release(&view);
         Py_DECREF(field);
         return false;
       }
-      int32_t * dest = ros_message->temp_order.data;
+      int32_t * dest = ros_message->partial_sequence.data;
       rc = PyBuffer_ToContiguous(dest, &view, view.len, 'C');
       if (rc < 0) {
         PyBuffer_Release(&view);
@@ -520,7 +520,7 @@ bool action_interfaces__action__bubblesort__feedback__convert_from_py(PyObject *
       }
       PyBuffer_Release(&view);
     } else {
-      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'temp_order'");
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'partial_sequence'");
       if (!seq_field) {
         Py_DECREF(field);
         return false;
@@ -531,13 +531,13 @@ bool action_interfaces__action__bubblesort__feedback__convert_from_py(PyObject *
         Py_DECREF(field);
         return false;
       }
-      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->temp_order), size)) {
+      if (!rosidl_runtime_c__int32__Sequence__init(&(ros_message->partial_sequence), size)) {
         PyErr_SetString(PyExc_RuntimeError, "unable to create int32__Sequence ros_message");
         Py_DECREF(seq_field);
         Py_DECREF(field);
         return false;
       }
-      int32_t * dest = ros_message->temp_order.data;
+      int32_t * dest = ros_message->partial_sequence.data;
       for (Py_ssize_t i = 0; i < size; ++i) {
         PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
         if (!item) {
@@ -593,9 +593,9 @@ PyObject * action_interfaces__action__bubblesort__feedback__convert_to_py(void *
     }
   }
   action_interfaces__action__Bubblesort_Feedback * ros_message = (action_interfaces__action__Bubblesort_Feedback *)raw_ros_message;
-  {  // temp_order
+  {  // partial_sequence
     PyObject * field = NULL;
-    field = PyObject_GetAttrString(_pymessage, "temp_order");
+    field = PyObject_GetAttrString(_pymessage, "partial_sequence");
     if (!field) {
       return NULL;
     }
@@ -632,12 +632,12 @@ PyObject * action_interfaces__action__bubblesort__feedback__convert_to_py(void *
       }
       Py_DECREF(pop);
     }
-    if (ros_message->temp_order.size > 0) {
+    if (ros_message->partial_sequence.size > 0) {
       // populating the array.array using the frombytes method
       PyObject * frombytes = PyObject_GetAttrString(field, "frombytes");
       assert(frombytes != NULL);
-      int32_t * src = &(ros_message->temp_order.data[0]);
-      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->temp_order.size * sizeof(int32_t));
+      int32_t * src = &(ros_message->partial_sequence.data[0]);
+      PyObject * data = PyBytes_FromStringAndSize((const char *)src, ros_message->partial_sequence.size * sizeof(int32_t));
       assert(data != NULL);
       PyObject * ret = PyObject_CallFunctionObjArgs(frombytes, data, NULL);
       Py_DECREF(data);
