@@ -3,7 +3,8 @@
   "output_dir": "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_typesupport_introspection_cpp/action_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource",
   "idl_tuples": [
-    "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces:action/Fibonacci.idl"
+    "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces:action/Fibonacci.idl",
+    "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces:action/Bubblesort.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
@@ -24,6 +25,7 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
     "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces/action/Fibonacci.idl",
+    "/home/teehee/ros2_ws/src/lab6/build/action_interfaces/rosidl_adapter/action_interfaces/action/Bubblesort.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",

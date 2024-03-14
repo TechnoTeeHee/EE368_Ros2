@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interfaces/action/detail/bubblesort__type_support.c.o"
+  "CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interfaces/action/detail/bubblesort__type_support.c.o.d"
   "CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interfaces/action/detail/fibonacci__type_support.c.o"
   "CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interfaces/action/detail/fibonacci__type_support.c.o.d"
   "libaction_interfaces__rosidl_typesupport_introspection_c.pdb"
   "libaction_interfaces__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/action_interfaces/action/detail/bubblesort__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/action_interfaces/action/detail/bubblesort__type_support.c"
   "rosidl_typesupport_introspection_c/action_interfaces/action/detail/fibonacci__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/action_interfaces/action/detail/fibonacci__type_support.c"
 )

@@ -27,6 +27,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/Fibonacci.action"
+  "action/Bubblesort.action"
 )
 
 ament_package()
