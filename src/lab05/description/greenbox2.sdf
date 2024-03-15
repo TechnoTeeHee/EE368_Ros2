@@ -1,0 +1,42 @@
+<sdf version='1.9'>
+  <model name='box'>
+    <link name='greenbox2'>
+      <inertial>
+        <pose>2 2 0.5 0 0 0</pose>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0</iyy>
+          <iyz>0</iyz>
+          <izz>0</izz>
+        </inertia>
+      </inertial>
+      <collision name='greenbox2_fixed_joint_lump__greenbox_link2_collision'>
+        <pose>1 1 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.5 0.5 0.5</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name='greenbox2_fixed_joint_lump__greenbox_link2_visual'>
+        <pose>1 1 0.25 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.5 0.5 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+          <ambient>0 1 0 1</ambient>
+        </material>
+      </visual>
+    </link>
+    <frame name='greenbox_joint2' attached_to='greenbox2'>
+      <pose>1 1 0.25 0 -0 0</pose>
+    </frame>
+    <frame name='greenbox_link2' attached_to='greenbox_joint2'/>
+  </model>
+</sdf>

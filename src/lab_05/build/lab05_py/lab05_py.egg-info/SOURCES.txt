@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+lab05_py/__init__.py
+lab05_py/depth_camera.py
+lab05_py/keyboard_control.py
+lab05_py/point_cloud2.py
+lab05_py.egg-info/PKG-INFO
+lab05_py.egg-info/SOURCES.txt
+lab05_py.egg-info/dependency_links.txt
+lab05_py.egg-info/entry_points.txt
+lab05_py.egg-info/requires.txt
+lab05_py.egg-info/top_level.txt
+lab05_py.egg-info/zip-safe
+resource/lab05_py

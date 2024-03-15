@@ -1,0 +1,1 @@
+[0mCMake Error: The source "/home/teehee/ros2_ws/src/lab03/exersice_2_2/CMakeLists.txt" does not match the source "/home/teehee/ros2_ws/src/exersice_2_2/CMakeLists.txt" used to generate cache.  Re-run cmake with a different source directory.[0m

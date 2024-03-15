@@ -1,0 +1,69 @@
+[0.119s] Invoking command in '/home/.engr-ece/rgz834/lab_05/build/lab_05': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rgz834/engr-ece/ros2_ws/install/tf2_pkg:/home/rgz834/engr-ece/ros2_ws/install/labs_pkg:/home/rgz834/engr-ece/ros2_ws/install/labex6:/home/rgz834/engr-ece/ros2_ws/install/labex13_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam3_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam2_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_4_pkg:/opt/ros/humble /usr/bin/cmake /home/.engr-ece/rgz834/lab_05/src/lab_05 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/.engr-ece/rgz834/lab_05/install/lab_05
+[0.276s] -- The C compiler identification is GNU 11.4.0
+[0.379s] -- The CXX compiler identification is GNU 11.4.0
+[0.404s] -- Detecting C compiler ABI info
+[0.637s] -- Detecting C compiler ABI info - done
+[0.655s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.656s] -- Detecting C compile features
+[0.657s] -- Detecting C compile features - done
+[0.678s] -- Detecting CXX compiler ABI info
+[0.923s] -- Detecting CXX compiler ABI info - done
+[0.941s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.941s] -- Detecting CXX compile features
+[0.942s] -- Detecting CXX compile features - done
+[1.077s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.388s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.487s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.432s] -- Found ament_lint_auto: 0.12.7 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.131s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.145s] -- Added test 'lint_cmake' to check CMake code style
+[3.158s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.189s] -- Added test 'xmllint' to check XML markup files
+[3.259s] -- Configuring done
+[3.411s] -- Generating done
+[3.450s] -- Build files have been written to: /home/.engr-ece/rgz834/lab_05/build/lab_05
+[3.453s] Invoked command in '/home/.engr-ece/rgz834/lab_05/build/lab_05' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rgz834/engr-ece/ros2_ws/install/tf2_pkg:/home/rgz834/engr-ece/ros2_ws/install/labs_pkg:/home/rgz834/engr-ece/ros2_ws/install/labex6:/home/rgz834/engr-ece/ros2_ws/install/labex13_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam3_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam2_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_4_pkg:/opt/ros/humble /usr/bin/cmake /home/.engr-ece/rgz834/lab_05/src/lab_05 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/.engr-ece/rgz834/lab_05/install/lab_05
+[3.462s] Invoking command in '/home/.engr-ece/rgz834/lab_05/build/lab_05': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rgz834/engr-ece/ros2_ws/install/tf2_pkg:/home/rgz834/engr-ece/ros2_ws/install/labs_pkg:/home/rgz834/engr-ece/ros2_ws/install/labex6:/home/rgz834/engr-ece/ros2_ws/install/labex13_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam3_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam2_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_4_pkg:/opt/ros/humble /usr/bin/cmake --build /home/.engr-ece/rgz834/lab_05/build/lab_05 -- -j16 -l16
+[3.498s] Invoked command in '/home/.engr-ece/rgz834/lab_05/build/lab_05' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rgz834/engr-ece/ros2_ws/install/tf2_pkg:/home/rgz834/engr-ece/ros2_ws/install/labs_pkg:/home/rgz834/engr-ece/ros2_ws/install/labex6:/home/rgz834/engr-ece/ros2_ws/install/labex13_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam3_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam2_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_4_pkg:/opt/ros/humble /usr/bin/cmake --build /home/.engr-ece/rgz834/lab_05/build/lab_05 -- -j16 -l16
+[3.523s] Invoking command in '/home/.engr-ece/rgz834/lab_05/build/lab_05': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rgz834/engr-ece/ros2_ws/install/tf2_pkg:/home/rgz834/engr-ece/ros2_ws/install/labs_pkg:/home/rgz834/engr-ece/ros2_ws/install/labex6:/home/rgz834/engr-ece/ros2_ws/install/labex13_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam3_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam2_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_4_pkg:/opt/ros/humble /usr/bin/cmake --install /home/.engr-ece/rgz834/lab_05/build/lab_05
+[3.528s] -- Install configuration: ""
+[3.531s] -- Execute custom install script
+[3.545s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/box.sdf
+[3.554s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/box.urdf
+[3.562s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/box.urdf.xacro
+[3.570s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/box.xacro
+[3.579s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/camera.xacro
+[3.587s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/colours.xacro
+[3.595s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/cubes.sdf
+[3.603s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/cubes.urdf
+[3.612s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/cubes.urdf.xacro
+[3.620s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/cubes.xacro
+[3.629s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/depth_camera.xacro
+[3.637s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/gazebo.xacro
+[3.646s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/inertial.xacro
+[3.655s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/lidar.xacro
+[3.663s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/robot.sdf
+[3.671s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/robot.urdf
+[3.679s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/robot.urdf.xacro
+[3.687s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/robot_core.xacro
+[3.699s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/launch/rsp.launch.py
+[3.712s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_4_1.sdf
+[3.721s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_4_2.sdf
+[3.730s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_4_3.sdf
+[3.738s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_4_5.sdf
+[3.754s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/ament_index/resource_index/package_run_dependencies/lab_05
+[3.767s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/ament_index/resource_index/parent_prefix_path/lab_05
+[3.780s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/environment/ament_prefix_path.sh
+[3.788s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/environment/ament_prefix_path.dsv
+[3.796s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/environment/path.sh
+[3.804s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/environment/path.dsv
+[3.812s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/local_setup.bash
+[3.820s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/local_setup.sh
+[3.827s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/local_setup.zsh
+[3.835s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/local_setup.dsv
+[3.844s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/package.dsv
+[3.857s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/ament_index/resource_index/packages/lab_05
+[3.871s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/cmake/lab_05Config.cmake
+[3.879s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/cmake/lab_05Config-version.cmake
+[3.887s] -- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/package.xml
+[3.896s] Invoked command in '/home/.engr-ece/rgz834/lab_05/build/lab_05' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rgz834/engr-ece/ros2_ws/install/tf2_pkg:/home/rgz834/engr-ece/ros2_ws/install/labs_pkg:/home/rgz834/engr-ece/ros2_ws/install/labex6:/home/rgz834/engr-ece/ros2_ws/install/labex13_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam3_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_exam2_pkg:/home/rgz834/engr-ece/ros2_ws/install/lab_4_pkg:/opt/ros/humble /usr/bin/cmake --install /home/.engr-ece/rgz834/lab_05/build/lab_05

@@ -1,0 +1,40 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/camera.xacro
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/colours.xacro
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/depth_camera.xacro
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/gazebo.xacro
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/inertial.xacro
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/lidar.xacro
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/robot.sdf
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/robot.urdf
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/robot.urdf.xacro
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/robot_core.xacro
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/scene.sdf
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/scene.urdf
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/scene.urdf.xacro
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/description/scene_core.xacro
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/launch/rsp.launch.py
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/bridges.yaml
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/cleanup.sh
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_4_5.sdf
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_5_1.sdf
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_5_1.sh
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_5_2.sdf
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_5_2.sh
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/worlds/ex_5_3.sdf
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/ament_index/resource_index/package_run_dependencies/lab_05
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/ament_index/resource_index/parent_prefix_path/lab_05
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/environment/path.sh
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/environment/path.dsv
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/local_setup.bash
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/local_setup.sh
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/local_setup.zsh
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/local_setup.dsv
+-- Symlinking: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/package.dsv
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/ament_index/resource_index/packages/lab_05
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/cmake/lab_05Config.cmake
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/cmake/lab_05Config-version.cmake
+-- Up-to-date symlink: /home/.engr-ece/rgz834/lab_05/install/lab_05/share/lab_05/package.xml

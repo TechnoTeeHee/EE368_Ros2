@@ -1,0 +1,11 @@
+float32[] goal_coordinates
+---
+float32 goal_time
+---
+float32 x
+float32 y
+float32 z
+float32[] current_goal
+int32 n_goal
+bool goal_update
+float32 time 

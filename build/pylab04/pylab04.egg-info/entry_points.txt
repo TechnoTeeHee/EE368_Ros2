@@ -1,0 +1,5 @@
+[console_scripts]
+around_wall = pylab04.around_wall:main
+go_to_red = pylab04.go_to_red:main
+stop_at_wall = pylab04.stop_at_wall:main
+

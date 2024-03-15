@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing lab05_py.egg-info/PKG-INFO
+writing dependency_links to lab05_py.egg-info/dependency_links.txt
+writing entry points to lab05_py.egg-info/entry_points.txt
+writing requirements to lab05_py.egg-info/requires.txt
+writing top-level names to lab05_py.egg-info/top_level.txt
+reading manifest file 'lab05_py.egg-info/SOURCES.txt'
+writing manifest file 'lab05_py.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/.engr-ece/rgz834/lab_05/install/lab05_py/lib/python3.10/site-packages/lab05-py.egg-link (link to .)
+Installing depth_camera script to /home/.engr-ece/rgz834/lab_05/install/lab05_py/lib/lab05_py
+
+Installed /home/.engr-ece/rgz834/lab_05/build/lab05_py
+running install_data

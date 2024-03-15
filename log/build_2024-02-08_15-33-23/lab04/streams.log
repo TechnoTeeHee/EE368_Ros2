@@ -1,0 +1,39 @@
+[0.176s] Invoking command in '/home/teehee/ros2_ws/build/lab04': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/lab04 -- -j4 -l4
+[0.335s] Invoked command in '/home/teehee/ros2_ws/build/lab04' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/lab04 -- -j4 -l4
+[0.390s] Invoking command in '/home/teehee/ros2_ws/build/lab04': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/lab04
+[0.409s] -- Install configuration: ""
+[0.417s] -- Execute custom install script
+[0.417s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/ament_index/resource_index/package_run_dependencies/lab04
+[0.418s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/ament_index/resource_index/parent_prefix_path/lab04
+[0.420s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/environment/ament_prefix_path.sh
+[0.421s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/environment/ament_prefix_path.dsv
+[0.421s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/environment/path.sh
+[0.422s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/environment/path.dsv
+[0.422s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/local_setup.bash
+[0.423s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/local_setup.sh
+[0.423s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/local_setup.zsh
+[0.428s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/local_setup.dsv
+[0.428s] -- Symlinking: /home/teehee/ros2_ws/install/lab04/share/lab04/package.dsv
+[0.449s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/ament_index/resource_index/packages/lab04
+[0.449s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/cmake/lab04Config.cmake
+[0.451s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/cmake/lab04Config-version.cmake
+[0.451s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/package.xml
+[0.452s] -- Symlinking: /home/teehee/ros2_ws/install/lab04/share/lab04/description/box.sdf
+[0.469s] -- Symlinking: /home/teehee/ros2_ws/install/lab04/share/lab04/description/box.urdf
+[0.485s] -- Symlinking: /home/teehee/ros2_ws/install/lab04/share/lab04/description/box.urdf.xacro
+[0.500s] -- Symlinking: /home/teehee/ros2_ws/install/lab04/share/lab04/description/box_core.xacro
+[0.524s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/bridges.yaml
+[0.524s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/colors.xacro
+[0.524s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/gazebo.xacro
+[0.524s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/inertial.xacro
+[0.524s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/lidar.xacro
+[0.524s] -- Symlinking: /home/teehee/ros2_ws/install/lab04/share/lab04/description/move.py
+[0.538s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/robot.sdf
+[0.538s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/robot.urdf
+[0.539s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/robot.urdf.xacro
+[0.539s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/description/robot_core.xacro
+[0.541s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/launch/rsp.launch.py
+[0.542s] -- Symlinking: /home/teehee/ros2_ws/install/lab04/share/lab04/worlds/ex_4_1.sdf
+[0.565s] -- Symlinking: /home/teehee/ros2_ws/install/lab04/share/lab04/worlds/ex_4_2.sdf
+[0.581s] -- Up-to-date symlink: /home/teehee/ros2_ws/install/lab04/share/lab04/worlds/world.sdf
+[0.600s] Invoked command in '/home/teehee/ros2_ws/build/lab04' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --install /home/teehee/ros2_ws/build/lab04

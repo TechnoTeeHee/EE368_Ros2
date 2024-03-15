@@ -1,0 +1,23 @@
+[0.376s] Invoking command in '/home/teehee/ros2_ws/build/pylab04': PYTHONPATH=/home/teehee/ros2_ws/build/pylab04/prefix_override:/home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/pylab04/build --no-deps install_data
+[0.504s] running develop
+[0.505s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.505s]   warnings.warn(
+[0.506s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.506s]   warnings.warn(
+[0.576s] running egg_info
+[0.576s] writing pylab04.egg-info/PKG-INFO
+[0.576s] writing dependency_links to pylab04.egg-info/dependency_links.txt
+[0.577s] writing entry points to pylab04.egg-info/entry_points.txt
+[0.577s] writing requirements to pylab04.egg-info/requires.txt
+[0.578s] writing top-level names to pylab04.egg-info/top_level.txt
+[0.579s] reading manifest file 'pylab04.egg-info/SOURCES.txt'
+[0.579s] writing manifest file 'pylab04.egg-info/SOURCES.txt'
+[0.580s] running build_ext
+[0.580s] Creating /home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages/pylab04.egg-link (link to .)
+[0.581s] Installing around_wall script to /home/teehee/ros2_ws/install/pylab04/lib/pylab04
+[0.581s] Installing go_to_red script to /home/teehee/ros2_ws/install/pylab04/lib/pylab04
+[0.581s] Installing stop_at_wall script to /home/teehee/ros2_ws/install/pylab04/lib/pylab04
+[0.582s] 
+[0.582s] Installed /home/teehee/ros2_ws/build/pylab04
+[0.582s] running install_data
+[0.594s] Invoked command in '/home/teehee/ros2_ws/build/pylab04' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/pylab04/prefix_override:/home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/pylab04/build --no-deps install_data

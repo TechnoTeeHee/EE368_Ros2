@@ -1,0 +1,28 @@
+[0.390s] Invoking command in '/home/teehee/ros2_ws/build/pylab04': PYTHONPATH=/home/teehee/ros2_ws/build/pylab04/prefix_override:/home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/pylab04/build --no-deps install_data
+[0.515s] running develop
+[0.516s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.516s]   warnings.warn(
+[0.517s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.517s]   warnings.warn(
+[0.583s] running egg_info
+[0.583s] creating pylab04.egg-info
+[0.583s] writing pylab04.egg-info/PKG-INFO
+[0.584s] writing dependency_links to pylab04.egg-info/dependency_links.txt
+[0.584s] writing entry points to pylab04.egg-info/entry_points.txt
+[0.585s] writing requirements to pylab04.egg-info/requires.txt
+[0.585s] writing top-level names to pylab04.egg-info/top_level.txt
+[0.585s] writing manifest file 'pylab04.egg-info/SOURCES.txt'
+[0.586s] reading manifest file 'pylab04.egg-info/SOURCES.txt'
+[0.586s] writing manifest file 'pylab04.egg-info/SOURCES.txt'
+[0.588s] running build_ext
+[0.589s] Creating /home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages/pylab04.egg-link (link to .)
+[0.589s] Installing stop_at_wall script to /home/teehee/ros2_ws/install/pylab04/lib/pylab04
+[0.590s] 
+[0.590s] Installed /home/teehee/ros2_ws/build/pylab04
+[0.590s] running install_data
+[0.590s] creating /home/teehee/ros2_ws/install/pylab04/share/ament_index
+[0.590s] creating /home/teehee/ros2_ws/install/pylab04/share/ament_index/resource_index
+[0.590s] creating /home/teehee/ros2_ws/install/pylab04/share/ament_index/resource_index/packages
+[0.590s] copying resource/pylab04 -> /home/teehee/ros2_ws/install/pylab04/share/ament_index/resource_index/packages
+[0.591s] copying package.xml -> /home/teehee/ros2_ws/install/pylab04/share/pylab04
+[0.604s] Invoked command in '/home/teehee/ros2_ws/build/pylab04' returned '0': PYTHONPATH=/home/teehee/ros2_ws/build/pylab04/prefix_override:/home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/teehee/ros2_ws/build/pylab04/build --no-deps install_data

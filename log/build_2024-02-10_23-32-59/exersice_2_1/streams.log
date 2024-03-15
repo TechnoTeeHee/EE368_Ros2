@@ -1,0 +1,5 @@
+[0.093s] Invoking command in '/home/teehee/ros2_ws/build/exersice_2_1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/exersice_2_1 -- -j4 -l4
+[0.116s] [0mCMake Error: The source directory "/home/teehee/ros2_ws/src/exersice_2_1" does not exist.
+[0.116s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.117s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.120s] Invoked command in '/home/teehee/ros2_ws/build/exersice_2_1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble /usr/bin/cmake --build /home/teehee/ros2_ws/build/exersice_2_1 -- -j4 -l4

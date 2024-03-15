@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from action_interfaces/action/Maze.action
+// generated code does not contain a copyright notice
+
+
+module action_interfaces {
+  module action {
+    struct Maze_Goal {
+      sequence<float> goal_coordinates;
+    };
+    struct Maze_Result {
+      float goal_time;
+    };
+    struct Maze_Feedback {
+      float x;
+
+      float y;
+
+      float z;
+
+      sequence<float> current_goal;
+
+      int32 n_goal;
+
+      boolean goal_update;
+
+      float time;
+    };
+  };
+};

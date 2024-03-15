@@ -1,0 +1,8 @@
+{
+  "package_name": "action_interfaces",
+  "non_idl_tuples": [
+    "/home/teehee/ros2_ws/src/lab6/src/action_interfaces:action/Fibonacci.action",
+    "/home/teehee/ros2_ws/src/lab6/src/action_interfaces:action/Bubblesort.action",
+    "/home/teehee/ros2_ws/src/lab6/src/action_interfaces:action/Maze.action"
+  ]
+}

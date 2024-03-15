@@ -1,0 +1,24 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/ament_index/resource_index/package_run_dependencies/lab_exam1
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/ament_index/resource_index/parent_prefix_path/lab_exam1
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/environment/path.sh
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/environment/path.dsv
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/local_setup.bash
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/local_setup.sh
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/local_setup.zsh
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/local_setup.dsv
+-- Symlinking: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/package.dsv
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/ament_index/resource_index/packages/lab_exam1
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/cmake/lab_exam1Config.cmake
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/cmake/lab_exam1Config-version.cmake
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/package.xml
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/castle.urdf.xacro
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/castle_core.xacro
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/colours.xacro
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/gazebo.xacro
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/description/inertial.xacro
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/launch/rsp.launch.py
+-- Up-to-date symlink: /home/teehee/ros2_ws/install/lab_exam1/share/lab_exam1/worlds/world.sdf

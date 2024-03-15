@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="scene">
+    <xacro:property name="wall_length" value="1" />
+    <xacro:property name="wall_thickness" value="0.1" />
+    <xacro:property name="wall_height" value="2" />
+    <xacro:property name="wall_mass" value="10" />
+    <xacro:property name="wall_mass" value="10" />
+
+    <xacro:property name="wall2_length" value="${1.5*1.414}" />
+
+    <xacro:property name="wall_distance" value="2" />
+  
+    <xacro:property name="doore_height" value="0" />
+
+    <xacro:property name="doors_bottom" value="0.4" />
+
+    <xacro:property name="doorw_height" value="0.6" />
+
+    <xacro:property name="doorn_height" value="1" />
+    <xacro:property name="doorn_bottom" value="0.2" />
+
+    <xacro:include filename="colours.xacro" />
+    <xacro:include filename="inertial.xacro" />
+    <xacro:include filename="scene_core.xacro" />
+</robot>

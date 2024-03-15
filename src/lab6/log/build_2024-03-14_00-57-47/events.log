@@ -1,0 +1,466 @@
+[0.000000] (-) TimerEvent: {}
+[0.000689] (action_interfaces) JobQueued: {'identifier': 'action_interfaces', 'dependencies': OrderedDict()}
+[0.000745] (action_interfaces) JobStarted: {'identifier': 'action_interfaces'}
+[0.121868] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'cmake'}
+[0.121910] (-) TimerEvent: {}
+[0.130596] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'build'}
+[0.142513] (action_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/teehee/ros2_ws/src/lab6/build/action_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/teehee/ros2_ws/src/lab6/build/action_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'teehee'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib:/home/teehee/ros2_ws/install/lab_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/teehee'), ('OLDPWD', '/home/teehee/ros2_ws/src/lab6/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2052'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/teehee/ros2_ws/src/lab6/install:/home/teehee/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'teehee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teehee'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/teehee-VM:@/tmp/.ICE-unix/2017,unix/teehee-VM:/tmp/.ICE-unix/2017'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/76eff82f_22c0_45a0_ad91_db8dfa124d94'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BUTRK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teehee/ros2_ws/src/lab6/install/action_interfaces:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/robot1:/home/teehee/ros2_ws/install/pylab_exam1:/home/teehee/ros2_ws/install/pylab05:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/lab_exam1:/home/teehee/ros2_ws/install/lab05:/home/teehee/ros2_ws/install/lab04:/home/teehee/ros2_ws/install/exersice_2_2:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/teehee/ros2_ws/src/lab6/build/action_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/pylab_exam1:/home/teehee/ros2_ws/install/pylab_exam1/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/pylab05:/home/teehee/ros2_ws/install/pylab05/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/pylab04:/home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/teehee/ros2_ws/src/lab6/install/action_interfaces:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/robot1:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/lab_exam1:/home/teehee/ros2_ws/install/lab05:/home/teehee/ros2_ws/install/lab04:/home/teehee/ros2_ws/install/exersice_2_2:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/exercise_3_4:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab_exam1:/home/teehee/ros2_ws/install/pylab05:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble')]), 'shell': False}
+[0.191635] (action_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.224114] (-) TimerEvent: {}
+[0.337618] (-) TimerEvent: {}
+[0.364661] (action_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.437515] (-) TimerEvent: {}
+[0.445973] (action_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.463814] (action_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.466199] (action_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.528211] (action_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.542034] (-) TimerEvent: {}
+[0.646029] (-) TimerEvent: {}
+[0.753645] (-) TimerEvent: {}
+[0.870313] (-) TimerEvent: {}
+[0.974064] (-) TimerEvent: {}
+[0.989471] (action_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.080436] (-) TimerEvent: {}
+[1.182982] (-) TimerEvent: {}
+[1.183500] (action_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.284983] (-) TimerEvent: {}
+[1.384951] (action_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.385086] (-) TimerEvent: {}
+[1.399389] (action_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.417442] (action_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.418038] (action_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.418072] (action_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.473252] (action_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.473378] (action_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.477899] (action_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.488259] (-) TimerEvent: {}
+[1.597632] (-) TimerEvent: {}
+[1.669111] (action_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.699990] (action_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/teehee/ros2_ws/src/lab6/build/action_interfaces\n'}
+[1.700090] (-) TimerEvent: {}
+[1.762356] (action_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.802349] (-) TimerEvent: {}
+[1.908986] (-) TimerEvent: {}
+[2.016757] (-) TimerEvent: {}
+[2.117722] (-) TimerEvent: {}
+[2.219007] (-) TimerEvent: {}
+[2.321537] (-) TimerEvent: {}
+[2.425068] (-) TimerEvent: {}
+[2.530530] (-) TimerEvent: {}
+[2.531653] (action_interfaces) StdoutLine: {'line': b'[  2%] Built target action_interfaces__cpp\n'}
+[2.640583] (action_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_action_interfaces\n'}
+[2.640828] (-) TimerEvent: {}
+[2.656251] (action_interfaces) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.742055] (-) TimerEvent: {}
+[2.849716] (-) TimerEvent: {}
+[2.953482] (-) TimerEvent: {}
+[3.057187] (-) TimerEvent: {}
+[3.129448] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[3.150331] (action_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/action_interfaces/action/detail/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[3.157432] (-) TimerEvent: {}
+[3.260230] (-) TimerEvent: {}
+[3.360600] (-) TimerEvent: {}
+[3.461624] (-) TimerEvent: {}
+[3.566358] (-) TimerEvent: {}
+[3.665169] (action_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/action_interfaces/action/detail/maze__type_support.cpp.o\x1b[0m\n'}
+[3.669874] (-) TimerEvent: {}
+[3.775776] (-) TimerEvent: {}
+[3.876594] (-) TimerEvent: {}
+[3.982834] (-) TimerEvent: {}
+[4.085834] (-) TimerEvent: {}
+[4.184637] (action_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/action_interfaces/action/detail/bubblesort__type_support.cpp.o\x1b[0m\n'}
+[4.187506] (-) TimerEvent: {}
+[4.287760] (-) TimerEvent: {}
+[4.388713] (-) TimerEvent: {}
+[4.489601] (-) TimerEvent: {}
+[4.593022] (-) TimerEvent: {}
+[4.632096] (action_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.697378] (-) TimerEvent: {}
+[4.801485] (-) TimerEvent: {}
+[4.833046] (action_interfaces) StdoutLine: {'line': b'[ 12%] Built target action_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[4.901790] (-) TimerEvent: {}
+[5.015207] (-) TimerEvent: {}
+[5.039974] (action_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[5.049023] (action_interfaces) StdoutLine: {'line': b'writing action_interfaces.egg-info/PKG-INFO\n'}
+[5.049103] (action_interfaces) StdoutLine: {'line': b'writing dependency_links to action_interfaces.egg-info/dependency_links.txt\n'}
+[5.057311] (action_interfaces) StdoutLine: {'line': b'writing top-level names to action_interfaces.egg-info/top_level.txt\n'}
+[5.068280] (action_interfaces) StdoutLine: {'line': b"reading manifest file 'action_interfaces.egg-info/SOURCES.txt'\n"}
+[5.072638] (action_interfaces) StdoutLine: {'line': b"writing manifest file 'action_interfaces.egg-info/SOURCES.txt'\n"}
+[5.103469] (action_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_build_action_interfaces_egg\n'}
+[5.128914] (-) TimerEvent: {}
+[5.162029] (action_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.233151] (-) TimerEvent: {}
+[5.336821] (-) TimerEvent: {}
+[5.441866] (-) TimerEvent: {}
+[5.544952] (-) TimerEvent: {}
+[5.647331] (-) TimerEvent: {}
+[5.749615] (-) TimerEvent: {}
+[5.826834] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[5.851767] (-) TimerEvent: {}
+[5.867771] (action_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_interfaces/action/detail/dds_fastrtps/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[5.953940] (-) TimerEvent: {}
+[6.059393] (-) TimerEvent: {}
+[6.163438] (-) TimerEvent: {}
+[6.274111] (-) TimerEvent: {}
+[6.381822] (-) TimerEvent: {}
+[6.389007] (action_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_interfaces/action/detail/dds_fastrtps/maze__type_support.cpp.o\x1b[0m\n'}
+[6.483144] (-) TimerEvent: {}
+[6.593945] (-) TimerEvent: {}
+[6.708895] (-) TimerEvent: {}
+[6.807172] (action_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/action_interfaces/action/detail/dds_fastrtps/bubblesort__type_support.cpp.o\x1b[0m\n'}
+[6.809032] (-) TimerEvent: {}
+[6.911434] (-) TimerEvent: {}
+[7.018104] (-) TimerEvent: {}
+[7.120208] (-) TimerEvent: {}
+[7.225658] (-) TimerEvent: {}
+[7.289025] (action_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.326788] (-) TimerEvent: {}
+[7.377876] (action_interfaces) StdoutLine: {'line': b'[ 23%] Built target action_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[7.424694] (action_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.428759] (-) TimerEvent: {}
+[7.539808] (-) TimerEvent: {}
+[7.641811] (-) TimerEvent: {}
+[7.746756] (-) TimerEvent: {}
+[7.864601] (-) TimerEvent: {}
+[7.946359] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[7.966257] (-) TimerEvent: {}
+[7.984608] (action_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_interfaces/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[8.067854] (-) TimerEvent: {}
+[8.172798] (-) TimerEvent: {}
+[8.285158] (-) TimerEvent: {}
+[8.389418] (-) TimerEvent: {}
+[8.480559] (action_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_interfaces/action/maze__type_support.cpp.o\x1b[0m\n'}
+[8.491608] (-) TimerEvent: {}
+[8.598539] (-) TimerEvent: {}
+[8.722973] (-) TimerEvent: {}
+[8.834087] (-) TimerEvent: {}
+[8.939700] (-) TimerEvent: {}
+[8.996390] (action_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/action_interfaces/action/bubblesort__type_support.cpp.o\x1b[0m\n'}
+[9.040311] (-) TimerEvent: {}
+[9.146295] (-) TimerEvent: {}
+[9.249082] (-) TimerEvent: {}
+[9.329661] (action_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[9.350672] (-) TimerEvent: {}
+[9.460484] (-) TimerEvent: {}
+[9.512873] (action_interfaces) StdoutLine: {'line': b'[ 34%] Built target action_interfaces__rosidl_typesupport_cpp\n'}
+[9.539545] (action_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.560631] (-) TimerEvent: {}
+[9.662941] (-) TimerEvent: {}
+[9.765616] (-) TimerEvent: {}
+[9.867817] (-) TimerEvent: {}
+[9.969922] (-) TimerEvent: {}
+[10.076307] (-) TimerEvent: {}
+[10.178889] (-) TimerEvent: {}
+[10.283128] (-) TimerEvent: {}
+[10.385602] (-) TimerEvent: {}
+[10.486670] (-) TimerEvent: {}
+[10.538324] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_generator_c\x1b[0m\n'}
+[10.586794] (-) TimerEvent: {}
+[10.597743] (action_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_generator_c.dir/rosidl_generator_c/action_interfaces/action/detail/fibonacci__functions.c.o\x1b[0m\n'}
+[10.687860] (-) TimerEvent: {}
+[10.749739] (action_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_generator_c.dir/rosidl_generator_c/action_interfaces/action/detail/maze__functions.c.o\x1b[0m\n'}
+[10.788817] (-) TimerEvent: {}
+[10.896533] (action_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_generator_c.dir/rosidl_generator_c/action_interfaces/action/detail/bubblesort__functions.c.o\x1b[0m\n'}
+[10.896671] (-) TimerEvent: {}
+[10.974552] (action_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking C shared library libaction_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[10.996892] (-) TimerEvent: {}
+[11.065258] (action_interfaces) StdoutLine: {'line': b'[ 44%] Built target action_interfaces__rosidl_generator_c\n'}
+[11.102258] (-) TimerEvent: {}
+[11.108013] (action_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[11.208991] (-) TimerEvent: {}
+[11.309236] (-) TimerEvent: {}
+[11.412889] (-) TimerEvent: {}
+[11.517155] (-) TimerEvent: {}
+[11.618529] (-) TimerEvent: {}
+[11.711984] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[11.718663] (-) TimerEvent: {}
+[11.723879] (action_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/action_interfaces/action/detail/fibonacci__type_support_c.cpp.o\x1b[0m\n'}
+[11.821788] (-) TimerEvent: {}
+[11.932396] (-) TimerEvent: {}
+[12.001531] (action_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/action_interfaces/action/detail/maze__type_support_c.cpp.o\x1b[0m\n'}
+[12.036730] (-) TimerEvent: {}
+[12.142204] (-) TimerEvent: {}
+[12.245858] (-) TimerEvent: {}
+[12.345265] (action_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/action_interfaces/action/detail/bubblesort__type_support_c.cpp.o\x1b[0m\n'}
+[12.346578] (-) TimerEvent: {}
+[12.447013] (-) TimerEvent: {}
+[12.548456] (-) TimerEvent: {}
+[12.577986] (action_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.650353] (-) TimerEvent: {}
+[12.712661] (action_interfaces) StdoutLine: {'line': b'[ 55%] Built target action_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[12.739304] (action_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[12.755512] (-) TimerEvent: {}
+[12.861282] (-) TimerEvent: {}
+[12.967836] (-) TimerEvent: {}
+[13.043526] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[13.053122] (action_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/fibonacci__type_support.cpp.o\x1b[0m\n'}
+[13.068817] (-) TimerEvent: {}
+[13.117647] (action_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/maze__type_support.cpp.o\x1b[0m\n'}
+[13.171074] (-) TimerEvent: {}
+[13.242590] (action_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/action_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/action_interfaces/action/bubblesort__type_support.cpp.o\x1b[0m\n'}
+[13.273520] (-) TimerEvent: {}
+[13.287627] (action_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libaction_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[13.351392] (action_interfaces) StdoutLine: {'line': b'[ 65%] Built target action_interfaces__rosidl_typesupport_c\n'}
+[13.377249] (-) TimerEvent: {}
+[13.389752] (action_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[13.481245] (-) TimerEvent: {}
+[13.582301] (-) TimerEvent: {}
+[13.685008] (-) TimerEvent: {}
+[13.788948] (-) TimerEvent: {}
+[13.891026] (-) TimerEvent: {}
+[13.918081] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[13.931922] (action_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interfaces/action/detail/fibonacci__type_support.c.o\x1b[0m\n'}
+[13.991684] (-) TimerEvent: {}
+[14.004993] (action_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interfaces/action/detail/maze__type_support.c.o\x1b[0m\n'}
+[14.092022] (-) TimerEvent: {}
+[14.103452] (action_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/action_interfaces/action/detail/bubblesort__type_support.c.o\x1b[0m\n'}
+[14.172706] (action_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking C shared library libaction_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[14.196276] (-) TimerEvent: {}
+[14.266107] (action_interfaces) StdoutLine: {'line': b'[ 76%] Built target action_interfaces__rosidl_typesupport_introspection_c\n'}
+[14.296422] (-) TimerEvent: {}
+[14.302352] (action_interfaces) StdoutLine: {'line': b'[ 76%] Built target action_interfaces\n'}
+[14.329466] (action_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[14.397440] (-) TimerEvent: {}
+[14.504134] (-) TimerEvent: {}
+[14.609803] (-) TimerEvent: {}
+[14.716618] (-) TimerEvent: {}
+[14.818239] (-) TimerEvent: {}
+[14.920414] (-) TimerEvent: {}
+[15.021868] (-) TimerEvent: {}
+[15.128339] (-) TimerEvent: {}
+[15.229085] (-) TimerEvent: {}
+[15.329518] (-) TimerEvent: {}
+[15.437619] (-) TimerEvent: {}
+[15.538795] (-) TimerEvent: {}
+[15.609350] (action_interfaces) StdoutLine: {'line': b'[ 78%] Built target action_interfaces__py\n'}
+[15.619202] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_generator_py\x1b[0m\n'}
+[15.640772] (-) TimerEvent: {}
+[15.651014] (action_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_interfaces/action/_fibonacci_s.c.o\x1b[0m\n'}
+[15.745457] (-) TimerEvent: {}
+[15.806134] (action_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_interfaces/action/_maze_s.c.o\x1b[0m\n'}
+[15.847354] (-) TimerEvent: {}
+[15.950236] (-) TimerEvent: {}
+[15.993651] (action_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_generator_py.dir/rosidl_generator_py/action_interfaces/action/_bubblesort_s.c.o\x1b[0m\n'}
+[16.050391] (-) TimerEvent: {}
+[16.150839] (-) TimerEvent: {}
+[16.153869] (action_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/action_interfaces/libaction_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[16.218171] (action_interfaces) StdoutLine: {'line': b'[ 87%] Built target action_interfaces__rosidl_generator_py\n'}
+[16.236736] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[16.248219] (action_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.252452] (-) TimerEvent: {}
+[16.353613] (-) TimerEvent: {}
+[16.390085] (action_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.457293] (-) TimerEvent: {}
+[16.543456] (action_interfaces) StdoutLine: {'line': b'[ 91%] Built target action_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[16.559463] (-) TimerEvent: {}
+[16.605265] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[16.668805] (action_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.668921] (-) TimerEvent: {}
+[16.772550] (-) TimerEvent: {}
+[16.874146] (-) TimerEvent: {}
+[16.908836] (action_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[16.976966] (-) TimerEvent: {}
+[16.989189] (action_interfaces) StdoutLine: {'line': b'[ 95%] Built target action_interfaces__rosidl_typesupport_c__pyext\n'}
+[16.999285] (action_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target action_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[17.013552] (action_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/action_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[17.077627] (-) TimerEvent: {}
+[17.178964] (-) TimerEvent: {}
+[17.241712] (action_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[17.280977] (-) TimerEvent: {}
+[17.312739] (action_interfaces) StdoutLine: {'line': b'[100%] Built target action_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[17.331001] (action_interfaces) CommandEnded: {'returncode': 0}
+[17.383942] (-) TimerEvent: {}
+[17.490283] (-) TimerEvent: {}
+[17.599908] (-) TimerEvent: {}
+[17.703579] (-) TimerEvent: {}
+[17.808091] (-) TimerEvent: {}
+[17.911680] (-) TimerEvent: {}
+[18.020128] (-) TimerEvent: {}
+[18.125968] (-) TimerEvent: {}
+[18.230471] (-) TimerEvent: {}
+[18.238213] (action_interfaces) JobProgress: {'identifier': 'action_interfaces', 'progress': 'install'}
+[18.244782] (action_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/teehee/ros2_ws/src/lab6/build/action_interfaces'], 'cwd': '/home/teehee/ros2_ws/src/lab6/build/action_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_CA:en'), ('USER', 'teehee'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib:/home/teehee/ros2_ws/install/lab_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/teehee'), ('OLDPWD', '/home/teehee/ros2_ws/src/lab6/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2052'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/teehee/ros2_ws/src/lab6/install:/home/teehee/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'teehee'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'teehee'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/teehee-VM:@/tmp/.ICE-unix/2017,unix/teehee-VM:/tmp/.ICE-unix/2017'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/76eff82f_22c0_45a0_ad91_db8dfa124d94'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BUTRK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/teehee/ros2_ws/src/lab6/install/action_interfaces:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/robot1:/home/teehee/ros2_ws/install/pylab_exam1:/home/teehee/ros2_ws/install/pylab05:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/lab_exam1:/home/teehee/ros2_ws/install/lab05:/home/teehee/ros2_ws/install/lab04:/home/teehee/ros2_ws/install/exersice_2_2:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/teehee/ros2_ws/src/lab6/build/action_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/build/tf2_pkg:/home/teehee/ros2_ws/install/tf2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/pylab_exam1:/home/teehee/ros2_ws/install/pylab_exam1/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/pylab05:/home/teehee/ros2_ws/install/pylab05/lib/python3.10/site-packages:/home/teehee/ros2_ws/build/pylab04:/home/teehee/ros2_ws/install/pylab04/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labs_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/labex6/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_exam2_pkg/lib/python3.10/site-packages:/home/teehee/ros2_ws/install/lab_interfaces/local/lib/python3.10/dist-packages:/home/teehee/ros2_ws/install/example_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/teehee/ros2_ws/src/lab6/install/action_interfaces:/home/teehee/ros2_ws/install/urdf_example:/home/teehee/ros2_ws/install/labs_bringup:/home/teehee/ros2_ws/install/robot1:/home/teehee/ros2_ws/install/lab_interfaces:/home/teehee/ros2_ws/install/lab_exam1:/home/teehee/ros2_ws/install/lab05:/home/teehee/ros2_ws/install/lab04:/home/teehee/ros2_ws/install/exersice_2_2:/home/teehee/ros2_ws/install/exersice_2_1:/home/teehee/ros2_ws/install/exercise_3_4:/home/teehee/ros2_ws/install/tf2_pkg:/home/teehee/ros2_ws/install/pylab_exam1:/home/teehee/ros2_ws/install/pylab05:/home/teehee/ros2_ws/install/pylab04:/home/teehee/ros2_ws/install/labs_pkg:/home/teehee/ros2_ws/install/labex6:/home/teehee/ros2_ws/install/lab_exam2_pkg:/home/teehee/ros2_ws/install/example_pkg:/opt/ros/humble')]), 'shell': False}
+[18.259488] (action_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.259643] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/ament_index/resource_index/rosidl_interfaces/action_interfaces\n'}
+[18.259676] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[18.259702] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[18.259733] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[18.259758] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__functions.c\n'}
+[18.259782] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__functions.h\n'}
+[18.259805] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__type_support.h\n'}
+[18.259828] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__functions.h\n'}
+[18.259850] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__functions.c\n'}
+[18.259872] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__functions.c\n'}
+[18.259894] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__struct.h\n'}
+[18.259920] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__type_support.h\n'}
+[18.259942] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__struct.h\n'}
+[18.259964] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__struct.h\n'}
+[18.259986] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__functions.h\n'}
+[18.260027] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__type_support.h\n'}
+[18.260053] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/maze.h\n'}
+[18.260077] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/fibonacci.h\n'}
+[18.260099] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/bubblesort.h\n'}
+[18.260121] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[18.260146] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[18.260169] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/environment/library_path.sh\n'}
+[18.260190] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/environment/library_path.dsv\n'}
+[18.260213] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_c.so\n'}
+[18.260236] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_c.so" to ""\n'}
+[18.260258] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[18.260279] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[18.260341] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[18.260374] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__rosidl_typesupport_fastrtps_c.h\n'}
+[18.260399] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__rosidl_typesupport_fastrtps_c.h\n'}
+[18.260425] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__rosidl_typesupport_fastrtps_c.h\n'}
+[18.260449] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[18.260472] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[18.260494] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[18.260516] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[18.260538] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[18.260560] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[18.260582] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[18.260731] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__rosidl_typesupport_introspection_c.h\n'}
+[18.260761] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__rosidl_typesupport_introspection_c.h\n'}
+[18.260792] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__rosidl_typesupport_introspection_c.h\n'}
+[18.260817] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__type_support.c\n'}
+[18.260842] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__type_support.c\n'}
+[18.260913] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__type_support.c\n'}
+[18.260956] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[18.265786] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[18.265830] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[18.265863] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[18.265889] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_c.so\n'}
+[18.265912] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[18.265935] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[18.265958] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[18.265979] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/maze.hpp\n'}
+[18.266001] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/fibonacci.hpp\n'}
+[18.266748] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[18.266831] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__builder.hpp\n'}
+[18.266861] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__builder.hpp\n'}
+[18.266887] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__builder.hpp\n'}
+[18.266913] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__traits.hpp\n'}
+[18.266937] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__traits.hpp\n'}
+[18.266959] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__struct.hpp\n'}
+[18.266980] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__struct.hpp\n'}
+[18.267002] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__traits.hpp\n'}
+[18.267024] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__struct.hpp\n'}
+[18.267052] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/bubblesort.hpp\n'}
+[18.267074] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[18.267094] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[18.267116] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[18.267137] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.267163] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/dds_fastrtps\n'}
+[18.267184] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.267207] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[18.267229] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/msg\n'}
+[18.267252] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[18.267275] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[18.267297] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[18.267318] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces\n'}
+[18.267339] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action\n'}
+[18.267360] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail\n'}
+[18.267381] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.267403] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__type_support.cpp\n'}
+[18.267491] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/bubblesort__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.267519] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__type_support.cpp\n'}
+[18.267544] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/fibonacci__type_support.cpp\n'}
+[18.267571] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/include/action_interfaces/action_interfaces/action/detail/maze__rosidl_typesupport_introspection_cpp.hpp\n'}
+[18.267595] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[18.267618] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[18.267773] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_cpp.so\n'}
+[18.267806] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[18.267831] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/environment/pythonpath.sh\n'}
+[18.267856] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/environment/pythonpath.dsv\n'}
+[18.267894] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info\n'}
+[18.267926] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[18.267952] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[18.267977] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[18.268002] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[18.268032] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces\n'}
+[18.268055] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[18.268078] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[18.268149] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/__init__.py\n'}
+[18.268192] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.268220] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/_action_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[18.268244] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/libaction_interfaces__rosidl_generator_py.so\n'}
+[18.268272] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.268296] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.268320] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action\n'}
+[18.268343] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_maze_s.c\n'}
+[18.268366] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/__init__.py\n'}
+[18.268388] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_fibonacci.py\n'}
+[18.268410] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_fibonacci_s.c\n'}
+[18.268432] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_maze.py\n'}
+[18.268455] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_bubblesort_s.c\n'}
+[18.268476] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_bubblesort.py\n'}
+[18.307759] (action_interfaces) StdoutLine: {'line': b"Listing '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces'...\n"}
+[18.309542] (action_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/__init__.py'...\n"}
+[18.309577] (action_interfaces) StdoutLine: {'line': b"Listing '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action'...\n"}
+[18.309605] (action_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/__init__.py'...\n"}
+[18.309631] (action_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_bubblesort.py'...\n"}
+[18.309656] (action_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_fibonacci.py'...\n"}
+[18.309679] (action_interfaces) StdoutLine: {'line': b"Compiling '/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action/_maze.py'...\n"}
+[18.329243] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.329341] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[18.329384] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.329411] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[18.329439] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[18.329464] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/local/lib/python3.10/dist-packages/action_interfaces/action_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[18.329487] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_py.so\n'}
+[18.329510] (action_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/teehee/ros2_ws/src/lab6/install/action_interfaces/lib/libaction_interfaces__rosidl_generator_py.so" to ""\n'}
+[18.329532] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/action/Fibonacci.idl\n'}
+[18.329555] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/action/Bubblesort.idl\n'}
+[18.329578] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/action/Maze.idl\n'}
+[18.329600] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/action/Fibonacci.action\n'}
+[18.329622] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/action/Bubblesort.action\n'}
+[18.329644] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/action/Maze.action\n'}
+[18.329665] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/ament_index/resource_index/package_run_dependencies/action_interfaces\n'}
+[18.329686] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/ament_index/resource_index/parent_prefix_path/action_interfaces\n'}
+[18.329708] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/environment/ament_prefix_path.sh\n'}
+[18.329730] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/environment/ament_prefix_path.dsv\n'}
+[18.329751] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/environment/path.sh\n'}
+[18.329771] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/environment/path.dsv\n'}
+[18.333114] (-) TimerEvent: {}
+[18.348740] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/local_setup.bash\n'}
+[18.350505] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/local_setup.sh\n'}
+[18.350538] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/local_setup.zsh\n'}
+[18.350570] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/local_setup.dsv\n'}
+[18.350595] (action_interfaces) StdoutLine: {'line': b'-- Installing: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/package.dsv\n'}
+[18.350620] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/ament_index/resource_index/packages/action_interfaces\n'}
+[18.350644] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cExport.cmake\n'}
+[18.350667] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[18.350691] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[18.350714] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[18.350737] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[18.350765] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[18.350787] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[18.350810] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[18.350833] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_cppExport.cmake\n'}
+[18.350854] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[18.350875] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[18.350897] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[18.350918] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[18.350943] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[18.350966] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[18.350988] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_pyExport.cmake\n'}
+[18.353109] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/export_action_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[18.353178] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[18.353206] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[18.353266] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.353340] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.354461] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[18.354579] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[18.355548] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[18.355598] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfacesConfig.cmake\n'}
+[18.355625] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/cmake/action_interfacesConfig-version.cmake\n'}
+[18.355650] (action_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/teehee/ros2_ws/src/lab6/install/action_interfaces/share/action_interfaces/package.xml\n'}
+[18.355675] (action_interfaces) CommandEnded: {'returncode': 0}
+[18.433596] (-) TimerEvent: {}
+[18.535612] (-) TimerEvent: {}
+[18.643531] (-) TimerEvent: {}
+[18.744413] (-) TimerEvent: {}
+[18.848873] (-) TimerEvent: {}
+[18.957251] (-) TimerEvent: {}
+[18.988824] (action_interfaces) JobEnded: {'identifier': 'action_interfaces', 'rc': 0}
+[19.008337] (-) EventReactorShutdown: {}

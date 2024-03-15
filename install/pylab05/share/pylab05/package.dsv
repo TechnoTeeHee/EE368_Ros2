@@ -1,0 +1,9 @@
+source;share/pylab05/hook/pythonpath.ps1
+source;share/pylab05/hook/pythonpath.dsv
+source;share/pylab05/hook/pythonpath.sh
+source;share/pylab05/hook/ament_prefix_path.ps1
+source;share/pylab05/hook/ament_prefix_path.dsv
+source;share/pylab05/hook/ament_prefix_path.sh
+source;../../build/pylab05/share/pylab05/hook/pythonpath_develop.ps1
+source;../../build/pylab05/share/pylab05/hook/pythonpath_develop.dsv
+source;../../build/pylab05/share/pylab05/hook/pythonpath_develop.sh

@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from action_interfaces/action/Bubblesort.action
+// generated code does not contain a copyright notice
+
+
+module action_interfaces {
+  module action {
+    struct Bubblesort_Goal {
+      sequence<int32> order;
+    };
+    struct Bubblesort_Result {
+      sequence<int32> sequence;
+
+      int32 i;
+
+      int32 j;
+    };
+    struct Bubblesort_Feedback {
+      sequence<int32> partial_sequence;
+
+      int32 i;
+
+      int32 j;
+    };
+  };
+};
