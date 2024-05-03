@@ -1,0 +1,54 @@
+---
+- ros_topic_name: "/cmd_vel_red"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_topic_name: "/cmd_vel_red"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/cmd_vel_green"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_topic_name: "/cmd_vel_green"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+  
+- ros_topic_name: "/cmd_vel_blue"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_topic_name: "/cmd_vel_blue"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+  
+- ros_topic_name: "/cmd_vel_chase"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_topic_name: "/cmd_vel_chase"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+  
+- gz_topic_name: "/model/rabbitRed/odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  ros_topic_name: "/odom_rabbit_red"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/model/rabbitGreen/odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  ros_topic_name: "/odom_rabbit_green"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/model/rabbitBlue/odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  ros_topic_name: "/odom_rabbit_blue"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/model/chase/odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  ros_topic_name: "/odom_chase"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  direction: GZ_TO_ROS
+
+- gz_topic_name: "/clock"
+  gz_type_name: "gz.msgs.Clock"
+  ros_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  direction: GZ_TO_ROS
