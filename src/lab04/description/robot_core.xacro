@@ -7,7 +7,7 @@
     <link name="base_link">
     </link>
     
-    <xacro:property name="chassis_joint_x" value="-0.1"/>
+    <xacro:property name="chassis_joint_x" value="0"/>
     <xacro:property name="chassis_joint_y" value="0"/>
     <xacro:property name="chassis_joint_z" value="0"/>
 
@@ -17,13 +17,13 @@
         <origin xyz="${chassis_joint_x} ${chassis_joint_y} ${chassis_joint_z}"/>
     </joint>
 
-    <xacro:property name="chassis_x" value="0.15"/>
+    <xacro:property name="chassis_x" value="0"/>
     <xacro:property name="chassis_y" value="0"/>
-    <xacro:property name="chassis_z" value="0.075"/>
+    <xacro:property name="chassis_z" value="0.2"/>
 
-    <xacro:property name="chassis_w" value="0.3"/>
-    <xacro:property name="chassis_l" value="0.3"/>
-    <xacro:property name="chassis_h" value="0.15"/>
+    <xacro:property name="chassis_w" value="1.0"/>
+    <xacro:property name="chassis_l" value="0.4"/>
+    <xacro:property name="chassis_h" value="0.2"/>
 
     <xacro:property name="chassis_roll" value="0"/>
     <xacro:property name="chassis_pitch" value="0"/>
@@ -37,7 +37,7 @@
             <geometry>
                 <box size="${chassis_w} ${chassis_l} ${chassis_h}"/>
             </geometry>
-            <material name="green"/>
+            <material name="blue"/>
         </visual>
         <collision>
             <origin xyz="${chassis_x} ${chassis_y} ${chassis_z}" rpy="${chassis_roll} ${chassis_pitch} ${chassis_yaw}"/>
@@ -52,9 +52,9 @@
     
     <!-- LEFT WHEEL -->
 
-    <xacro:property name="l_wheel_joint_x" value="0"/>
-    <xacro:property name="l_wheel_joint_y" value="0.175"/>
-    <xacro:property name="l_wheel_joint_z" value="0"/>
+    <xacro:property name="l_wheel_joint_x" value="0.3"/>
+    <xacro:property name="l_wheel_joint_y" value="0.25"/>
+    <xacro:property name="l_wheel_joint_z" value="0.2"/>
 
     <xacro:property name="l_wheel_joint_ax" value="0"/>
     <xacro:property name="l_wheel_joint_ay" value="0"/>
@@ -71,8 +71,8 @@
         <axis xyz="${l_wheel_joint_ax} ${l_wheel_joint_ay} ${l_wheel_joint_az}"/>
     </joint>
 
-    <xacro:property name="l_wheel_length" value="0.04"/>
-    <xacro:property name="l_wheel_radius" value="0.05"/>
+    <xacro:property name="l_wheel_length" value="0.1"/>
+    <xacro:property name="l_wheel_radius" value="0.2"/>
     <xacro:property name="l_wheel_m" value="0.1"/>
 
     <xacro:property name="l_wheel_x" value="0"/>
@@ -88,7 +88,7 @@
             <geometry>
                 <cylinder length="${l_wheel_length}" radius="${l_wheel_radius}"/>
             </geometry>
-            <material name="blue"/>
+            <material name="red"/>
         </visual>    
         <collision>
             <geometry>
@@ -102,9 +102,9 @@
 
     <!-- RIGHT WHEEL -->
 
-    <xacro:property name="r_wheel_joint_x" value="0"/>
-    <xacro:property name="r_wheel_joint_y" value="-0.175"/>
-    <xacro:property name="r_wheel_joint_z" value="0"/>
+    <xacro:property name="r_wheel_joint_x" value="0.3"/>
+    <xacro:property name="r_wheel_joint_y" value="-0.25"/>
+    <xacro:property name="r_wheel_joint_z" value="0.2"/>
 
     <xacro:property name="r_wheel_joint_ax" value="0"/>
     <xacro:property name="r_wheel_joint_ay" value="0"/>
@@ -121,8 +121,8 @@
         <axis xyz="${r_wheel_joint_ax} ${r_wheel_joint_ay} ${r_wheel_joint_az}"/>
     </joint>
 
-    <xacro:property name="r_wheel_length" value="0.04"/>
-    <xacro:property name="r_wheel_radius" value="0.05"/>
+    <xacro:property name="r_wheel_length" value="0.1"/>
+    <xacro:property name="r_wheel_radius" value="0.2"/>
     <xacro:property name="r_wheel_m" value="0.1"/>
 
     <xacro:property name="r_wheel_x" value="0"/>
@@ -138,7 +138,58 @@
             <geometry>
                 <cylinder length="${r_wheel_length}" radius="${r_wheel_radius}"/>
             </geometry>
-            <material name="blue"/>
+            <material name="red"/>
+        </visual>    
+        <collision>
+            <geometry>
+                <cylinder length="${r_wheel_length}" radius="${r_wheel_radius}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="${r_wheel_m}" length="${r_wheel_length}" radius="${r_wheel_radius}">
+            <origin xyz="${r_wheel_x} ${r_wheel_y} ${r_wheel_z}" rpy="${r_wheel_roll} ${r_wheel_pitch} ${r_wheel_yaw}"/>
+        </xacro:inertial_cylinder>
+    </link>
+    <!-- LEFT WHEEL1 -->
+
+    <joint name="left_wheel_joint1" type="continuous">
+        <parent link="base_link"/>
+        <child link="left_wheel1"/>
+        <origin xyz="-0.25 ${l_wheel_joint_y} ${l_wheel_joint_z}" rpy="${l_wheel_joint_roll} ${l_wheel_joint_pitch} ${l_wheel_joint_yaw}" />
+        <axis xyz="${l_wheel_joint_ax} ${l_wheel_joint_ay} ${l_wheel_joint_az}"/>
+    </joint>
+
+    <link name="left_wheel1">
+        <visual>
+            <geometry>
+                <cylinder length="${l_wheel_length}" radius="${l_wheel_radius}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>    
+        <collision>
+            <geometry>
+                <cylinder length="${l_wheel_length}" radius="${l_wheel_radius}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="${l_wheel_m}" length="${l_wheel_length}" radius="${l_wheel_radius}">
+            <origin xyz="${l_wheel_x} ${l_wheel_y} ${l_wheel_z}" rpy="${l_wheel_roll} ${l_wheel_pitch} ${l_wheel_yaw}"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <!-- RIGHT WHEEL1 -->
+
+    <joint name="right_wheel_joint1" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_wheel1"/>
+        <origin xyz="-0.25 ${r_wheel_joint_y} ${r_wheel_joint_z}" rpy="${r_wheel_joint_roll} ${r_wheel_joint_pitch} ${r_wheel_joint_yaw}" />
+        <axis xyz="${r_wheel_joint_ax} ${r_wheel_joint_ay} ${r_wheel_joint_az}"/>
+    </joint>
+
+    <link name="right_wheel1">
+        <visual>
+            <geometry>
+                <cylinder length="${r_wheel_length}" radius="${r_wheel_radius}"/>
+            </geometry>
+            <material name="red"/>
         </visual>    
         <collision>
             <geometry>
@@ -150,46 +201,46 @@
         </xacro:inertial_cylinder>
     </link>
 
-    <xacro:property name="c_wheel_joint_x" value="0.24"/>
-    <xacro:property name="c_wheel_joint_y" value="0"/>
-    <xacro:property name="c_wheel_joint_z" value="0"/>
+    <xacro:property name="robo_hub_joint_x" value="0"/>
+    <xacro:property name="robo_hub_joint_y" value="0"/>
+    <xacro:property name="robo_hub_joint_z" value="0"/>
 
-    <xacro:property name="c_wheel_joint_roll" value="0"/>
-    <xacro:property name="c_wheel_joint_pitch" value="0"/>
-    <xacro:property name="c_wheel_joint_yaw" value="0"/>
-
-    <!-- CASTER WHEEL -->
-    <joint name="caster_wheel_joint" type="fixed">
-        <parent link="chassis"/>
-        <child link="caster_wheel"/>
-        <origin xyz="${c_wheel_joint_x} ${c_wheel_joint_y} ${c_wheel_joint_z}" rpy="${c_wheel_joint_roll} ${c_wheel_joint_pitch} ${c_wheel_joint_yaw}"/>
+    <joint name="robo_hub_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="robo_hub"/>
+        <origin xyz="${robo_hub_joint_x} ${robo_hub_joint_y} ${robo_hub_joint_z}"/>
     </joint>
 
-    <xacro:property name="c_wheel_radius" value="0.05"/>
-    <xacro:property name="c_wheel_mass" value="0.1"/>
-    <xacro:property name="c_wheel_x" value="0"/>
-    <xacro:property name="c_wheel_y" value="0"/>
-    <xacro:property name="c_wheel_z" value="0"/>
-    <xacro:property name="c_wheel_roll" value="0"/>
-    <xacro:property name="c_wheel_pitch" value="0"/>
-    <xacro:property name="c_wheel_yaw" value="0"/>
+    <xacro:property name="robo_hub_x" value="0.1"/>
+    <xacro:property name="robo_hub_y" value="0"/>
+    <xacro:property name="robo_hub_z" value="0.4"/>
 
-    <link name="caster_wheel">
+    <xacro:property name="robo_hub_l" value="0.4"/>
+    <xacro:property name="robo_hub_w" value="0.3"/>
+    <xacro:property name="robo_hub_h" value="0.2"/>
+
+    <xacro:property name="robo_hub_roll" value="0"/>
+    <xacro:property name="robo_hub_pitch" value="0"/>
+    <xacro:property name="robo_hub_yaw" value="0"/>
+
+    <xacro:property name="robo_hub_m" value="0.5"/>
+
+    <link name="robo_hub">
         <visual>
+            <origin xyz="${robo_hub_x} ${robo_hub_y} ${robo_hub_z}"/>
             <geometry>
-                <sphere radius="${c_wheel_radius}"/>
+                <box size="${robo_hub_w} ${robo_hub_l} ${robo_hub_h}"/>
             </geometry>
-            <material name="black"/>
+            <material name="green"/>
         </visual>
         <collision>
+            <origin xyz="${robo_hub_x} ${robo_hub_y} ${robo_hub_z}" rpy="${robo_hub_roll} ${robo_hub_pitch} ${robo_hub_yaw}"/>
             <geometry>
-                <sphere radius="${c_wheel_radius}"/>
+                <box size="${robo_hub_w} ${robo_hub_l} ${robo_hub_h}"/>
             </geometry>
         </collision>
-        <xacro:inertial_sphere mass="${c_wheel_mass}" radius="${c_wheel_radius}">
-            <origin xyz="${c_wheel_x} ${c_wheel_y} ${c_wheel_z}" rpy="${c_wheel_roll} ${c_wheel_pitch} ${c_wheel_yaw}"/>
-        </xacro:inertial_sphere>
+        <xacro:inertial_box mass="${robo_hub_m}" x="${robo_hub_w}" y="${robo_hub_l}" z="${robo_hub_h}">
+            <origin xyz="${robo_hub_x} ${robo_hub_y} ${robo_hub_z}" rpy="${robo_hub_roll} ${robo_hub_pitch} ${robo_hub_yaw}"/>
+        </xacro:inertial_box>    
     </link>
-    
-    
 </robot>

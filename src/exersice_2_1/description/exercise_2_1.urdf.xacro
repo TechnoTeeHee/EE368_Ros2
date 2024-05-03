@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+    <!-- This will include all the contents of example_include.xacro first -->
+    <xacro:include filename="colors.xacro" />
+    <xacro:include filename="inertial.xacro" />
+
+    <!-- This first link called "world" is empty -->
+    <link name="world"></link>
+
+    <!-- A simple fixed joint from our empty world link, to our base.
+         The base origin is offset from the world origin. -->
+    <joint name="cylinder1" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="world"/>
+        <child link="cylinder1_link"/>       
+    </joint>
+
+    <xacro:property name="cylinder_length" value="2" />
+    <xacro:property name="cylinder_radius" value="0.1" />
+
+    <link name="cylinder1_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+            <geometry>                
+                <cylinder length="${cylinder_length}" radius="${cylinder_radius}" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+            <geometry>
+                <cylinder length="${cylinder_length}" radius="${cylinder_radius}" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="1.0" length="${cylinder_length}"
+            radius="${cylinder_radius}">
+            <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+
+    <joint name="cylinder2" type="fixed">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="world"/>
+        <child link="cylinder2_link"/>   
+    </joint>
+
+    <link name="cylinder2_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="${pi/2} ${pi/2} 0"/>
+            <geometry>                
+                <cylinder length="${cylinder_length}" radius="${cylinder_radius}" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="${pi/2} ${pi/2} 0"/>
+            <geometry>
+                <cylinder length="${cylinder_length}" radius="${cylinder_radius}" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="1.0" length="${cylinder_length}"
+            radius="${cylinder_radius}">
+            <origin xyz="0 0 0" rpy="${pi/2} ${pi/2} 0"/>
+        </xacro:inertial_cylinder>
+    </link>
+    
+    <joint name="shaft" type="revolute">
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <parent link="world"/>
+        <child link="shaft_link"/>
+        <axis xyz="0 0 1"/>
+        <limit lower="0" upper="${2*pi}" velocity="100" effort="100"/> 
+    </joint>
+
+    <xacro:property name="shaft_side_length" value="0.2" />
+    <xacro:property name="shaft_height" value="2"/>
+
+    <link name="shaft_link">
+        <visual>
+            <origin xyz="0 0 ${shaft_height/2}" rpy="0 0 0"/>
+            <geometry>
+                <box size="${shaft_side_length} ${shaft_side_length} ${shaft_height}"/>
+            </geometry>
+            <material name="magenta"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 ${shaft_height/2}" rpy="0 0 0"/>
+            <geometry>
+                <box size="${shaft_side_length} ${shaft_side_length} ${shaft_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.1" x="${shaft_side_length/2}" y="${shaft_side_length/2}" z="${shaft_height/2}">
+            <origin xyz="0.0 0 0" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <xacro:property name="topshaft_side_length" value="0.2" />
+    <xacro:property name="topshaft_height" value="1"/>
+    
+    <joint name="topshaft" type="prismatic">
+        <origin xyz="0 0 ${shaft_height+(topshaft_side_length/2)}" rpy="0 0 0"/>
+        <parent link="shaft_link"/>
+        <child link="topshaft_link"/>
+        <axis xyz="1 0 0"/>
+        <limit lower="${-(topshaft_height/2-0.2)}" upper="${topshaft_height/2-0.2}" velocity="100" effort="100"/> 
+    </joint>
+
+    <link name="topshaft_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 ${pi/2} 0"/>
+            <geometry>
+                <box size="${topshaft_side_length} ${topshaft_side_length} ${topshaft_height}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+        <collision>
+            <origin xyz="0 0 ${shaft_height}" rpy="0 ${pi/2} 0"/>
+            <geometry>
+                <box size="${topshaft_side_length} ${topshaft_side_length} ${topshaft_height}"/>
+            </geometry>
+        </collision>
+        <xacro:inertial_box mass="0.1" x="${topshaft_side_length/2}" y="${topshaft_side_length/2}" z="${topshaft_height/2}">
+            <origin xyz="0.0 0 0" rpy="0 ${pi/2} 0"/>
+        </xacro:inertial_box>
+    </link>
+</robot>
